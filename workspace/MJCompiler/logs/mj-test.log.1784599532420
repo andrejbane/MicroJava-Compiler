@@ -1,0 +1,101 @@
+INFO  04:03:17,797 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\v1_subclass_arg_recursion.mj
+INFO  04:03:17,841 - #2 program
+INFO  04:03:17,841 - #54 p
+INFO  04:03:17,841 - #5 class
+INFO  04:03:17,842 - #54 A
+INFO  04:03:17,842 - #45 {
+INFO  04:03:17,842 - #54 int
+INFO  04:03:17,843 - #54 x
+INFO  04:03:17,843 - #40 ;
+INFO  04:03:17,844 - #45 {
+INFO  04:03:17,844 - #46 }
+INFO  04:03:17,844 - #46 }
+INFO  04:03:17,844 - #5 class
+INFO  04:03:17,844 - #54 B
+INFO  04:03:17,844 - #15 extends
+INFO  04:03:17,844 - #54 A
+INFO  04:03:17,845 - #45 {
+INFO  04:03:17,845 - #54 int
+INFO  04:03:17,845 - #54 y
+INFO  04:03:17,845 - #40 ;
+INFO  04:03:17,845 - #45 {
+INFO  04:03:17,845 - #46 }
+INFO  04:03:17,850 - #46 }
+INFO  04:03:17,850 - #45 {
+INFO  04:03:17,850 - #14 void
+INFO  04:03:17,850 - #54 take
+INFO  04:03:17,850 - #43 (
+INFO  04:03:17,851 - #54 A
+INFO  04:03:17,851 - #54 a
+INFO  04:03:17,851 - #44 )
+INFO  04:03:17,851 - #45 {
+INFO  04:03:17,851 - #46 }
+INFO  04:03:17,852 - #54 int
+INFO  04:03:17,852 - #54 fact
+INFO  04:03:17,852 - #43 (
+INFO  04:03:17,852 - #54 int
+INFO  04:03:17,852 - #54 n
+INFO  04:03:17,852 - #44 )
+INFO  04:03:17,852 - #45 {
+INFO  04:03:17,852 - #9 if
+INFO  04:03:17,852 - #43 (
+INFO  04:03:17,852 - #54 n
+INFO  04:03:17,852 - #32 <
+INFO  04:03:17,853 - #53 2
+INFO  04:03:17,854 - #44 )
+INFO  04:03:17,854 - #13 return
+INFO  04:03:17,854 - #53 1
+INFO  04:03:17,854 - #40 ;
+INFO  04:03:17,854 - #13 return
+INFO  04:03:17,854 - #54 n
+INFO  04:03:17,854 - #25 *
+INFO  04:03:17,854 - #54 fact
+INFO  04:03:17,855 - #43 (
+INFO  04:03:17,855 - #54 n
+INFO  04:03:17,855 - #24 -
+INFO  04:03:17,855 - #53 1
+INFO  04:03:17,855 - #44 )
+INFO  04:03:17,855 - #40 ;
+INFO  04:03:17,855 - #46 }
+INFO  04:03:17,855 - #14 void
+INFO  04:03:17,855 - #54 main
+INFO  04:03:17,855 - #43 (
+INFO  04:03:17,855 - #44 )
+INFO  04:03:17,856 - #54 B
+INFO  04:03:17,856 - #54 b
+INFO  04:03:17,856 - #40 ;
+INFO  04:03:17,856 - #54 int
+INFO  04:03:17,856 - #54 r
+INFO  04:03:17,856 - #40 ;
+INFO  04:03:17,856 - #45 {
+INFO  04:03:17,856 - #54 b
+INFO  04:03:17,856 - #36 =
+INFO  04:03:17,856 - #10 new
+INFO  04:03:17,856 - #54 B
+INFO  04:03:17,856 - #40 ;
+INFO  04:03:17,856 - #54 take
+INFO  04:03:17,856 - #43 (
+INFO  04:03:17,857 - #54 b
+INFO  04:03:17,857 - #44 )
+INFO  04:03:17,857 - #40 ;
+INFO  04:03:17,857 - #54 r
+INFO  04:03:17,857 - #36 =
+INFO  04:03:17,857 - #54 fact
+INFO  04:03:17,857 - #43 (
+INFO  04:03:17,857 - #53 5
+INFO  04:03:17,857 - #44 )
+INFO  04:03:17,857 - #40 ;
+INFO  04:03:17,857 - #46 }
+INFO  04:03:17,857 - #46 }
+INFO  04:03:17,862 - Pretraga na 11 (n), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31a5c39e
+INFO  04:03:17,863 - Pretraga na 12 (n), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31a5c39e
+INFO  04:03:17,863 - Pretraga na 12 (fact), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f2108b5
+INFO  04:03:17,863 - Pretraga na 12 (n), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31a5c39e
+INFO  04:03:17,863 - Pretraga na 18 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@27c20538
+INFO  04:03:17,863 - Kreiranje objekta klase B na liniji 18
+INFO  04:03:17,863 - Pretraga na 19 (take), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5bcab519
+INFO  04:03:17,863 - Pretraga na 19 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@27c20538
+INFO  04:03:17,863 - Pretraga na 20 (r), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  04:03:17,863 - Pretraga na 20 (fact), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f2108b5
+INFO  04:03:17,863 - Semantic analysis passed for v1_subclass_arg_recursion.mj
+INFO  04:03:17,863 - ===================================

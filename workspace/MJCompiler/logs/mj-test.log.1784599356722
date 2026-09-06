@@ -1,0 +1,41 @@
+INFO  04:02:36,455 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n4_ternary_mismatch.mj
+INFO  04:02:36,502 - #2 program
+INFO  04:02:36,502 - #54 p
+INFO  04:02:36,502 - #45 {
+INFO  04:02:36,502 - #14 void
+INFO  04:02:36,503 - #54 main
+INFO  04:02:36,503 - #43 (
+INFO  04:02:36,503 - #44 )
+INFO  04:02:36,504 - #54 int
+INFO  04:02:36,504 - #54 x
+INFO  04:02:36,504 - #40 ;
+INFO  04:02:36,505 - #54 char
+INFO  04:02:36,505 - #54 c
+INFO  04:02:36,505 - #40 ;
+INFO  04:02:36,505 - #54 int
+INFO  04:02:36,505 - #54 t
+INFO  04:02:36,505 - #40 ;
+INFO  04:02:36,505 - #45 {
+INFO  04:02:36,505 - #54 t
+INFO  04:02:36,506 - #36 =
+INFO  04:02:36,506 - #54 x
+INFO  04:02:36,506 - #32 <
+INFO  04:02:36,511 - #54 c
+INFO  04:02:36,512 - #49 ?
+INFO  04:02:36,512 - #54 x
+INFO  04:02:36,512 - #50 :
+INFO  04:02:36,512 - #54 c
+INFO  04:02:36,512 - #40 ;
+INFO  04:02:36,513 - #46 }
+INFO  04:02:36,513 - #46 }
+INFO  04:02:36,518 - Pretraga na 7 (t), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57baeedf
+INFO  04:02:36,518 - Pretraga na 7 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@343f4d3d
+INFO  04:02:36,518 - Pretraga na 7 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+ERROR 04:02:36,518 - Relacioni operator zahteva kompatibilne operande na liniji 7
+INFO  04:02:36,518 - Pretraga na 7 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@343f4d3d
+INFO  04:02:36,518 - Pretraga na 7 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+ERROR 04:02:36,518 - Uslov ternarnog operatora mora biti tipa bool na liniji 7
+ERROR 04:02:36,518 - Drugi i treci operand ternarnog operatora moraju biti istog tipa na liniji 7
+ERROR 04:02:36,518 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 7
+INFO  04:02:36,518 - Semantic errors detected in n4_ternary_mismatch.mj
+INFO  04:02:36,518 - ===================================

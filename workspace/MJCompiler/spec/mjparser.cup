@@ -1,0 +1,634 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+parser code {:
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+
+	public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+		done_parsing();
+		report_error(message, info);
+	}
+
+	public void syntax_error(Symbol currentToken) {
+		report_error("Sintaksna greska", currentToken);
+	}
+
+	public void unrecovered_syntax_error(Symbol currentToken) throws java.lang.Exception {
+		report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", currentToken);
+	}
+
+	public void report_error(String message, Object info) {
+		errorDetected = true;
+		StringBuilder errorMessage = new StringBuilder(message);
+		if (info instanceof Symbol) {
+			Symbol symbol = (Symbol) info;
+			errorMessage.append(" na liniji ").append(symbol.left)
+				.append(", kolona ").append(symbol.right);
+		}
+		log.error(errorMessage.toString());
+	}
+
+	public boolean hasErrors() {
+		return errorDetected;
+	}
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol symbol = getScanner().next_token();
+	if (symbol != null && symbol.value != null) {
+		log.info(symbol.toString() + " " + symbol.value.toString());
+	}
+	return symbol;
+:}
+
+terminal PROG, BREAK, ENUM, CLASS, ABSTRACT, ELSE, CONST, IF, NEW;
+terminal PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, FOR, FOREACH, LENGTH;
+terminal SWITCH, CASE, FINDANY, MAP;
+terminal PLUS, MINUS, MUL, DIV, MOD;
+terminal EQUALSTO, DIFFERENT, GREATER, EGREATER, LESS, ELESS;
+terminal AND, OR, EQUAL, PLUSPLUS, MINUSMINUS, ARROW;
+terminal SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
+terminal LSQBRACE, RSQBRACE, QUESTION, DOUBLEDOT;
+terminal String BOOL;
+terminal String CHAR;
+terminal Integer NUMBER;
+terminal String IDENT;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
+nonterminal GlobalDeclarationList, GlobalDeclaration;
+nonterminal ConstDeclaration, ConstDeclaratorList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ConstDeclarator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ConstValue;
+nonterminal VariableDeclaration, VariableDeclaratorList, VariableDeclaratorListPrefix;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj VariableDeclarator;
+nonterminal ArraySuffix;
+nonterminal VariableDeclarationRecovery, VariableDeclaratorCommaRecovery;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDeclaration, ConcreteClassHeader;
+nonterminal ConcreteMethodSectionOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj AbstractClassDeclaration, AbstractClassHeader;
+nonterminal AbstractMethodSectionOpt;
+nonterminal ClassFieldList, ExtendsRecovery, ClassFieldRecovery;
+nonterminal ClassFieldToMethodRecovery;
+nonterminal MethodDeclarationList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDeclaration, MethodHeader, MethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ReturnType;
+nonterminal AbstractClassMemberList, AbstractClassMember;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj AbstractMethodDeclaration;
+nonterminal LocalVariableDeclarationList;
+nonterminal FormalParametersOpt, FormalParameters, FormalParametersPrefix;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj FormalParameter;
+nonterminal FormalParameterEndRecovery, FormalParameterCommaRecovery;
+nonterminal StatementList, Statement, MatchedStatement, UnmatchedStatement;
+nonterminal IfCondition, ForHeader, ForeachHeader, DesignatorStatementOpt, ConditionOpt;
+nonterminal ReturnExpressionOpt, PrintWidthOpt;
+nonterminal DesignatorStatement, FindAnyStatement, MapStatement;
+nonterminal DesignatorStatementRecovery, IfConditionEndRecovery;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal ActualParametersOpt, ActualParameters, FactorCallOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expression, NonTernaryExpression;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct TernaryExpression, AdditiveTail;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Term, Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, ConditionTerm, ConditionFactor;
+nonterminal RelationalOperator, AdditiveOperator, MultiplicativeOperator;
+
+start with Program;
+
+Program ::=
+	(Program) PROG ProgramName GlobalDeclarationList LBRACE MethodDeclarationList RBRACE
+;
+
+ProgramName ::=
+	(ProgramName) IDENT:name
+;
+
+GlobalDeclarationList ::=
+	(GlobalDeclarationsMultiple) GlobalDeclarationList GlobalDeclaration
+	|
+	(NoGlobalDeclarations) /* epsilon */
+;
+
+GlobalDeclaration ::=
+	(GlobalConstDeclaration) ConstDeclaration
+	|
+	(GlobalVariableDeclaration) VariableDeclaration
+	|
+	(GlobalClassDeclaration) ClassDeclaration
+	|
+	(GlobalAbstractClassDeclaration) AbstractClassDeclaration
+;
+
+ConstDeclaration ::=
+	(ConstDeclaration) CONST Type ConstDeclaratorList SEMI
+;
+
+ConstDeclaratorList ::=
+	(ConstDeclaratorsMultiple) ConstDeclaratorList COMMA ConstDeclarator
+	|
+	(ConstDeclaratorsSingle) ConstDeclarator
+;
+
+ConstDeclarator ::=
+	(ConstDeclarator) IDENT:name EQUAL ConstValue
+;
+
+ConstValue ::=
+	(NumericConstValue) NUMBER:value
+	|
+	(CharacterConstValue) CHAR:value
+	|
+	(BooleanConstValue) BOOL:value
+;
+
+VariableDeclaration ::=
+	(ValidVariableDeclaration) Type VariableDeclaratorList SEMI
+	|
+	(VariableDeclarationRecoveredAtSemicolon) Type VariableDeclarationRecovery
+;
+
+VariableDeclarationRecovery ::=
+	(VariableDeclarationRecovery) error SEMI:semicolon
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije promenljive do ; na liniji " + semicolonleft,
+			null
+		);
+	:}
+;
+
+VariableDeclaratorList ::=
+	(VariableDeclaratorsMultiple) VariableDeclaratorListPrefix VariableDeclarator
+	|
+	(VariableDeclaratorsSingle) VariableDeclarator
+;
+
+VariableDeclaratorListPrefix ::=
+	(VariableDeclaratorListPrefixValid) VariableDeclaratorList COMMA
+	|
+	(VariableDeclaratorListPrefixRecovered) VariableDeclaratorCommaRecovery
+;
+
+VariableDeclaratorCommaRecovery ::=
+	(VariableDeclaratorCommaRecovery) error COMMA:comma
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije promenljive do , na liniji " + commaleft,
+			null
+		);
+	:}
+;
+
+VariableDeclarator ::=
+	(VariableDeclarator) IDENT:name ArraySuffix
+;
+
+ArraySuffix ::=
+	(ArraySuffixPresent) LSQBRACE RSQBRACE
+	|
+	(NoArraySuffix) /* epsilon */
+;
+
+Type ::=
+	(Type) IDENT:name
+;
+
+ClassDeclaration ::=
+	(CompleteClassDeclaration)
+		ConcreteClassHeader ClassFieldList ConcreteMethodSectionOpt RBRACE
+	|
+	(ClassDeclarationRecoveredTypedField)
+		ConcreteClassHeader ClassFieldList Type ClassFieldToMethodRecovery
+		MethodDeclarationList RBRACE RBRACE
+;
+
+ConcreteClassHeader ::=
+	(ConcreteClassHeaderWithoutExtends) CLASS IDENT:name LBRACE
+	|
+	(ConcreteClassHeaderWithExtends) CLASS IDENT:name EXTENDS Type LBRACE
+	|
+	(ConcreteClassHeaderRecoveredExtends) CLASS IDENT:name EXTENDS ExtendsRecovery
+;
+
+ExtendsRecovery ::=
+	(ExtendsRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije extends do { na liniji " + lbraceleft,
+			null
+		);
+	:}
+;
+
+ConcreteMethodSectionOpt ::=
+	(ConcreteMethodSection) LBRACE MethodDeclarationList RBRACE
+	|
+	(NoConcreteMethodSection) /* epsilon */
+	|
+	(ConcreteMethodSectionRecoveredField)
+		ClassFieldRecovery MethodDeclarationList RBRACE
+;
+
+ClassFieldRecovery ::=
+	(ClassFieldRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije polja klase do { na liniji " + lbraceleft,
+			null
+		);
+	:}
+;
+
+AbstractClassDeclaration ::=
+	(CompleteAbstractClassDeclaration)
+		AbstractClassHeader ClassFieldList AbstractMethodSectionOpt RBRACE
+	|
+	(AbstractClassDeclarationRecoveredTypedField)
+		AbstractClassHeader ClassFieldList Type ClassFieldToMethodRecovery
+		AbstractClassMemberList RBRACE RBRACE
+;
+
+ClassFieldToMethodRecovery ::=
+	(ClassFieldToMethodRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije polja klase do { na liniji " + lbraceleft,
+			null
+		);
+	:}
+;
+
+AbstractClassHeader ::=
+	(AbstractClassHeaderWithoutExtends) ABSTRACT CLASS IDENT:name LBRACE
+	|
+	(AbstractClassHeaderWithExtends) ABSTRACT CLASS IDENT:name EXTENDS Type LBRACE
+	|
+	(AbstractClassHeaderRecoveredExtends) ABSTRACT CLASS IDENT:name EXTENDS ExtendsRecovery
+;
+
+AbstractMethodSectionOpt ::=
+	(AbstractMethodSection) LBRACE AbstractClassMemberList RBRACE
+	|
+	(NoAbstractMethodSection) /* epsilon */
+	|
+	(AbstractMethodSectionRecoveredField)
+		ClassFieldRecovery AbstractClassMemberList RBRACE
+;
+
+ClassFieldList ::=
+	(ClassFieldsMultiple) ClassFieldList VariableDeclaration
+	|
+	(NoClassFields) /* epsilon */
+;
+
+MethodDeclarationList ::=
+	(MethodDeclarationsMultiple) MethodDeclarationList MethodDeclaration
+	|
+	(NoMethodDeclarations) /* epsilon */
+;
+
+MethodDeclaration ::=
+	(MethodDeclaration)
+		MethodHeader LocalVariableDeclarationList LBRACE StatementList RBRACE
+;
+
+MethodHeader ::=
+	(ValidMethodHeader) ReturnType MethodName LPAREN FormalParametersOpt RPAREN
+	|
+	(MethodHeaderRecoveredFormalParameter)
+		ReturnType MethodName LPAREN FormalParameterEndRecovery
+;
+
+MethodName ::=
+	(MethodName) IDENT:name
+;
+
+FormalParameterEndRecovery ::=
+	(FormalParameterEndRecovery) error RPAREN:rparen
+	{:
+		parser.report_error(
+			"Izvrsen oporavak formalnog parametra do ) na liniji " + rparenleft,
+			null
+		);
+	:}
+;
+
+ReturnType ::=
+	(TypedReturnType) Type
+	|
+	(VoidReturnType) VOID
+;
+
+AbstractClassMemberList ::=
+	(AbstractClassMembersMultiple) AbstractClassMemberList AbstractClassMember
+	|
+	(NoAbstractClassMembers) /* epsilon */
+;
+
+AbstractClassMember ::=
+	(AbstractClassConcreteMethod) MethodDeclaration
+	|
+	(AbstractClassAbstractMethod) AbstractMethodDeclaration SEMI
+;
+
+AbstractMethodDeclaration ::=
+	(AbstractMethodDeclaration) ABSTRACT MethodHeader
+;
+
+LocalVariableDeclarationList ::=
+	(LocalVariableDeclarationsMultiple)
+		LocalVariableDeclarationList VariableDeclaration
+	|
+	(NoLocalVariableDeclarations) /* epsilon */
+;
+
+FormalParametersOpt ::=
+	(FormalParametersPresent) FormalParameters
+	|
+	(NoFormalParameters) /* epsilon */
+;
+
+FormalParameters ::=
+	(FormalParametersMultiple) FormalParametersPrefix FormalParameter
+	|
+	(FormalParametersSingle) FormalParameter
+;
+
+FormalParametersPrefix ::=
+	(FormalParametersPrefixValid) FormalParameters COMMA
+	|
+	(FormalParametersPrefixRecovered) FormalParameterCommaRecovery
+;
+
+FormalParameterCommaRecovery ::=
+	(FormalParameterCommaRecovery) error COMMA:comma
+	{:
+		parser.report_error(
+			"Izvrsen oporavak formalnog parametra do , na liniji " + commaleft,
+			null
+		);
+	:}
+;
+
+FormalParameter ::=
+	(FormalParameter) Type IDENT:name ArraySuffix
+;
+
+StatementList ::=
+	(StatementsMultiple) StatementList Statement
+	|
+	(NoStatements) /* epsilon */
+;
+
+Statement ::=
+	(MatchedStatementNode) MatchedStatement
+	|
+	(UnmatchedStatementNode) UnmatchedStatement
+;
+
+MatchedStatement ::=
+	(MatchedDesignatorStatement) DesignatorStatement SEMI
+	|
+	(MatchedFindAnyStatement) FindAnyStatement
+	|
+	(MatchedMapStatement) MapStatement
+	|
+	(MatchedRecoveredDesignatorStatement) Designator DesignatorStatementRecovery
+	|
+	(MatchedIfElseStatement)
+		IfCondition MatchedStatement ELSE MatchedStatement
+	|
+	(MatchedForStatement) ForHeader MatchedStatement
+	|
+	(MatchedForeachStatement) ForeachHeader MatchedStatement
+	|
+	(MatchedBreakStatement) BREAK SEMI
+	|
+	(MatchedContinueStatement) CONTINUE SEMI
+	|
+	(MatchedReturnStatement) RETURN ReturnExpressionOpt SEMI
+	|
+	(MatchedReadStatement) READ LPAREN Designator RPAREN SEMI
+	|
+	(MatchedPrintStatement) PRINT LPAREN Expression PrintWidthOpt RPAREN SEMI
+	|
+	(MatchedBlockStatement) LBRACE StatementList RBRACE
+;
+
+DesignatorStatementRecovery ::=
+	(DesignatorStatementRecovery) error SEMI:semicolon
+	{:
+		parser.report_error(
+			"Izvrsen oporavak iskaza dodele do ; na liniji " + semicolonleft,
+			null
+		);
+	:}
+;
+
+UnmatchedStatement ::=
+	(UnmatchedIfStatement) IfCondition Statement
+	|
+	(UnmatchedIfElseStatement)
+		IfCondition MatchedStatement ELSE UnmatchedStatement
+	|
+	(UnmatchedForStatement) ForHeader UnmatchedStatement
+	|
+	(UnmatchedForeachStatement) ForeachHeader UnmatchedStatement
+;
+
+IfCondition ::=
+	(ValidIfCondition) IF LPAREN Condition RPAREN
+	|
+	(IfConditionRecovered) IF LPAREN IfConditionEndRecovery
+;
+
+IfConditionEndRecovery ::=
+	(IfConditionEndRecovery) error RPAREN:rparen
+	{:
+		parser.report_error(
+			"Izvrsen oporavak uslova if iskaza do ) na liniji " + rparenleft,
+			null
+		);
+	:}
+;
+
+ForHeader ::=
+	(ForHeader)
+		FOR LPAREN DesignatorStatementOpt SEMI ConditionOpt SEMI
+		DesignatorStatementOpt RPAREN
+;
+
+ForeachHeader ::=
+	(ForeachHeader)
+		FOREACH LPAREN Designator:target DOUBLEDOT Designator:array RPAREN
+;
+
+DesignatorStatementOpt ::=
+	(DesignatorStatementPresent) DesignatorStatement
+	|
+	(NoDesignatorStatement) /* epsilon */
+;
+
+ConditionOpt ::=
+	(ConditionPresent) Condition
+	|
+	(NoCondition) /* epsilon */
+;
+
+ReturnExpressionOpt ::=
+	(ReturnExpressionPresent) Expression
+	|
+	(NoReturnExpression) /* epsilon */
+;
+
+PrintWidthOpt ::=
+	(PrintWidthPresent) COMMA NUMBER
+	|
+	(NoPrintWidth) /* epsilon */
+;
+
+DesignatorStatement ::=
+	(DesignatorAssignment) Designator:destination EQUAL Expression:value
+	|
+	(DesignatorCall) Designator:method LPAREN ActualParametersOpt RPAREN
+	|
+	(DesignatorIncrement) Designator:target PLUSPLUS
+	|
+	(DesignatorDecrement) Designator:target MINUSMINUS
+;
+
+FindAnyStatement ::=
+	(FindAnyStatement)
+		Designator:result EQUAL Designator:array DOT FINDANY
+		LPAREN Expression:value RPAREN SEMI
+;
+
+MapStatement ::=
+	(MapStatement)
+		Designator:result EQUAL Designator:array DOT MAP
+		LPAREN IDENT:mapper ARROW Expression:value RPAREN SEMI
+;
+
+Designator ::=
+	(DesignatorName) IDENT:name
+	|
+	(DesignatorMember) Designator:owner DOT IDENT:member
+	|
+	(DesignatorLength) Designator:array DOT LENGTH
+	|
+	(DesignatorElement) Designator:array LSQBRACE Expression:index RSQBRACE
+;
+
+ActualParametersOpt ::=
+	(ActualParametersPresent) ActualParameters
+	|
+	(NoActualParameters) /* epsilon */
+;
+
+ActualParameters ::=
+	(ActualParametersMultiple) ActualParameters:previous COMMA Expression:argument
+	|
+	(ActualParametersSingle) Expression:argument
+;
+
+FactorCallOpt ::=
+	(FactorCall) LPAREN ActualParametersOpt RPAREN
+	|
+	(NoFactorCall) /* epsilon */
+;
+
+Expression ::=
+	(ExpressionWithoutTernary) NonTernaryExpression
+	|
+	(ExpressionWithTernary) TernaryExpression
+;
+
+NonTernaryExpression ::=
+	(PositiveNonTernaryExpression) Term AdditiveTail
+	|
+	(NegativeNonTernaryExpression) MINUS Term AdditiveTail
+;
+
+TernaryExpression ::=
+	(TernaryExpression) Condition QUESTION Expression DOUBLEDOT Expression
+;
+
+AdditiveTail ::=
+	(AdditiveTermsMultiple) AdditiveTail AdditiveOperator Term
+	|
+	(NoAdditiveTerms) /* epsilon */
+;
+
+Term ::=
+	(TermWithMultiplication) Term MultiplicativeOperator Factor
+	|
+	(TermFactor) Factor
+;
+
+Factor ::=
+	(FactorDesignator) Designator:value FactorCallOpt
+	|
+	(FactorConstant) ConstValue:value
+	|
+	(FactorNewObject) NEW Type:type
+	|
+	(FactorNewArray) NEW Type:type LSQBRACE Expression:size RSQBRACE
+	|
+	(FactorParenthesized) LPAREN Expression:value RPAREN
+;
+
+Condition ::=
+	(ConditionWithOr) Condition OR ConditionTerm
+	|
+	(ConditionSingleTerm) ConditionTerm
+;
+
+ConditionTerm ::=
+	(ConditionTermWithAnd) ConditionTerm AND ConditionFactor
+	|
+	(ConditionTermSingleFactor) ConditionFactor
+;
+
+ConditionFactor ::=
+	(ConditionFactorExpression) NonTernaryExpression
+	|
+	(ConditionFactorRelational)
+		NonTernaryExpression RelationalOperator NonTernaryExpression
+;
+
+RelationalOperator ::=
+	(RelationalEqual) EQUALSTO
+	|
+	(RelationalNotEqual) DIFFERENT
+	|
+	(RelationalGreater) GREATER
+	|
+	(RelationalGreaterOrEqual) EGREATER
+	|
+	(RelationalLess) LESS
+	|
+	(RelationalLessOrEqual) ELESS
+;
+
+AdditiveOperator ::=
+	(AdditivePlus) PLUS
+	|
+	(AdditiveMinus) MINUS
+;
+
+MultiplicativeOperator ::=
+	(MultiplicativeMultiply) MUL
+	|
+	(MultiplicativeDivide) DIV
+	|
+	(MultiplicativeModulo) MOD
+;

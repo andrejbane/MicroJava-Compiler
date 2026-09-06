@@ -1,0 +1,60 @@
+INFO  04:02:36,151 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n3_class_less.mj
+INFO  04:02:36,195 - #2 program
+INFO  04:02:36,195 - #54 p
+INFO  04:02:36,195 - #5 class
+INFO  04:02:36,196 - #54 A
+INFO  04:02:36,196 - #45 {
+INFO  04:02:36,196 - #54 int
+INFO  04:02:36,196 - #54 x
+INFO  04:02:36,197 - #40 ;
+INFO  04:02:36,198 - #45 {
+INFO  04:02:36,198 - #46 }
+INFO  04:02:36,198 - #46 }
+INFO  04:02:36,198 - #45 {
+INFO  04:02:36,199 - #14 void
+INFO  04:02:36,199 - #54 main
+INFO  04:02:36,199 - #43 (
+INFO  04:02:36,199 - #44 )
+INFO  04:02:36,200 - #54 A
+INFO  04:02:36,200 - #54 a
+INFO  04:02:36,200 - #40 ;
+INFO  04:02:36,200 - #54 A
+INFO  04:02:36,200 - #54 b
+INFO  04:02:36,200 - #40 ;
+INFO  04:02:36,205 - #54 bool
+INFO  04:02:36,205 - #54 r
+INFO  04:02:36,205 - #40 ;
+INFO  04:02:36,205 - #45 {
+INFO  04:02:36,205 - #54 a
+INFO  04:02:36,205 - #36 =
+INFO  04:02:36,205 - #10 new
+INFO  04:02:36,205 - #54 A
+INFO  04:02:36,205 - #40 ;
+INFO  04:02:36,206 - #54 b
+INFO  04:02:36,206 - #36 =
+INFO  04:02:36,206 - #10 new
+INFO  04:02:36,206 - #54 A
+INFO  04:02:36,206 - #40 ;
+INFO  04:02:36,206 - #9 if
+INFO  04:02:36,206 - #43 (
+INFO  04:02:36,206 - #54 a
+INFO  04:02:36,206 - #32 <
+INFO  04:02:36,207 - #54 b
+INFO  04:02:36,207 - #44 )
+INFO  04:02:36,207 - #54 r
+INFO  04:02:36,207 - #36 =
+INFO  04:02:36,207 - #51 true
+INFO  04:02:36,207 - #40 ;
+INFO  04:02:36,207 - #46 }
+INFO  04:02:36,207 - #46 }
+INFO  04:02:36,212 - Pretraga na 9 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57fffcd7
+INFO  04:02:36,212 - Kreiranje objekta klase A na liniji 9
+INFO  04:02:36,212 - Pretraga na 10 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@598067a5
+INFO  04:02:36,212 - Kreiranje objekta klase A na liniji 10
+INFO  04:02:36,212 - Pretraga na 11 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57fffcd7
+INFO  04:02:36,212 - Pretraga na 11 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@598067a5
+ERROR 04:02:36,213 - Reference se mogu porediti samo operatorima == i != na liniji 11
+ERROR 04:02:36,213 - Uslov if iskaza mora biti tipa bool na liniji 11
+INFO  04:02:36,213 - Pretraga na 11 (r), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0ecd4b
+INFO  04:02:36,213 - Semantic errors detected in n3_class_less.mj
+INFO  04:02:36,213 - ===================================

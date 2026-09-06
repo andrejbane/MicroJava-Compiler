@@ -1,0 +1,100 @@
+<project name="MJCompiler" default="compile" basedir=".">
+	<target name="delete">
+		<delete>
+			<fileset dir="src/rs/ac/bg/etf/pp1">
+				<exclude name="SemanticPass.java"/>
+				<exclude name="CounterVisitor.java"/>
+				<exclude name="CodeGenerator.java"/>
+				<exclude name="util/Log4JUtils.java"/>
+			</fileset>
+		</delete>
+	</target>
+	<target name="parserGen" depends="delete">
+		<mkdir dir="src/rs/ac/bg/etf/pp1/ast"/>
+		<java
+			jar="lib/cup_v10k.jar"
+			dir="${basedir}/src"
+			fork="true"
+			failonerror="true">
+			<arg value="-destdir"/>
+			<arg value="rs/ac/bg/etf/pp1"/>
+			<arg value="-ast"/>
+			<arg value="rs.ac.bg.etf.pp1.ast"/>
+			<arg value="-parser"/>
+			<arg value="MJParser"/>
+			<arg value="-buildtree"/>
+			<arg value="../spec/mjparser.cup"/>
+		</java>
+	</target>
+	<target name="lexerGen" depends="parserGen">
+		<java jar="lib/JFlex.jar" fork="true" failonerror="true">
+			<arg value="-d"/>
+			<arg value="./src/rs/ac/bg/etf/pp1"/>
+			<arg value="spec/mjlexer.flex"/>
+		</java>
+	</target>
+	<target name="compile" depends="lexerGen">
+		<javac
+			srcdir="src/rs/ac/bg/etf/pp1"
+			release="8"
+			includeantruntime="false">
+			<classpath>
+				<pathelement path="lib/JFlex.jar"/>
+				<pathelement path="lib/cup_v10k.jar"/>
+				<pathelement path="lib/log4j-1.2.17.jar"/>
+				<pathelement path="lib/symboltable-1-1.jar"/>
+				<pathelement path="lib/mj-runtime.jar"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="runObj" description="Run all four generated test object files">
+		<echo message="Running test/test301.obj (input: 10 10)"/>
+		<java
+			classname="rs.etf.pp1.mj.runtime.Run"
+			fork="true"
+			failonerror="true"
+			inputstring="10 10">
+			<arg value="test/test301.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime.jar"/>
+			</classpath>
+		</java>
+
+		<echo message="Running test/test302.obj (input: 1 2 3 10)"/>
+		<java
+			classname="rs.etf.pp1.mj.runtime.Run"
+			fork="true"
+			failonerror="true"
+			inputstring="1 2 3 10">
+			<arg value="test/test302.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime.jar"/>
+			</classpath>
+		</java>
+
+		<echo message="Running test/test303.obj (input: 2)"/>
+		<java
+			classname="rs.etf.pp1.mj.runtime.Run"
+			fork="true"
+			failonerror="true"
+			inputstring="2">
+			<arg value="test/test303.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime.jar"/>
+			</classpath>
+		</java>
+
+		<echo message="Running test/test304.obj (input: 2)"/>
+		<java
+			classname="rs.etf.pp1.mj.runtime.Run"
+			fork="true"
+			failonerror="true"
+			inputstring="2">
+			<arg value="test/test304.obj"/>
+			<classpath>
+				<pathelement location="lib/mj-runtime.jar"/>
+			</classpath>
+		</java>
+	</target>
+</project>

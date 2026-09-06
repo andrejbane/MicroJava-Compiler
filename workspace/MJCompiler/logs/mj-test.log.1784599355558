@@ -1,0 +1,69 @@
+INFO  03:59:51,795 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t6_subst_and_invariance.mj
+INFO  03:59:51,836 - #2 program
+INFO  03:59:51,836 - #54 p
+INFO  03:59:51,837 - #5 class
+INFO  03:59:51,837 - #54 A
+INFO  03:59:51,837 - #45 {
+INFO  03:59:51,837 - #54 int
+INFO  03:59:51,838 - #54 x
+INFO  03:59:51,838 - #40 ;
+INFO  03:59:51,839 - #45 {
+INFO  03:59:51,839 - #46 }
+INFO  03:59:51,839 - #46 }
+INFO  03:59:51,839 - #5 class
+INFO  03:59:51,840 - #54 B
+INFO  03:59:51,840 - #15 extends
+INFO  03:59:51,840 - #54 A
+INFO  03:59:51,840 - #45 {
+INFO  03:59:51,840 - #54 int
+INFO  03:59:51,840 - #54 y
+INFO  03:59:51,840 - #40 ;
+INFO  03:59:51,840 - #45 {
+INFO  03:59:51,840 - #46 }
+INFO  03:59:51,840 - #46 }
+INFO  03:59:51,840 - #45 {
+INFO  03:59:51,840 - #14 void
+INFO  03:59:51,840 - #54 main
+INFO  03:59:51,841 - #43 (
+INFO  03:59:51,841 - #44 )
+INFO  03:59:51,841 - #54 A
+INFO  03:59:51,842 - #54 a
+INFO  03:59:51,842 - #40 ;
+INFO  03:59:51,842 - #54 B
+INFO  03:59:51,842 - #54 b
+INFO  03:59:51,842 - #40 ;
+INFO  03:59:51,842 - #54 A
+INFO  03:59:51,842 - #54 arrA
+INFO  03:59:51,842 - #47 [
+INFO  03:59:51,842 - #48 ]
+INFO  03:59:51,842 - #40 ;
+INFO  03:59:51,842 - #54 B
+INFO  03:59:51,842 - #54 arrB
+INFO  03:59:51,842 - #47 [
+INFO  03:59:51,842 - #48 ]
+INFO  03:59:51,842 - #40 ;
+INFO  03:59:51,842 - #45 {
+INFO  03:59:51,842 - #54 a
+INFO  03:59:51,843 - #36 =
+INFO  03:59:51,843 - #54 b
+INFO  03:59:51,843 - #40 ;
+INFO  03:59:51,844 - #54 b
+INFO  03:59:51,844 - #36 =
+INFO  03:59:51,844 - #54 a
+INFO  03:59:51,844 - #40 ;
+INFO  03:59:51,844 - #54 arrA
+INFO  03:59:51,844 - #36 =
+INFO  03:59:51,844 - #54 arrB
+INFO  03:59:51,844 - #40 ;
+INFO  03:59:51,844 - #46 }
+INFO  03:59:51,844 - #46 }
+INFO  03:59:51,849 - Pretraga na 19 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4667ae56
+INFO  03:59:51,849 - Pretraga na 19 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@77cd7a0
+INFO  03:59:51,849 - Pretraga na 20 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@77cd7a0
+INFO  03:59:51,849 - Pretraga na 20 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4667ae56
+ERROR 03:59:51,849 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 20
+INFO  03:59:51,849 - Pretraga na 21 (arrA), nadjeno rs.etf.pp1.symboltable.concepts.Obj@204f30ec
+INFO  03:59:51,849 - Pretraga na 21 (arrB), nadjeno rs.etf.pp1.symboltable.concepts.Obj@e25b2fe
+ERROR 03:59:51,849 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 21
+INFO  03:59:51,849 - Semantic errors detected in t6_subst_and_invariance.mj
+INFO  03:59:51,849 - ===================================

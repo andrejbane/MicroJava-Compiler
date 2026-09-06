@@ -1,0 +1,185 @@
+INFO  03:42:11,649 - Semantically checking source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\semantic-invalid.mj
+INFO  03:42:11,690 - #2 program
+INFO  03:42:11,690 - #54 semantic_invalid
+INFO  03:42:11,690 - #8 const
+INFO  03:42:11,690 - #54 int
+INFO  03:42:11,690 - #54 wrongConstant
+INFO  03:42:11,691 - #36 =
+INFO  03:42:11,691 - #52 'x'
+INFO  03:42:11,691 - #40 ;
+INFO  03:42:11,691 - #6 abstract
+INFO  03:42:11,692 - #5 class
+INFO  03:42:11,692 - #54 AbstractBase
+INFO  03:42:11,692 - #45 {
+INFO  03:42:11,692 - #45 {
+INFO  03:42:11,692 - #6 abstract
+INFO  03:42:11,692 - #54 int
+INFO  03:42:11,692 - #54 calculate
+INFO  03:42:11,692 - #43 (
+INFO  03:42:11,694 - #54 int
+INFO  03:42:11,699 - #54 value
+INFO  03:42:11,699 - #44 )
+INFO  03:42:11,700 - #40 ;
+INFO  03:42:11,700 - #46 }
+INFO  03:42:11,700 - #46 }
+INFO  03:42:11,700 - #5 class
+INFO  03:42:11,701 - #54 Broken
+INFO  03:42:11,701 - #15 extends
+INFO  03:42:11,701 - #54 AbstractBase
+INFO  03:42:11,701 - #45 {
+INFO  03:42:11,701 - #45 {
+INFO  03:42:11,701 - #54 char
+INFO  03:42:11,701 - #54 calculate
+INFO  03:42:11,701 - #43 (
+INFO  03:42:11,701 - #54 int
+INFO  03:42:11,701 - #54 value
+INFO  03:42:11,701 - #44 )
+INFO  03:42:11,701 - #45 {
+INFO  03:42:11,701 - #13 return
+INFO  03:42:11,702 - #52 'x'
+INFO  03:42:11,702 - #40 ;
+INFO  03:42:11,702 - #46 }
+INFO  03:42:11,702 - #46 }
+INFO  03:42:11,703 - #46 }
+INFO  03:42:11,703 - #54 int
+INFO  03:42:11,703 - #54 values
+INFO  03:42:11,703 - #47 [
+INFO  03:42:11,703 - #48 ]
+INFO  03:42:11,703 - #41 ,
+INFO  03:42:11,704 - #54 mapped
+INFO  03:42:11,704 - #47 [
+INFO  03:42:11,704 - #48 ]
+INFO  03:42:11,704 - #41 ,
+INFO  03:42:11,704 - #54 mapper
+INFO  03:42:11,704 - #40 ;
+INFO  03:42:11,704 - #45 {
+INFO  03:42:11,704 - #54 int
+INFO  03:42:11,704 - #54 noValue
+INFO  03:42:11,704 - #43 (
+INFO  03:42:11,704 - #44 )
+INFO  03:42:11,704 - #45 {
+INFO  03:42:11,704 - #13 return
+INFO  03:42:11,705 - #40 ;
+INFO  03:42:11,705 - #46 }
+INFO  03:42:11,705 - #14 void
+INFO  03:42:11,705 - #54 wrongCall
+INFO  03:42:11,705 - #43 (
+INFO  03:42:11,705 - #54 int
+INFO  03:42:11,705 - #54 value
+INFO  03:42:11,705 - #44 )
+INFO  03:42:11,705 - #45 {
+INFO  03:42:11,705 - #11 print
+INFO  03:42:11,705 - #43 (
+INFO  03:42:11,705 - #54 value
+INFO  03:42:11,705 - #44 )
+INFO  03:42:11,706 - #40 ;
+INFO  03:42:11,706 - #46 }
+INFO  03:42:11,706 - #14 void
+INFO  03:42:11,706 - #54 main
+INFO  03:42:11,706 - #43 (
+INFO  03:42:11,706 - #44 )
+INFO  03:42:11,706 - #54 int
+INFO  03:42:11,706 - #54 local
+INFO  03:42:11,706 - #47 [
+INFO  03:42:11,706 - #48 ]
+INFO  03:42:11,706 - #40 ;
+INFO  03:42:11,707 - #54 bool
+INFO  03:42:11,707 - #54 found
+INFO  03:42:11,707 - #40 ;
+INFO  03:42:11,707 - #54 Broken
+INFO  03:42:11,707 - #54 broken
+INFO  03:42:11,707 - #40 ;
+INFO  03:42:11,707 - #45 {
+INFO  03:42:11,707 - #54 broken
+INFO  03:42:11,707 - #36 =
+INFO  03:42:11,707 - #10 new
+INFO  03:42:11,707 - #54 AbstractBase
+INFO  03:42:11,707 - #40 ;
+INFO  03:42:11,707 - #54 values
+INFO  03:42:11,707 - #36 =
+INFO  03:42:11,707 - #10 new
+INFO  03:42:11,707 - #54 int
+INFO  03:42:11,707 - #47 [
+INFO  03:42:11,707 - #52 'x'
+INFO  03:42:11,707 - #48 ]
+INFO  03:42:11,707 - #40 ;
+INFO  03:42:11,707 - #54 values
+INFO  03:42:11,707 - #47 [
+INFO  03:42:11,707 - #52 'x'
+INFO  03:42:11,707 - #48 ]
+INFO  03:42:11,708 - #36 =
+INFO  03:42:11,708 - #53 1
+INFO  03:42:11,708 - #40 ;
+INFO  03:42:11,708 - #54 found
+INFO  03:42:11,708 - #36 =
+INFO  03:42:11,708 - #54 values
+INFO  03:42:11,708 - #42 .
+INFO  03:42:11,708 - #21 findAny
+INFO  03:42:11,708 - #43 (
+INFO  03:42:11,708 - #52 'x'
+INFO  03:42:11,708 - #44 )
+INFO  03:42:11,708 - #40 ;
+INFO  03:42:11,708 - #54 mapped
+INFO  03:42:11,708 - #36 =
+INFO  03:42:11,708 - #54 values
+INFO  03:42:11,708 - #42 .
+INFO  03:42:11,708 - #22 map
+INFO  03:42:11,708 - #43 (
+INFO  03:42:11,708 - #54 found
+INFO  03:42:11,709 - #39 =>
+INFO  03:42:11,709 - #54 found
+INFO  03:42:11,709 - #44 )
+INFO  03:42:11,709 - #40 ;
+INFO  03:42:11,709 - #54 wrongCall
+INFO  03:42:11,709 - #43 (
+INFO  03:42:11,709 - #44 )
+INFO  03:42:11,710 - #40 ;
+INFO  03:42:11,710 - #3 break
+INFO  03:42:11,710 - #40 ;
+INFO  03:42:11,710 - #9 if
+INFO  03:42:11,710 - #43 (
+INFO  03:42:11,710 - #53 1
+INFO  03:42:11,710 - #44 )
+INFO  03:42:11,710 - #11 print
+INFO  03:42:11,710 - #43 (
+INFO  03:42:11,710 - #53 1
+INFO  03:42:11,711 - #44 )
+INFO  03:42:11,711 - #40 ;
+INFO  03:42:11,711 - #54 local
+INFO  03:42:11,711 - #36 =
+INFO  03:42:11,711 - #54 values
+INFO  03:42:11,711 - #40 ;
+INFO  03:42:11,711 - #46 }
+INFO  03:42:11,711 - #46 }
+ERROR 03:42:11,715 - Tip vrednosti konstante se ne poklapa sa deklarisanim tipom na liniji 3
+ERROR 03:42:11,715 - Redefinisana metoda calculate mora imati isti potpis kao nasledjena metoda na liniji 15
+ERROR 03:42:11,715 - Klasa Broken ne implementira apstraktnu metodu calculate na liniji 12
+ERROR 03:42:11,715 - Metoda koja vraca vrednost zahteva return izraz na liniji 2
+INFO  03:42:11,715 - Pretraga na 31 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  03:42:11,716 - Pretraga na 39 (broken), nadjeno rs.etf.pp1.symboltable.concepts.Obj@10bdf5e5
+ERROR 03:42:11,716 - Apstraktna klasa se ne moze instancirati na liniji 39
+ERROR 03:42:11,716 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 39
+INFO  03:42:11,716 - Pretraga na 40 (values), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+ERROR 03:42:11,716 - Velicina niza mora biti tipa int na liniji 40
+INFO  03:42:11,716 - Pretraga na 41 (values), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+ERROR 03:42:11,716 - Indeks niza mora biti tipa int na liniji 41
+INFO  03:42:11,716 - Pretraga na 41 (values[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7e0b0338
+INFO  03:42:11,716 - Pretraga na 42 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  03:42:11,716 - Pretraga na 42 (values), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+ERROR 03:42:11,716 - Argument findAny mora biti tipa elementa niza na liniji 42
+INFO  03:42:11,716 - Pretraga na 43 (mapped), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  03:42:11,716 - Pretraga na 43 (values), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+INFO  03:42:11,716 - Pretraga na 43 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  03:42:11,716 - Pretraga na 43 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+ERROR 03:42:11,716 - Promenljiva funkcije map mora biti tipa elementa izvornog niza na liniji 43
+ERROR 03:42:11,716 - Izraz funkcije map ne odgovara tipu rezultujuceg niza na liniji 43
+INFO  03:42:11,716 - Pretraga na 44 (wrongCall), nadjeno rs.etf.pp1.symboltable.concepts.Obj@55d56113
+ERROR 03:42:11,716 - Poziv wrongCall ima pogresan broj argumenata na liniji 44
+ERROR 03:42:11,716 - break se moze koristiti samo unutar for petlje
+ERROR 03:42:11,716 - Uslov if iskaza mora biti tipa bool na liniji 46
+INFO  03:42:11,716 - Pretraga na 47 (local), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  03:42:11,716 - Pretraga na 47 (values), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+ERROR 03:42:11,716 - Semantic test failed for C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\semantic-invalid.mj
+java.lang.IllegalStateException: Semantic errors detected in semantic-invalid.mj
+	at rs.ac.bg.etf.pp1.MJSemanticTest.runSemanticAnalysis(MJSemanticTest.java:68)
+	at rs.ac.bg.etf.pp1.MJSemanticTest.main(MJSemanticTest.java:36)

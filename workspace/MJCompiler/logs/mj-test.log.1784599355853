@@ -1,0 +1,68 @@
+INFO  04:02:35,565 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n1_findany_classarray.mj
+INFO  04:02:35,611 - #2 program
+INFO  04:02:35,611 - #54 p
+INFO  04:02:35,611 - #5 class
+INFO  04:02:35,612 - #54 A
+INFO  04:02:35,612 - #45 {
+INFO  04:02:35,612 - #54 int
+INFO  04:02:35,612 - #54 x
+INFO  04:02:35,612 - #40 ;
+INFO  04:02:35,613 - #45 {
+INFO  04:02:35,613 - #46 }
+INFO  04:02:35,614 - #46 }
+INFO  04:02:35,614 - #54 int
+INFO  04:02:35,614 - #54 aniz
+INFO  04:02:35,614 - #47 [
+INFO  04:02:35,614 - #48 ]
+INFO  04:02:35,614 - #40 ;
+INFO  04:02:35,614 - #45 {
+INFO  04:02:35,614 - #14 void
+INFO  04:02:35,614 - #54 main
+INFO  04:02:35,615 - #43 (
+INFO  04:02:35,615 - #44 )
+INFO  04:02:35,616 - #54 bool
+INFO  04:02:35,616 - #54 b
+INFO  04:02:35,616 - #40 ;
+INFO  04:02:35,616 - #54 A
+INFO  04:02:35,616 - #54 objniz
+INFO  04:02:35,616 - #47 [
+INFO  04:02:35,616 - #48 ]
+INFO  04:02:35,616 - #40 ;
+INFO  04:02:35,616 - #54 int
+INFO  04:02:35,616 - #54 r1
+INFO  04:02:35,616 - #47 [
+INFO  04:02:35,616 - #48 ]
+INFO  04:02:35,616 - #40 ;
+INFO  04:02:35,616 - #54 char
+INFO  04:02:35,616 - #54 cr
+INFO  04:02:35,616 - #47 [
+INFO  04:02:35,616 - #48 ]
+INFO  04:02:35,616 - #40 ;
+INFO  04:02:35,616 - #45 {
+INFO  04:02:35,616 - #54 objniz
+INFO  04:02:35,617 - #36 =
+INFO  04:02:35,617 - #10 new
+INFO  04:02:35,617 - #54 A
+INFO  04:02:35,617 - #47 [
+INFO  04:02:35,617 - #53 3
+INFO  04:02:35,617 - #48 ]
+INFO  04:02:35,617 - #40 ;
+INFO  04:02:35,617 - #54 b
+INFO  04:02:35,617 - #36 =
+INFO  04:02:35,618 - #54 objniz
+INFO  04:02:35,618 - #42 .
+INFO  04:02:35,618 - #21 findAny
+INFO  04:02:35,618 - #43 (
+INFO  04:02:35,618 - #54 null
+INFO  04:02:35,618 - #44 )
+INFO  04:02:35,618 - #40 ;
+INFO  04:02:35,618 - #46 }
+INFO  04:02:35,618 - #46 }
+INFO  04:02:35,623 - Pretraga na 17 (objniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@754ba872
+INFO  04:02:35,623 - Pretraga na 18 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@146ba0ac
+INFO  04:02:35,623 - Pretraga na 18 (objniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@754ba872
+INFO  04:02:35,623 - Pretraga na 18 (null), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4dfa3a9d
+ERROR 04:02:35,623 - findAny podrzava samo nizove ugradjenih tipova na liniji 18
+ERROR 04:02:35,623 - Argument findAny mora biti tipa elementa niza na liniji 18
+INFO  04:02:35,624 - Semantic errors detected in n1_findany_classarray.mj
+INFO  04:02:35,624 - ===================================

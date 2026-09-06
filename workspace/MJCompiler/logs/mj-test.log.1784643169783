@@ -1,0 +1,486 @@
+INFO  16:12:49,289 - Compiling source file: C:\dev\pp1domaci\workspace\MJCompiler\test\test301.mj
+INFO  16:12:49,367 - #2 program
+INFO  16:12:49,368 - #55 test301
+INFO  16:12:49,368 - #8 const
+INFO  16:12:49,369 - #55 int
+INFO  16:12:49,369 - #55 nula
+INFO  16:12:49,370 - #37 =
+INFO  16:12:49,370 - #54 0
+INFO  16:12:49,370 - #41 ;
+INFO  16:12:49,371 - #8 const
+INFO  16:12:49,371 - #55 int
+INFO  16:12:49,371 - #55 jedan
+INFO  16:12:49,372 - #37 =
+INFO  16:12:49,372 - #54 1
+INFO  16:12:49,372 - #41 ;
+INFO  16:12:49,372 - #8 const
+INFO  16:12:49,372 - #55 int
+INFO  16:12:49,372 - #55 pet
+INFO  16:12:49,372 - #37 =
+INFO  16:12:49,372 - #54 5
+INFO  16:12:49,372 - #41 ;
+INFO  16:12:49,372 - #55 int
+INFO  16:12:49,372 - #55 niz
+INFO  16:12:49,373 - #48 [
+INFO  16:12:49,373 - #49 ]
+INFO  16:12:49,373 - #41 ;
+INFO  16:12:49,374 - #55 char
+INFO  16:12:49,374 - #55 nizch
+INFO  16:12:49,374 - #48 [
+INFO  16:12:49,374 - #49 ]
+INFO  16:12:49,374 - #41 ;
+INFO  16:12:49,374 - #55 int
+INFO  16:12:49,374 - #55 a
+INFO  16:12:49,374 - #41 ;
+INFO  16:12:49,375 - #46 {
+INFO  16:12:49,375 - #14 void
+INFO  16:12:49,376 - #55 main
+INFO  16:12:49,376 - #44 (
+INFO  16:12:49,377 - #45 )
+INFO  16:12:49,377 - #55 int
+INFO  16:12:49,378 - #55 bodovi
+INFO  16:12:49,378 - #41 ;
+INFO  16:12:49,378 - #55 int
+INFO  16:12:49,378 - #55 temp
+INFO  16:12:49,378 - #41 ;
+INFO  16:12:49,378 - #55 bool
+INFO  16:12:49,378 - #55 bt
+INFO  16:12:49,378 - #41 ;
+INFO  16:12:49,378 - #46 {
+INFO  16:12:49,378 - #55 bodovi
+INFO  16:12:49,379 - #37 =
+INFO  16:12:49,379 - #54 0
+INFO  16:12:49,379 - #41 ;
+INFO  16:12:49,380 - #55 bodovi
+INFO  16:12:49,380 - #38 ++
+INFO  16:12:49,380 - #41 ;
+INFO  16:12:49,380 - #55 bodovi
+INFO  16:12:49,380 - #37 =
+INFO  16:12:49,380 - #55 bodovi
+INFO  16:12:49,380 - #24 +
+INFO  16:12:49,381 - #55 jedan
+INFO  16:12:49,382 - #41 ;
+INFO  16:12:49,382 - #55 bodovi
+INFO  16:12:49,382 - #37 =
+INFO  16:12:49,382 - #55 bodovi
+INFO  16:12:49,382 - #26 *
+INFO  16:12:49,382 - #55 pet
+INFO  16:12:49,384 - #41 ;
+INFO  16:12:49,384 - #55 bodovi
+INFO  16:12:49,384 - #39 --
+INFO  16:12:49,384 - #41 ;
+INFO  16:12:49,384 - #11 print
+INFO  16:12:49,384 - #44 (
+INFO  16:12:49,384 - #55 bodovi
+INFO  16:12:49,384 - #45 )
+INFO  16:12:49,384 - #41 ;
+INFO  16:12:49,384 - #11 print
+INFO  16:12:49,385 - #44 (
+INFO  16:12:49,385 - #55 eol
+INFO  16:12:49,385 - #45 )
+INFO  16:12:49,385 - #41 ;
+INFO  16:12:49,385 - #55 niz
+INFO  16:12:49,385 - #37 =
+INFO  16:12:49,385 - #10 new
+INFO  16:12:49,385 - #55 int
+INFO  16:12:49,385 - #48 [
+INFO  16:12:49,385 - #54 3
+INFO  16:12:49,385 - #49 ]
+INFO  16:12:49,385 - #41 ;
+INFO  16:12:49,385 - #55 niz
+INFO  16:12:49,385 - #48 [
+INFO  16:12:49,385 - #55 nula
+INFO  16:12:49,386 - #49 ]
+INFO  16:12:49,386 - #37 =
+INFO  16:12:49,386 - #54 2
+INFO  16:12:49,386 - #41 ;
+INFO  16:12:49,386 - #55 niz
+INFO  16:12:49,386 - #48 [
+INFO  16:12:49,386 - #55 jedan
+INFO  16:12:49,386 - #49 ]
+INFO  16:12:49,386 - #37 =
+INFO  16:12:49,386 - #54 3
+INFO  16:12:49,386 - #41 ;
+INFO  16:12:49,386 - #55 niz
+INFO  16:12:49,386 - #48 [
+INFO  16:12:49,386 - #55 niz
+INFO  16:12:49,386 - #48 [
+INFO  16:12:49,387 - #55 nula
+INFO  16:12:49,387 - #49 ]
+INFO  16:12:49,387 - #49 ]
+INFO  16:12:49,387 - #37 =
+INFO  16:12:49,387 - #55 niz
+INFO  16:12:49,387 - #48 [
+INFO  16:12:49,387 - #54 1
+INFO  16:12:49,387 - #49 ]
+INFO  16:12:49,387 - #26 *
+INFO  16:12:49,387 - #54 4
+INFO  16:12:49,387 - #41 ;
+INFO  16:12:49,387 - #55 bodovi
+INFO  16:12:49,387 - #37 =
+INFO  16:12:49,387 - #55 niz
+INFO  16:12:49,387 - #48 [
+INFO  16:12:49,387 - #54 2
+INFO  16:12:49,387 - #49 ]
+INFO  16:12:49,387 - #27 /
+INFO  16:12:49,387 - #55 niz
+INFO  16:12:49,388 - #48 [
+INFO  16:12:49,388 - #54 0
+INFO  16:12:49,388 - #49 ]
+INFO  16:12:49,388 - #41 ;
+INFO  16:12:49,388 - #11 print
+INFO  16:12:49,388 - #44 (
+INFO  16:12:49,388 - #55 bodovi
+INFO  16:12:49,388 - #45 )
+INFO  16:12:49,388 - #41 ;
+INFO  16:12:49,388 - #11 print
+INFO  16:12:49,388 - #44 (
+INFO  16:12:49,388 - #55 eol
+INFO  16:12:49,388 - #45 )
+INFO  16:12:49,388 - #41 ;
+INFO  16:12:49,388 - #11 print
+INFO  16:12:49,388 - #44 (
+INFO  16:12:49,388 - #55 niz
+INFO  16:12:49,388 - #48 [
+INFO  16:12:49,388 - #54 2
+INFO  16:12:49,388 - #49 ]
+INFO  16:12:49,389 - #45 )
+INFO  16:12:49,389 - #41 ;
+INFO  16:12:49,389 - #11 print
+INFO  16:12:49,389 - #44 (
+INFO  16:12:49,389 - #55 eol
+INFO  16:12:49,389 - #45 )
+INFO  16:12:49,389 - #41 ;
+INFO  16:12:49,389 - #55 nizch
+INFO  16:12:49,389 - #37 =
+INFO  16:12:49,389 - #10 new
+INFO  16:12:49,389 - #55 char
+INFO  16:12:49,389 - #48 [
+INFO  16:12:49,389 - #54 3
+INFO  16:12:49,389 - #49 ]
+INFO  16:12:49,389 - #41 ;
+INFO  16:12:49,389 - #55 nizch
+INFO  16:12:49,389 - #48 [
+INFO  16:12:49,389 - #54 0
+INFO  16:12:49,389 - #49 ]
+INFO  16:12:49,389 - #37 =
+INFO  16:12:49,389 - #53 'a'
+INFO  16:12:49,389 - #41 ;
+INFO  16:12:49,389 - #55 nizch
+INFO  16:12:49,389 - #48 [
+INFO  16:12:49,389 - #55 jedan
+INFO  16:12:49,389 - #49 ]
+INFO  16:12:49,390 - #37 =
+INFO  16:12:49,390 - #53 'b'
+INFO  16:12:49,390 - #41 ;
+INFO  16:12:49,390 - #55 nizch
+INFO  16:12:49,390 - #48 [
+INFO  16:12:49,390 - #55 pet
+INFO  16:12:49,390 - #25 -
+INFO  16:12:49,390 - #54 3
+INFO  16:12:49,390 - #49 ]
+INFO  16:12:49,390 - #37 =
+INFO  16:12:49,390 - #53 'c'
+INFO  16:12:49,390 - #41 ;
+INFO  16:12:49,390 - #11 print
+INFO  16:12:49,390 - #44 (
+INFO  16:12:49,390 - #55 nizch
+INFO  16:12:49,391 - #48 [
+INFO  16:12:49,391 - #54 1
+INFO  16:12:49,391 - #49 ]
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #41 ;
+INFO  16:12:49,391 - #11 print
+INFO  16:12:49,391 - #44 (
+INFO  16:12:49,391 - #55 eol
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #41 ;
+INFO  16:12:49,391 - #11 print
+INFO  16:12:49,391 - #44 (
+INFO  16:12:49,391 - #55 nizch
+INFO  16:12:49,391 - #48 [
+INFO  16:12:49,391 - #55 jedan
+INFO  16:12:49,391 - #26 *
+INFO  16:12:49,391 - #54 2
+INFO  16:12:49,391 - #49 ]
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #41 ;
+INFO  16:12:49,391 - #11 print
+INFO  16:12:49,391 - #44 (
+INFO  16:12:49,391 - #55 eol
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #41 ;
+INFO  16:12:49,391 - #11 print
+INFO  16:12:49,391 - #44 (
+INFO  16:12:49,391 - #55 ord
+INFO  16:12:49,391 - #44 (
+INFO  16:12:49,391 - #55 nizch
+INFO  16:12:49,391 - #48 [
+INFO  16:12:49,391 - #54 0
+INFO  16:12:49,391 - #49 ]
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #45 )
+INFO  16:12:49,391 - #41 ;
+INFO  16:12:49,392 - #11 print
+INFO  16:12:49,392 - #44 (
+INFO  16:12:49,392 - #55 nizch
+INFO  16:12:49,392 - #43 .
+INFO  16:12:49,392 - #19 length
+INFO  16:12:49,392 - #45 )
+INFO  16:12:49,392 - #41 ;
+INFO  16:12:49,392 - #11 print
+INFO  16:12:49,392 - #44 (
+INFO  16:12:49,392 - #55 niz
+INFO  16:12:49,392 - #43 .
+INFO  16:12:49,392 - #19 length
+INFO  16:12:49,392 - #45 )
+INFO  16:12:49,392 - #41 ;
+INFO  16:12:49,392 - #55 a
+INFO  16:12:49,392 - #37 =
+INFO  16:12:49,392 - #54 1
+INFO  16:12:49,392 - #41 ;
+INFO  16:12:49,392 - #12 read
+INFO  16:12:49,392 - #44 (
+INFO  16:12:49,392 - #55 bodovi
+INFO  16:12:49,392 - #45 )
+INFO  16:12:49,392 - #41 ;
+INFO  16:12:49,392 - #55 bodovi
+INFO  16:12:49,392 - #37 =
+INFO  16:12:49,392 - #25 -
+INFO  16:12:49,392 - #55 bodovi
+INFO  16:12:49,392 - #24 +
+INFO  16:12:49,392 - #44 (
+INFO  16:12:49,392 - #55 pet
+INFO  16:12:49,392 - #26 *
+INFO  16:12:49,392 - #55 a
+INFO  16:12:49,392 - #27 /
+INFO  16:12:49,392 - #54 2
+INFO  16:12:49,392 - #25 -
+INFO  16:12:49,393 - #55 nula
+INFO  16:12:49,393 - #45 )
+INFO  16:12:49,393 - #26 *
+INFO  16:12:49,393 - #55 bodovi
+INFO  16:12:49,393 - #25 -
+INFO  16:12:49,393 - #44 (
+INFO  16:12:49,393 - #54 3
+INFO  16:12:49,393 - #28 %
+INFO  16:12:49,393 - #54 2
+INFO  16:12:49,394 - #24 +
+INFO  16:12:49,394 - #54 3
+INFO  16:12:49,394 - #26 *
+INFO  16:12:49,394 - #54 2
+INFO  16:12:49,394 - #25 -
+INFO  16:12:49,394 - #54 7
+INFO  16:12:49,394 - #45 )
+INFO  16:12:49,394 - #41 ;
+INFO  16:12:49,394 - #11 print
+INFO  16:12:49,394 - #44 (
+INFO  16:12:49,394 - #55 bodovi
+INFO  16:12:49,394 - #45 )
+INFO  16:12:49,394 - #41 ;
+INFO  16:12:49,394 - #12 read
+INFO  16:12:49,394 - #44 (
+INFO  16:12:49,394 - #55 bodovi
+INFO  16:12:49,394 - #45 )
+INFO  16:12:49,394 - #41 ;
+INFO  16:12:49,394 - #55 bt
+INFO  16:12:49,394 - #37 =
+INFO  16:12:49,394 - #52 true
+INFO  16:12:49,394 - #41 ;
+INFO  16:12:49,394 - #11 print
+INFO  16:12:49,394 - #44 (
+INFO  16:12:49,394 - #55 bt
+INFO  16:12:49,394 - #50 ?
+INFO  16:12:49,395 - #55 bodovi
+INFO  16:12:49,395 - #51 :
+INFO  16:12:49,395 - #55 bodovi
+INFO  16:12:49,395 - #24 +
+INFO  16:12:49,395 - #54 10
+INFO  16:12:49,395 - #45 )
+INFO  16:12:49,395 - #41 ;
+INFO  16:12:49,395 - #11 print
+INFO  16:12:49,395 - #44 (
+INFO  16:12:49,395 - #52 false
+INFO  16:12:49,395 - #50 ?
+INFO  16:12:49,396 - #55 bodovi
+INFO  16:12:49,396 - #24 +
+INFO  16:12:49,396 - #54 20
+INFO  16:12:49,396 - #51 :
+INFO  16:12:49,396 - #55 bodovi
+INFO  16:12:49,396 - #24 +
+INFO  16:12:49,396 - #54 30
+INFO  16:12:49,396 - #45 )
+INFO  16:12:49,396 - #41 ;
+INFO  16:12:49,396 - #11 print
+INFO  16:12:49,396 - #44 (
+INFO  16:12:49,396 - #55 bodovi
+INFO  16:12:49,396 - #31 >
+INFO  16:12:49,396 - #54 10
+INFO  16:12:49,397 - #50 ?
+INFO  16:12:49,397 - #53 '+'
+INFO  16:12:49,397 - #51 :
+INFO  16:12:49,397 - #53 '-'
+INFO  16:12:49,397 - #45 )
+INFO  16:12:49,397 - #41 ;
+INFO  16:12:49,397 - #11 print
+INFO  16:12:49,397 - #44 (
+INFO  16:12:49,397 - #55 eol
+INFO  16:12:49,397 - #45 )
+INFO  16:12:49,397 - #41 ;
+INFO  16:12:49,397 - #55 bt
+INFO  16:12:49,397 - #37 =
+INFO  16:12:49,397 - #55 niz
+INFO  16:12:49,397 - #43 .
+INFO  16:12:49,397 - #22 findAny
+INFO  16:12:49,397 - #44 (
+INFO  16:12:49,397 - #54 12
+INFO  16:12:49,397 - #45 )
+INFO  16:12:49,397 - #41 ;
+INFO  16:12:49,397 - #11 print
+INFO  16:12:49,398 - #44 (
+INFO  16:12:49,398 - #55 bt
+INFO  16:12:49,398 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #11 print
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 eol
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #55 bt
+INFO  16:12:49,399 - #37 =
+INFO  16:12:49,399 - #55 niz
+INFO  16:12:49,399 - #43 .
+INFO  16:12:49,399 - #22 findAny
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 pet
+INFO  16:12:49,399 - #25 -
+INFO  16:12:49,399 - #55 jedan
+INFO  16:12:49,399 - #25 -
+INFO  16:12:49,399 - #55 jedan
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #11 print
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 bt
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #11 print
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 eol
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #55 bt
+INFO  16:12:49,399 - #37 =
+INFO  16:12:49,399 - #55 niz
+INFO  16:12:49,399 - #43 .
+INFO  16:12:49,399 - #22 findAny
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 bodovi
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #11 print
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 bt
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #11 print
+INFO  16:12:49,399 - #44 (
+INFO  16:12:49,399 - #55 eol
+INFO  16:12:49,399 - #45 )
+INFO  16:12:49,399 - #41 ;
+INFO  16:12:49,399 - #47 }
+INFO  16:12:49,399 - #47 }
+INFO  16:12:49,410 - Pretraga na 20 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,410 - Pretraga na 21 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,410 - Pretraga na 22 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,410 - Pretraga na 22 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 22 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,411 - Pretraga na 23 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 23 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 23 (pet), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  16:12:49,411 - Pretraga na 24 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 25 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 26 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,411 - Pretraga na 28 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 29 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 29 (nula), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  16:12:49,411 - Pretraga na 29 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4566e5bd
+INFO  16:12:49,411 - Pretraga na 30 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 30 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,411 - Pretraga na 30 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1ed4004b
+INFO  16:12:49,411 - Pretraga na 31 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 31 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 31 (nula), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  16:12:49,411 - Pretraga na 31 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@ff5b51f
+INFO  16:12:49,411 - Pretraga na 31 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@25bbe1b6
+INFO  16:12:49,411 - Pretraga na 31 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 31 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5702b3b1
+INFO  16:12:49,411 - Pretraga na 32 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 32 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 32 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@69ea3742
+INFO  16:12:49,411 - Pretraga na 32 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 32 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4b952a2d
+INFO  16:12:49,411 - Pretraga na 33 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 34 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,411 - Pretraga na 35 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 35 (niz[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3159c4b8
+INFO  16:12:49,411 - Pretraga na 36 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,411 - Pretraga na 38 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 39 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 39 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4bec1f0c
+INFO  16:12:49,411 - Pretraga na 40 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 40 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,411 - Pretraga na 40 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@29ca901e
+INFO  16:12:49,411 - Pretraga na 41 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 41 (pet), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  16:12:49,411 - Pretraga na 41 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5649fd9b
+INFO  16:12:49,411 - Pretraga na 42 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 42 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6adede5
+INFO  16:12:49,411 - Pretraga na 43 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,411 - Pretraga na 44 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 44 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,411 - Pretraga na 44 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2d928643
+INFO  16:12:49,411 - Pretraga na 45 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,411 - Pretraga na 46 (ord), nadjeno rs.etf.pp1.symboltable.concepts.Obj@27c20538
+INFO  16:12:49,411 - Pretraga na 46 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 46 (nizch[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5025a98f
+INFO  16:12:49,411 - Pretraga na 48 (nizch), nadjeno rs.etf.pp1.symboltable.concepts.Obj@73846619
+INFO  16:12:49,411 - Pretraga na 48 (length), nadjeno rs.etf.pp1.symboltable.concepts.Obj@64bfbc86
+INFO  16:12:49,411 - Pretraga na 49 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,411 - Pretraga na 49 (length), nadjeno rs.etf.pp1.symboltable.concepts.Obj@64bf3bbf
+INFO  16:12:49,411 - Pretraga na 51 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@55d56113
+INFO  16:12:49,411 - Pretraga na 52 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 53 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 53 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 53 (pet), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  16:12:49,411 - Pretraga na 53 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@55d56113
+INFO  16:12:49,411 - Pretraga na 53 (nula), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  16:12:49,411 - Pretraga na 53 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 54 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 56 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 57 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,411 - Pretraga na 59 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,411 - Pretraga na 59 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 59 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 60 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 60 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,411 - Pretraga na 61 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,412 - Pretraga na 63 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,412 - Pretraga na 64 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 64 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,412 - Pretraga na 65 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 65 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,412 - Pretraga na 66 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 66 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,412 - Pretraga na 66 (pet), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  16:12:49,412 - Pretraga na 66 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,412 - Pretraga na 66 (jedan), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  16:12:49,412 - Pretraga na 67 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 67 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,412 - Pretraga na 68 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 68 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13805618
+INFO  16:12:49,412 - Pretraga na 68 (bodovi), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  16:12:49,412 - Pretraga na 69 (bt), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  16:12:49,412 - Pretraga na 69 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  16:12:49,422 - Object code written to C:\dev\pp1domaci\workspace\MJCompiler\test\test301.obj
+INFO  16:12:49,422 - ===================================

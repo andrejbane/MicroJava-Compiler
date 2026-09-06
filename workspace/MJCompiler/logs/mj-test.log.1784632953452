@@ -1,0 +1,290 @@
+INFO  13:21:17,420 - Compiling source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\codegen-recursion.mj
+INFO  13:21:17,465 - #2 program
+INFO  13:21:17,465 - #54 codegen_recursion
+INFO  13:21:17,465 - #6 abstract
+INFO  13:21:17,465 - #5 class
+INFO  13:21:17,466 - #54 Base
+INFO  13:21:17,466 - #45 {
+INFO  13:21:17,466 - #45 {
+INFO  13:21:17,466 - #6 abstract
+INFO  13:21:17,466 - #54 int
+INFO  13:21:17,466 - #54 apply
+INFO  13:21:17,467 - #43 (
+INFO  13:21:17,467 - #54 int
+INFO  13:21:17,467 - #54 value
+INFO  13:21:17,467 - #44 )
+INFO  13:21:17,468 - #40 ;
+INFO  13:21:17,468 - #46 }
+INFO  13:21:17,469 - #46 }
+INFO  13:21:17,469 - #5 class
+INFO  13:21:17,469 - #54 AddTen
+INFO  13:21:17,475 - #15 extends
+INFO  13:21:17,475 - #54 Base
+INFO  13:21:17,475 - #45 {
+INFO  13:21:17,475 - #45 {
+INFO  13:21:17,475 - #54 int
+INFO  13:21:17,476 - #54 apply
+INFO  13:21:17,476 - #43 (
+INFO  13:21:17,476 - #54 int
+INFO  13:21:17,476 - #54 value
+INFO  13:21:17,476 - #44 )
+INFO  13:21:17,476 - #45 {
+INFO  13:21:17,476 - #13 return
+INFO  13:21:17,476 - #54 value
+INFO  13:21:17,476 - #23 +
+INFO  13:21:17,477 - #53 10
+INFO  13:21:17,478 - #40 ;
+INFO  13:21:17,478 - #46 }
+INFO  13:21:17,478 - #46 }
+INFO  13:21:17,478 - #46 }
+INFO  13:21:17,478 - #5 class
+INFO  13:21:17,478 - #54 AddTwenty
+INFO  13:21:17,478 - #15 extends
+INFO  13:21:17,478 - #54 Base
+INFO  13:21:17,479 - #45 {
+INFO  13:21:17,479 - #45 {
+INFO  13:21:17,479 - #54 int
+INFO  13:21:17,479 - #54 apply
+INFO  13:21:17,479 - #43 (
+INFO  13:21:17,479 - #54 int
+INFO  13:21:17,479 - #54 value
+INFO  13:21:17,479 - #44 )
+INFO  13:21:17,479 - #45 {
+INFO  13:21:17,479 - #13 return
+INFO  13:21:17,479 - #54 value
+INFO  13:21:17,479 - #23 +
+INFO  13:21:17,479 - #53 20
+INFO  13:21:17,479 - #40 ;
+INFO  13:21:17,479 - #46 }
+INFO  13:21:17,479 - #46 }
+INFO  13:21:17,479 - #46 }
+INFO  13:21:17,479 - #54 Base
+INFO  13:21:17,479 - #54 items
+INFO  13:21:17,479 - #47 [
+INFO  13:21:17,479 - #48 ]
+INFO  13:21:17,479 - #40 ;
+INFO  13:21:17,480 - #54 int
+INFO  13:21:17,480 - #54 mapper
+INFO  13:21:17,480 - #40 ;
+INFO  13:21:17,480 - #45 {
+INFO  13:21:17,480 - #54 int
+INFO  13:21:17,480 - #54 recursiveCall
+INFO  13:21:17,480 - #43 (
+INFO  13:21:17,480 - #54 int
+INFO  13:21:17,480 - #54 index
+INFO  13:21:17,480 - #44 )
+INFO  13:21:17,480 - #45 {
+INFO  13:21:17,480 - #9 if
+INFO  13:21:17,480 - #43 (
+INFO  13:21:17,480 - #54 index
+INFO  13:21:17,480 - #28 ==
+INFO  13:21:17,480 - #53 0
+INFO  13:21:17,481 - #44 )
+INFO  13:21:17,481 - #13 return
+INFO  13:21:17,481 - #54 items
+INFO  13:21:17,481 - #47 [
+INFO  13:21:17,481 - #53 0
+INFO  13:21:17,481 - #48 ]
+INFO  13:21:17,481 - #42 .
+INFO  13:21:17,481 - #54 apply
+INFO  13:21:17,481 - #43 (
+INFO  13:21:17,481 - #53 0
+INFO  13:21:17,481 - #44 )
+INFO  13:21:17,481 - #40 ;
+INFO  13:21:17,481 - #13 return
+INFO  13:21:17,482 - #54 items
+INFO  13:21:17,482 - #47 [
+INFO  13:21:17,482 - #54 index
+INFO  13:21:17,482 - #48 ]
+INFO  13:21:17,482 - #42 .
+INFO  13:21:17,482 - #54 apply
+INFO  13:21:17,482 - #43 (
+INFO  13:21:17,482 - #54 recursiveCall
+INFO  13:21:17,482 - #43 (
+INFO  13:21:17,482 - #54 index
+INFO  13:21:17,482 - #24 -
+INFO  13:21:17,482 - #53 1
+INFO  13:21:17,482 - #44 )
+INFO  13:21:17,483 - #44 )
+INFO  13:21:17,483 - #40 ;
+INFO  13:21:17,483 - #46 }
+INFO  13:21:17,483 - #54 int
+INFO  13:21:17,483 - #54 recursiveMap
+INFO  13:21:17,483 - #43 (
+INFO  13:21:17,483 - #54 int
+INFO  13:21:17,483 - #54 value
+INFO  13:21:17,483 - #44 )
+INFO  13:21:17,483 - #54 int
+INFO  13:21:17,483 - #54 source
+INFO  13:21:17,483 - #47 [
+INFO  13:21:17,483 - #48 ]
+INFO  13:21:17,483 - #41 ,
+INFO  13:21:17,483 - #54 result
+INFO  13:21:17,483 - #47 [
+INFO  13:21:17,483 - #48 ]
+INFO  13:21:17,483 - #40 ;
+INFO  13:21:17,483 - #45 {
+INFO  13:21:17,483 - #54 source
+INFO  13:21:17,483 - #36 =
+INFO  13:21:17,484 - #10 new
+INFO  13:21:17,484 - #54 int
+INFO  13:21:17,484 - #47 [
+INFO  13:21:17,484 - #53 1
+INFO  13:21:17,484 - #48 ]
+INFO  13:21:17,484 - #40 ;
+INFO  13:21:17,484 - #54 source
+INFO  13:21:17,484 - #47 [
+INFO  13:21:17,484 - #53 0
+INFO  13:21:17,484 - #48 ]
+INFO  13:21:17,484 - #36 =
+INFO  13:21:17,484 - #54 value
+INFO  13:21:17,484 - #40 ;
+INFO  13:21:17,484 - #54 result
+INFO  13:21:17,484 - #36 =
+INFO  13:21:17,484 - #54 source
+INFO  13:21:17,484 - #42 .
+INFO  13:21:17,484 - #22 map
+INFO  13:21:17,484 - #43 (
+INFO  13:21:17,484 - #54 mapper
+INFO  13:21:17,484 - #39 =>
+INFO  13:21:17,484 - #54 value
+INFO  13:21:17,484 - #28 ==
+INFO  13:21:17,484 - #53 0
+INFO  13:21:17,484 - #49 ?
+INFO  13:21:17,484 - #54 mapper
+INFO  13:21:17,484 - #50 :
+INFO  13:21:17,484 - #54 recursiveMap
+INFO  13:21:17,484 - #43 (
+INFO  13:21:17,484 - #54 value
+INFO  13:21:17,484 - #24 -
+INFO  13:21:17,484 - #53 1
+INFO  13:21:17,484 - #44 )
+INFO  13:21:17,484 - #23 +
+INFO  13:21:17,484 - #54 value
+INFO  13:21:17,484 - #44 )
+INFO  13:21:17,485 - #40 ;
+INFO  13:21:17,485 - #13 return
+INFO  13:21:17,485 - #54 result
+INFO  13:21:17,486 - #47 [
+INFO  13:21:17,486 - #53 0
+INFO  13:21:17,486 - #48 ]
+INFO  13:21:17,486 - #40 ;
+INFO  13:21:17,486 - #46 }
+INFO  13:21:17,486 - #14 void
+INFO  13:21:17,486 - #54 main
+INFO  13:21:17,486 - #43 (
+INFO  13:21:17,486 - #44 )
+INFO  13:21:17,487 - #54 AddTen
+INFO  13:21:17,487 - #54 addTen
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 AddTwenty
+INFO  13:21:17,487 - #54 addTwenty
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #45 {
+INFO  13:21:17,487 - #54 addTen
+INFO  13:21:17,487 - #36 =
+INFO  13:21:17,487 - #10 new
+INFO  13:21:17,487 - #54 AddTen
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 addTwenty
+INFO  13:21:17,487 - #36 =
+INFO  13:21:17,487 - #10 new
+INFO  13:21:17,487 - #54 AddTwenty
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 items
+INFO  13:21:17,487 - #36 =
+INFO  13:21:17,487 - #10 new
+INFO  13:21:17,487 - #54 Base
+INFO  13:21:17,487 - #47 [
+INFO  13:21:17,487 - #53 3
+INFO  13:21:17,487 - #48 ]
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 items
+INFO  13:21:17,487 - #47 [
+INFO  13:21:17,487 - #53 0
+INFO  13:21:17,487 - #48 ]
+INFO  13:21:17,487 - #36 =
+INFO  13:21:17,487 - #54 addTen
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 items
+INFO  13:21:17,487 - #47 [
+INFO  13:21:17,487 - #53 1
+INFO  13:21:17,487 - #48 ]
+INFO  13:21:17,487 - #36 =
+INFO  13:21:17,487 - #54 addTwenty
+INFO  13:21:17,487 - #40 ;
+INFO  13:21:17,487 - #54 items
+INFO  13:21:17,487 - #47 [
+INFO  13:21:17,487 - #53 2
+INFO  13:21:17,487 - #48 ]
+INFO  13:21:17,488 - #36 =
+INFO  13:21:17,488 - #54 addTen
+INFO  13:21:17,488 - #40 ;
+INFO  13:21:17,488 - #11 print
+INFO  13:21:17,488 - #43 (
+INFO  13:21:17,488 - #54 recursiveCall
+INFO  13:21:17,488 - #43 (
+INFO  13:21:17,488 - #53 2
+INFO  13:21:17,488 - #44 )
+INFO  13:21:17,488 - #44 )
+INFO  13:21:17,488 - #40 ;
+INFO  13:21:17,488 - #11 print
+INFO  13:21:17,488 - #43 (
+INFO  13:21:17,488 - #54 recursiveMap
+INFO  13:21:17,488 - #43 (
+INFO  13:21:17,488 - #53 2
+INFO  13:21:17,488 - #44 )
+INFO  13:21:17,488 - #44 )
+INFO  13:21:17,489 - #40 ;
+INFO  13:21:17,489 - #11 print
+INFO  13:21:17,489 - #43 (
+INFO  13:21:17,489 - #54 eol
+INFO  13:21:17,489 - #44 )
+INFO  13:21:17,489 - #40 ;
+INFO  13:21:17,489 - #46 }
+INFO  13:21:17,489 - #46 }
+INFO  13:21:17,494 - Pretraga na 15 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  13:21:17,495 - Pretraga na 25 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  13:21:17,495 - Pretraga na 35 (index), nadjeno rs.etf.pp1.symboltable.concepts.Obj@60c6f5b
+INFO  13:21:17,495 - Pretraga na 35 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,495 - Pretraga na 35 (items[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0f93f1
+INFO  13:21:17,495 - Pretraga na 35 (apply), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5025a98f
+INFO  13:21:17,495 - Pretraga na 36 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,495 - Pretraga na 36 (index), nadjeno rs.etf.pp1.symboltable.concepts.Obj@60c6f5b
+INFO  13:21:17,495 - Pretraga na 36 (items[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@71318ec4
+INFO  13:21:17,496 - Pretraga na 36 (apply), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5025a98f
+INFO  13:21:17,496 - Pretraga na 36 (recursiveCall), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  13:21:17,496 - Pretraga na 36 (index), nadjeno rs.etf.pp1.symboltable.concepts.Obj@60c6f5b
+INFO  13:21:17,496 - Pretraga na 42 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ec0a365
+INFO  13:21:17,496 - Pretraga na 43 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ec0a365
+INFO  13:21:17,496 - Pretraga na 43 (source[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4fe3c938
+INFO  13:21:17,496 - Pretraga na 43 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  13:21:17,496 - Pretraga na 44 (result), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  13:21:17,496 - Pretraga na 44 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ec0a365
+INFO  13:21:17,496 - Pretraga na 45 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  13:21:17,496 - Pretraga na 45 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2ac273d3
+INFO  13:21:17,496 - Pretraga na 45 (recursiveMap), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ce81285
+INFO  13:21:17,496 - Pretraga na 45 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  13:21:17,496 - Pretraga na 45 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  13:21:17,496 - Pretraga na 44 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2ac273d3
+INFO  13:21:17,496 - Pretraga na 46 (result), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  13:21:17,496 - Pretraga na 46 (result[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56235b8e
+INFO  13:21:17,497 - Pretraga na 53 (addTen), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5abca1e0
+INFO  13:21:17,497 - Kreiranje objekta klase AddTen na liniji 53
+INFO  13:21:17,497 - Pretraga na 54 (addTwenty), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e9ba398
+INFO  13:21:17,497 - Kreiranje objekta klase AddTwenty na liniji 54
+INFO  13:21:17,497 - Pretraga na 55 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,497 - Pretraga na 56 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,497 - Pretraga na 56 (items[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@527740a2
+INFO  13:21:17,497 - Pretraga na 56 (addTen), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5abca1e0
+INFO  13:21:17,497 - Pretraga na 57 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,497 - Pretraga na 57 (items[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13a5fe33
+INFO  13:21:17,497 - Pretraga na 57 (addTwenty), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e9ba398
+INFO  13:21:17,497 - Pretraga na 58 (items), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  13:21:17,497 - Pretraga na 58 (items[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3108bc
+INFO  13:21:17,497 - Pretraga na 58 (addTen), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5abca1e0
+INFO  13:21:17,497 - Pretraga na 59 (recursiveCall), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  13:21:17,497 - Pretraga na 60 (recursiveMap), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ce81285
+INFO  13:21:17,497 - Pretraga na 61 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  13:21:17,502 - Object code written to C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\codegen-recursion.obj
+INFO  13:21:17,502 - ===================================

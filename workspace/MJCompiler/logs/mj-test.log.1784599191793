@@ -1,0 +1,49 @@
+INFO  03:59:51,526 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t5_map_formal.mj
+INFO  03:59:51,568 - #2 program
+INFO  03:59:51,568 - #54 p
+INFO  03:59:51,568 - #54 int
+INFO  03:59:51,569 - #54 niz
+INFO  03:59:51,570 - #47 [
+INFO  03:59:51,570 - #48 ]
+INFO  03:59:51,570 - #40 ;
+INFO  03:59:51,570 - #54 int
+INFO  03:59:51,570 - #54 niz2
+INFO  03:59:51,570 - #47 [
+INFO  03:59:51,570 - #48 ]
+INFO  03:59:51,570 - #40 ;
+INFO  03:59:51,570 - #45 {
+INFO  03:59:51,570 - #14 void
+INFO  03:59:51,570 - #54 f
+INFO  03:59:51,571 - #43 (
+INFO  03:59:51,571 - #54 int
+INFO  03:59:51,571 - #54 q
+INFO  03:59:51,571 - #44 )
+INFO  03:59:51,572 - #45 {
+INFO  03:59:51,572 - #54 niz2
+INFO  03:59:51,573 - #36 =
+INFO  03:59:51,573 - #54 niz
+INFO  03:59:51,573 - #42 .
+INFO  03:59:51,573 - #22 map
+INFO  03:59:51,573 - #43 (
+INFO  03:59:51,573 - #54 q
+INFO  03:59:51,573 - #39 =>
+INFO  03:59:51,573 - #54 q
+INFO  03:59:51,573 - #25 *
+INFO  03:59:51,573 - #53 2
+INFO  03:59:51,574 - #44 )
+INFO  03:59:51,575 - #40 ;
+INFO  03:59:51,575 - #46 }
+INFO  03:59:51,575 - #14 void
+INFO  03:59:51,575 - #54 main
+INFO  03:59:51,575 - #43 (
+INFO  03:59:51,575 - #44 )
+INFO  03:59:51,577 - #45 {
+INFO  03:59:51,577 - #46 }
+INFO  03:59:51,577 - #46 }
+INFO  03:59:51,581 - Pretraga na 9 (niz2), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5442a311
+INFO  03:59:51,581 - Pretraga na 9 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@548e7350
+INFO  03:59:51,581 - Pretraga na 9 (q), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+INFO  03:59:51,581 - Pretraga na 9 (q), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+ERROR 03:59:51,581 - Identifikator funkcije map mora biti lokalna ili globalna promenljiva na liniji 9
+INFO  03:59:51,581 - Semantic errors detected in t5_map_formal.mj
+INFO  03:59:51,581 - ===================================

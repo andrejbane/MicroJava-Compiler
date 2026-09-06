@@ -1,0 +1,3 @@
+ERROR 16:13:16,072 - Sintaksna greska na liniji 86, kolona 22
+ERROR 16:13:16,073 - Izvrsen oporavak iskaza dodele do ; na liniji 86
+Compilation failed for test\test302.mj: Syntax errors detected in test302.mj

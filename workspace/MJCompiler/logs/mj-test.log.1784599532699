@@ -1,0 +1,108 @@
+INFO  04:05:32,422 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\v2_multilevel_abstract_ok.mj
+INFO  04:05:32,466 - #2 program
+INFO  04:05:32,466 - #54 p
+INFO  04:05:32,466 - #6 abstract
+INFO  04:05:32,466 - #5 class
+INFO  04:05:32,466 - #54 A
+INFO  04:05:32,466 - #45 {
+INFO  04:05:32,466 - #45 {
+INFO  04:05:32,467 - #6 abstract
+INFO  04:05:32,467 - #14 void
+INFO  04:05:32,467 - #54 f
+INFO  04:05:32,467 - #43 (
+INFO  04:05:32,468 - #44 )
+INFO  04:05:32,468 - #40 ;
+INFO  04:05:32,468 - #6 abstract
+INFO  04:05:32,468 - #54 int
+INFO  04:05:32,468 - #54 g
+INFO  04:05:32,469 - #43 (
+INFO  04:05:32,469 - #54 int
+INFO  04:05:32,469 - #54 x
+INFO  04:05:32,469 - #44 )
+INFO  04:05:32,476 - #40 ;
+INFO  04:05:32,476 - #46 }
+INFO  04:05:32,476 - #46 }
+INFO  04:05:32,476 - #6 abstract
+INFO  04:05:32,476 - #5 class
+INFO  04:05:32,476 - #54 B
+INFO  04:05:32,476 - #15 extends
+INFO  04:05:32,476 - #54 A
+INFO  04:05:32,476 - #45 {
+INFO  04:05:32,476 - #45 {
+INFO  04:05:32,476 - #14 void
+INFO  04:05:32,476 - #54 f
+INFO  04:05:32,476 - #43 (
+INFO  04:05:32,476 - #44 )
+INFO  04:05:32,476 - #45 {
+INFO  04:05:32,476 - #46 }
+INFO  04:05:32,477 - #46 }
+INFO  04:05:32,477 - #46 }
+INFO  04:05:32,477 - #5 class
+INFO  04:05:32,477 - #54 C
+INFO  04:05:32,477 - #15 extends
+INFO  04:05:32,477 - #54 B
+INFO  04:05:32,477 - #45 {
+INFO  04:05:32,477 - #45 {
+INFO  04:05:32,477 - #54 int
+INFO  04:05:32,478 - #54 g
+INFO  04:05:32,478 - #43 (
+INFO  04:05:32,478 - #54 int
+INFO  04:05:32,478 - #54 x
+INFO  04:05:32,478 - #44 )
+INFO  04:05:32,478 - #45 {
+INFO  04:05:32,478 - #13 return
+INFO  04:05:32,478 - #54 x
+INFO  04:05:32,478 - #40 ;
+INFO  04:05:32,478 - #46 }
+INFO  04:05:32,478 - #46 }
+INFO  04:05:32,478 - #46 }
+INFO  04:05:32,478 - #45 {
+INFO  04:05:32,478 - #14 void
+INFO  04:05:32,478 - #54 main
+INFO  04:05:32,478 - #43 (
+INFO  04:05:32,478 - #44 )
+INFO  04:05:32,478 - #54 C
+INFO  04:05:32,478 - #54 c
+INFO  04:05:32,478 - #40 ;
+INFO  04:05:32,479 - #54 int
+INFO  04:05:32,479 - #54 r
+INFO  04:05:32,479 - #40 ;
+INFO  04:05:32,479 - #45 {
+INFO  04:05:32,479 - #54 c
+INFO  04:05:32,479 - #36 =
+INFO  04:05:32,479 - #10 new
+INFO  04:05:32,479 - #54 C
+INFO  04:05:32,479 - #40 ;
+INFO  04:05:32,479 - #54 c
+INFO  04:05:32,479 - #42 .
+INFO  04:05:32,479 - #54 f
+INFO  04:05:32,479 - #43 (
+INFO  04:05:32,479 - #44 )
+INFO  04:05:32,479 - #40 ;
+INFO  04:05:32,480 - #54 r
+INFO  04:05:32,480 - #36 =
+INFO  04:05:32,480 - #54 c
+INFO  04:05:32,480 - #42 .
+INFO  04:05:32,480 - #54 g
+INFO  04:05:32,480 - #43 (
+INFO  04:05:32,480 - #53 3
+INFO  04:05:32,480 - #44 )
+INFO  04:05:32,480 - #40 ;
+INFO  04:05:32,480 - #11 print
+INFO  04:05:32,480 - #43 (
+INFO  04:05:32,480 - #54 r
+INFO  04:05:32,480 - #44 )
+INFO  04:05:32,481 - #40 ;
+INFO  04:05:32,481 - #46 }
+INFO  04:05:32,481 - #46 }
+INFO  04:05:32,485 - Pretraga na 18 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@cb644e
+INFO  04:05:32,486 - Pretraga na 26 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  04:05:32,486 - Kreiranje objekta klase C na liniji 26
+INFO  04:05:32,486 - Pretraga na 27 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  04:05:32,486 - Pretraga na 27 (f), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  04:05:32,486 - Pretraga na 28 (r), nadjeno rs.etf.pp1.symboltable.concepts.Obj@ff5b51f
+INFO  04:05:32,486 - Pretraga na 28 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ef9176
+INFO  04:05:32,486 - Pretraga na 28 (g), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  04:05:32,486 - Pretraga na 29 (r), nadjeno rs.etf.pp1.symboltable.concepts.Obj@ff5b51f
+INFO  04:05:32,486 - Semantic analysis passed for v2_multilevel_abstract_ok.mj
+INFO  04:05:32,486 - ===================================

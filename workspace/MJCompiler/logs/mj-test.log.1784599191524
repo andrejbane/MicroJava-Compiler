@@ -1,0 +1,42 @@
+INFO  03:59:51,240 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t4_findany_nonbool.mj
+INFO  03:59:51,284 - #2 program
+INFO  03:59:51,284 - #54 p
+INFO  03:59:51,284 - #54 int
+INFO  03:59:51,285 - #54 niz
+INFO  03:59:51,285 - #47 [
+INFO  03:59:51,285 - #48 ]
+INFO  03:59:51,285 - #40 ;
+INFO  03:59:51,286 - #45 {
+INFO  03:59:51,286 - #14 void
+INFO  03:59:51,286 - #54 main
+INFO  03:59:51,286 - #43 (
+INFO  03:59:51,287 - #44 )
+INFO  03:59:51,287 - #54 int
+INFO  03:59:51,287 - #54 x
+INFO  03:59:51,287 - #40 ;
+INFO  03:59:51,288 - #45 {
+INFO  03:59:51,288 - #54 niz
+INFO  03:59:51,288 - #36 =
+INFO  03:59:51,288 - #10 new
+INFO  03:59:51,288 - #54 int
+INFO  03:59:51,288 - #47 [
+INFO  03:59:51,289 - #53 3
+INFO  03:59:51,289 - #48 ]
+INFO  03:59:51,289 - #40 ;
+INFO  03:59:51,289 - #54 x
+INFO  03:59:51,289 - #36 =
+INFO  03:59:51,289 - #54 niz
+INFO  03:59:51,289 - #42 .
+INFO  03:59:51,289 - #21 findAny
+INFO  03:59:51,289 - #43 (
+INFO  03:59:51,289 - #53 1
+INFO  03:59:51,289 - #44 )
+INFO  03:59:51,289 - #40 ;
+INFO  03:59:51,290 - #46 }
+INFO  03:59:51,290 - #46 }
+INFO  03:59:51,294 - Pretraga na 9 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@39c0f4a
+INFO  03:59:51,294 - Pretraga na 10 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1794d431
+INFO  03:59:51,294 - Pretraga na 10 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@39c0f4a
+ERROR 03:59:51,294 - Rezultat findAny mora biti promenljiva tipa bool na liniji 10
+INFO  03:59:51,294 - Semantic errors detected in t4_findany_nonbool.mj
+INFO  03:59:51,294 - ===================================

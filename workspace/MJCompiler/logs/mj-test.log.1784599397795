@@ -1,0 +1,39 @@
+INFO  04:02:36,991 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n6_int_char.mj
+INFO  04:02:37,036 - #2 program
+INFO  04:02:37,036 - #54 p
+INFO  04:02:37,036 - #45 {
+INFO  04:02:37,036 - #14 void
+INFO  04:02:37,037 - #54 main
+INFO  04:02:37,037 - #43 (
+INFO  04:02:37,037 - #44 )
+INFO  04:02:37,037 - #54 int
+INFO  04:02:37,038 - #54 x
+INFO  04:02:37,038 - #40 ;
+INFO  04:02:37,039 - #54 char
+INFO  04:02:37,039 - #54 c
+INFO  04:02:37,039 - #40 ;
+INFO  04:02:37,039 - #45 {
+INFO  04:02:37,039 - #54 x
+INFO  04:02:37,039 - #36 =
+INFO  04:02:37,039 - #54 c
+INFO  04:02:37,039 - #40 ;
+INFO  04:02:37,040 - #54 c
+INFO  04:02:37,040 - #36 =
+INFO  04:02:37,040 - #54 x
+INFO  04:02:37,040 - #40 ;
+INFO  04:02:37,041 - #54 x
+INFO  04:02:37,041 - #36 =
+INFO  04:02:37,041 - #52 'a'
+INFO  04:02:37,041 - #40 ;
+INFO  04:02:37,041 - #46 }
+INFO  04:02:37,041 - #46 }
+INFO  04:02:37,046 - Pretraga na 7 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6093dd95
+INFO  04:02:37,046 - Pretraga na 7 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5622fdf
+ERROR 04:02:37,046 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 7
+INFO  04:02:37,046 - Pretraga na 8 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5622fdf
+INFO  04:02:37,046 - Pretraga na 8 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6093dd95
+ERROR 04:02:37,046 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 8
+INFO  04:02:37,046 - Pretraga na 9 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6093dd95
+ERROR 04:02:37,046 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 9
+INFO  04:02:37,046 - Semantic errors detected in n6_int_char.mj
+INFO  04:02:37,046 - ===================================

@@ -1,0 +1,44 @@
+INFO  03:59:50,971 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t3_argcount.mj
+INFO  03:59:51,013 - #2 program
+INFO  03:59:51,013 - #54 p
+INFO  03:59:51,013 - #45 {
+INFO  03:59:51,014 - #54 int
+INFO  03:59:51,014 - #54 add
+INFO  03:59:51,015 - #43 (
+INFO  03:59:51,015 - #54 int
+INFO  03:59:51,015 - #54 a
+INFO  03:59:51,015 - #41 ,
+INFO  03:59:51,016 - #54 int
+INFO  03:59:51,016 - #54 b
+INFO  03:59:51,016 - #44 )
+INFO  03:59:51,016 - #45 {
+INFO  03:59:51,017 - #13 return
+INFO  03:59:51,017 - #54 a
+INFO  03:59:51,017 - #23 +
+INFO  03:59:51,018 - #54 b
+INFO  03:59:51,018 - #40 ;
+INFO  03:59:51,018 - #46 }
+INFO  03:59:51,018 - #14 void
+INFO  03:59:51,019 - #54 main
+INFO  03:59:51,019 - #43 (
+INFO  03:59:51,019 - #44 )
+INFO  03:59:51,020 - #54 int
+INFO  03:59:51,020 - #54 x
+INFO  03:59:51,020 - #40 ;
+INFO  03:59:51,020 - #45 {
+INFO  03:59:51,020 - #54 x
+INFO  03:59:51,020 - #36 =
+INFO  03:59:51,020 - #54 add
+INFO  03:59:51,020 - #43 (
+INFO  03:59:51,020 - #53 1
+INFO  03:59:51,020 - #44 )
+INFO  03:59:51,020 - #40 ;
+INFO  03:59:51,020 - #46 }
+INFO  03:59:51,020 - #46 }
+INFO  03:59:51,025 - Pretraga na 4 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4dfa3a9d
+INFO  03:59:51,025 - Pretraga na 4 (b), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6eebc39e
+INFO  03:59:51,025 - Pretraga na 9 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@f6c48ac
+INFO  03:59:51,026 - Pretraga na 9 (add), nadjeno rs.etf.pp1.symboltable.concepts.Obj@146ba0ac
+ERROR 03:59:51,026 - Poziv add ima pogresan broj argumenata na liniji 9
+INFO  03:59:51,026 - Semantic errors detected in t3_argcount.mj
+INFO  03:59:51,026 - ===================================

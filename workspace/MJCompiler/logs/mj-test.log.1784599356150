@@ -1,0 +1,60 @@
+INFO  04:02:35,855 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n2_map_result_mismatch.mj
+INFO  04:02:35,896 - #2 program
+INFO  04:02:35,896 - #54 p
+INFO  04:02:35,896 - #54 char
+INFO  04:02:35,896 - #54 cniz
+INFO  04:02:35,897 - #47 [
+INFO  04:02:35,897 - #48 ]
+INFO  04:02:35,897 - #40 ;
+INFO  04:02:35,897 - #54 bool
+INFO  04:02:35,897 - #54 bniz
+INFO  04:02:35,897 - #47 [
+INFO  04:02:35,897 - #48 ]
+INFO  04:02:35,897 - #40 ;
+INFO  04:02:35,898 - #45 {
+INFO  04:02:35,898 - #14 void
+INFO  04:02:35,898 - #54 main
+INFO  04:02:35,898 - #43 (
+INFO  04:02:35,899 - #44 )
+INFO  04:02:35,899 - #54 char
+INFO  04:02:35,899 - #54 c
+INFO  04:02:35,899 - #40 ;
+INFO  04:02:35,900 - #45 {
+INFO  04:02:35,900 - #54 cniz
+INFO  04:02:35,900 - #36 =
+INFO  04:02:35,900 - #10 new
+INFO  04:02:35,900 - #54 char
+INFO  04:02:35,900 - #47 [
+INFO  04:02:35,900 - #53 3
+INFO  04:02:35,900 - #48 ]
+INFO  04:02:35,901 - #40 ;
+INFO  04:02:35,901 - #54 bniz
+INFO  04:02:35,901 - #36 =
+INFO  04:02:35,901 - #10 new
+INFO  04:02:35,901 - #54 bool
+INFO  04:02:35,901 - #47 [
+INFO  04:02:35,901 - #53 3
+INFO  04:02:35,901 - #48 ]
+INFO  04:02:35,901 - #40 ;
+INFO  04:02:35,901 - #54 bniz
+INFO  04:02:35,901 - #36 =
+INFO  04:02:35,901 - #54 cniz
+INFO  04:02:35,901 - #42 .
+INFO  04:02:35,901 - #22 map
+INFO  04:02:35,901 - #43 (
+INFO  04:02:35,901 - #54 c
+INFO  04:02:35,901 - #39 =>
+INFO  04:02:35,901 - #54 c
+INFO  04:02:35,901 - #44 )
+INFO  04:02:35,901 - #40 ;
+INFO  04:02:35,902 - #46 }
+INFO  04:02:35,902 - #46 }
+INFO  04:02:35,907 - Pretraga na 10 (cniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57baeedf
+INFO  04:02:35,907 - Pretraga na 11 (bniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@343f4d3d
+INFO  04:02:35,907 - Pretraga na 12 (bniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@343f4d3d
+INFO  04:02:35,907 - Pretraga na 12 (cniz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57baeedf
+INFO  04:02:35,907 - Pretraga na 12 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+INFO  04:02:35,907 - Pretraga na 12 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@53b32d7
+ERROR 04:02:35,907 - Izraz funkcije map ne odgovara tipu rezultujuceg niza na liniji 12
+INFO  04:02:35,907 - Semantic errors detected in n2_map_result_mismatch.mj
+INFO  04:02:35,907 - ===================================

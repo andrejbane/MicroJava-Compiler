@@ -1,0 +1,210 @@
+INFO  03:42:08,064 - Semantically checking source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\semantic-valid.mj
+INFO  03:42:08,112 - #2 program
+INFO  03:42:08,112 - #54 semantic_valid
+INFO  03:42:08,112 - #6 abstract
+INFO  03:42:08,113 - #5 class
+INFO  03:42:08,113 - #54 Base
+INFO  03:42:08,113 - #45 {
+INFO  03:42:08,113 - #54 int
+INFO  03:42:08,113 - #54 value
+INFO  03:42:08,114 - #40 ;
+INFO  03:42:08,115 - #45 {
+INFO  03:42:08,115 - #6 abstract
+INFO  03:42:08,115 - #54 Base
+INFO  03:42:08,115 - #54 self
+INFO  03:42:08,115 - #43 (
+INFO  03:42:08,115 - #44 )
+INFO  03:42:08,116 - #40 ;
+INFO  03:42:08,116 - #54 int
+INFO  03:42:08,116 - #54 plus
+INFO  03:42:08,116 - #43 (
+INFO  03:42:08,117 - #54 int
+INFO  03:42:08,117 - #54 amount
+INFO  03:42:08,117 - #44 )
+INFO  03:42:08,117 - #45 {
+INFO  03:42:08,118 - #13 return
+INFO  03:42:08,118 - #54 value
+INFO  03:42:08,118 - #23 +
+INFO  03:42:08,119 - #54 amount
+INFO  03:42:08,119 - #40 ;
+INFO  03:42:08,119 - #46 }
+INFO  03:42:08,119 - #46 }
+INFO  03:42:08,120 - #46 }
+INFO  03:42:08,120 - #5 class
+INFO  03:42:08,120 - #54 Derived
+INFO  03:42:08,120 - #15 extends
+INFO  03:42:08,120 - #54 Base
+INFO  03:42:08,120 - #45 {
+INFO  03:42:08,120 - #45 {
+INFO  03:42:08,120 - #54 Base
+INFO  03:42:08,120 - #54 self
+INFO  03:42:08,120 - #43 (
+INFO  03:42:08,121 - #44 )
+INFO  03:42:08,121 - #45 {
+INFO  03:42:08,121 - #13 return
+INFO  03:42:08,121 - #54 this
+INFO  03:42:08,121 - #40 ;
+INFO  03:42:08,121 - #46 }
+INFO  03:42:08,121 - #46 }
+INFO  03:42:08,121 - #46 }
+INFO  03:42:08,121 - #54 Base
+INFO  03:42:08,121 - #54 base
+INFO  03:42:08,121 - #40 ;
+INFO  03:42:08,121 - #54 Derived
+INFO  03:42:08,121 - #54 derived
+INFO  03:42:08,121 - #40 ;
+INFO  03:42:08,121 - #54 Base
+INFO  03:42:08,121 - #54 objects
+INFO  03:42:08,121 - #47 [
+INFO  03:42:08,121 - #48 ]
+INFO  03:42:08,121 - #40 ;
+INFO  03:42:08,121 - #45 {
+INFO  03:42:08,121 - #54 Base
+INFO  03:42:08,121 - #54 make
+INFO  03:42:08,121 - #43 (
+INFO  03:42:08,122 - #44 )
+INFO  03:42:08,122 - #45 {
+INFO  03:42:08,122 - #13 return
+INFO  03:42:08,122 - #10 new
+INFO  03:42:08,122 - #54 Derived
+INFO  03:42:08,122 - #40 ;
+INFO  03:42:08,122 - #46 }
+INFO  03:42:08,122 - #14 void
+INFO  03:42:08,122 - #54 main
+INFO  03:42:08,122 - #43 (
+INFO  03:42:08,122 - #44 )
+INFO  03:42:08,122 - #54 int
+INFO  03:42:08,122 - #54 source
+INFO  03:42:08,122 - #47 [
+INFO  03:42:08,122 - #48 ]
+INFO  03:42:08,122 - #41 ,
+INFO  03:42:08,122 - #54 result
+INFO  03:42:08,122 - #47 [
+INFO  03:42:08,122 - #48 ]
+INFO  03:42:08,122 - #41 ,
+INFO  03:42:08,123 - #54 mapper
+INFO  03:42:08,123 - #40 ;
+INFO  03:42:08,123 - #54 bool
+INFO  03:42:08,123 - #54 found
+INFO  03:42:08,123 - #40 ;
+INFO  03:42:08,123 - #45 {
+INFO  03:42:08,123 - #54 derived
+INFO  03:42:08,123 - #36 =
+INFO  03:42:08,123 - #10 new
+INFO  03:42:08,123 - #54 Derived
+INFO  03:42:08,123 - #40 ;
+INFO  03:42:08,123 - #54 base
+INFO  03:42:08,123 - #36 =
+INFO  03:42:08,123 - #54 derived
+INFO  03:42:08,123 - #40 ;
+INFO  03:42:08,123 - #54 base
+INFO  03:42:08,123 - #36 =
+INFO  03:42:08,123 - #54 make
+INFO  03:42:08,123 - #43 (
+INFO  03:42:08,123 - #44 )
+INFO  03:42:08,124 - #40 ;
+INFO  03:42:08,124 - #9 if
+INFO  03:42:08,124 - #43 (
+INFO  03:42:08,124 - #54 base
+INFO  03:42:08,124 - #28 ==
+INFO  03:42:08,124 - #54 derived
+INFO  03:42:08,125 - #44 )
+INFO  03:42:08,125 - #11 print
+INFO  03:42:08,125 - #43 (
+INFO  03:42:08,125 - #54 base
+INFO  03:42:08,125 - #42 .
+INFO  03:42:08,125 - #54 plus
+INFO  03:42:08,125 - #43 (
+INFO  03:42:08,125 - #53 1
+INFO  03:42:08,125 - #44 )
+INFO  03:42:08,125 - #44 )
+INFO  03:42:08,126 - #40 ;
+INFO  03:42:08,126 - #54 objects
+INFO  03:42:08,126 - #36 =
+INFO  03:42:08,126 - #10 new
+INFO  03:42:08,126 - #54 Base
+INFO  03:42:08,126 - #47 [
+INFO  03:42:08,126 - #53 1
+INFO  03:42:08,126 - #48 ]
+INFO  03:42:08,126 - #40 ;
+INFO  03:42:08,126 - #54 objects
+INFO  03:42:08,126 - #47 [
+INFO  03:42:08,126 - #53 0
+INFO  03:42:08,126 - #48 ]
+INFO  03:42:08,126 - #36 =
+INFO  03:42:08,126 - #54 derived
+INFO  03:42:08,126 - #40 ;
+INFO  03:42:08,126 - #54 source
+INFO  03:42:08,126 - #36 =
+INFO  03:42:08,126 - #10 new
+INFO  03:42:08,126 - #54 int
+INFO  03:42:08,126 - #47 [
+INFO  03:42:08,126 - #53 1
+INFO  03:42:08,126 - #48 ]
+INFO  03:42:08,126 - #40 ;
+INFO  03:42:08,126 - #54 source
+INFO  03:42:08,126 - #47 [
+INFO  03:42:08,126 - #53 0
+INFO  03:42:08,127 - #48 ]
+INFO  03:42:08,127 - #36 =
+INFO  03:42:08,127 - #53 1
+INFO  03:42:08,127 - #40 ;
+INFO  03:42:08,127 - #54 result
+INFO  03:42:08,127 - #36 =
+INFO  03:42:08,127 - #54 source
+INFO  03:42:08,127 - #42 .
+INFO  03:42:08,127 - #22 map
+INFO  03:42:08,127 - #43 (
+INFO  03:42:08,127 - #54 mapper
+INFO  03:42:08,127 - #39 =>
+INFO  03:42:08,127 - #54 mapper
+INFO  03:42:08,127 - #23 +
+INFO  03:42:08,127 - #53 1
+INFO  03:42:08,127 - #44 )
+INFO  03:42:08,127 - #40 ;
+INFO  03:42:08,127 - #54 found
+INFO  03:42:08,127 - #36 =
+INFO  03:42:08,127 - #54 source
+INFO  03:42:08,127 - #42 .
+INFO  03:42:08,127 - #21 findAny
+INFO  03:42:08,127 - #43 (
+INFO  03:42:08,127 - #53 1
+INFO  03:42:08,127 - #44 )
+INFO  03:42:08,127 - #40 ;
+INFO  03:42:08,127 - #11 print
+INFO  03:42:08,128 - #43 (
+INFO  03:42:08,128 - #54 found
+INFO  03:42:08,128 - #44 )
+INFO  03:42:08,128 - #40 ;
+INFO  03:42:08,128 - #46 }
+INFO  03:42:08,128 - #46 }
+INFO  03:42:08,133 - Pretraga na 10 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@64bf3bbf
+INFO  03:42:08,133 - Pretraga na 10 (amount), nadjeno rs.etf.pp1.symboltable.concepts.Obj@64bfbc86
+INFO  03:42:08,133 - Pretraga na 20 (this), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7e0b0338
+INFO  03:42:08,133 - Kreiranje objekta klase Derived na liniji 31
+INFO  03:42:08,134 - Pretraga na 38 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  03:42:08,134 - Kreiranje objekta klase Derived na liniji 38
+INFO  03:42:08,134 - Pretraga na 39 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0f93f1
+INFO  03:42:08,134 - Pretraga na 39 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  03:42:08,134 - Pretraga na 40 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0f93f1
+INFO  03:42:08,134 - Pretraga na 40 (make), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  03:42:08,134 - Pretraga na 41 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0f93f1
+INFO  03:42:08,134 - Pretraga na 41 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  03:42:08,134 - Pretraga na 41 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3c0f93f1
+INFO  03:42:08,134 - Pretraga na 41 (plus), nadjeno rs.etf.pp1.symboltable.concepts.Obj@20322d26
+INFO  03:42:08,134 - Pretraga na 43 (objects), nadjeno rs.etf.pp1.symboltable.concepts.Obj@a67c67e
+INFO  03:42:08,134 - Pretraga na 44 (objects), nadjeno rs.etf.pp1.symboltable.concepts.Obj@a67c67e
+INFO  03:42:08,134 - Pretraga na 44 (objects[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3327bd23
+INFO  03:42:08,134 - Pretraga na 44 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  03:42:08,134 - Pretraga na 46 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e1d422d
+INFO  03:42:08,134 - Pretraga na 47 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e1d422d
+INFO  03:42:08,134 - Pretraga na 47 (source[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@66480dd7
+INFO  03:42:08,134 - Pretraga na 48 (result), nadjeno rs.etf.pp1.symboltable.concepts.Obj@52a86356
+INFO  03:42:08,134 - Pretraga na 48 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e1d422d
+INFO  03:42:08,134 - Pretraga na 48 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ce81285
+INFO  03:42:08,134 - Pretraga na 48 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5ce81285
+INFO  03:42:08,134 - Pretraga na 49 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  03:42:08,134 - Pretraga na 49 (source), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4e1d422d
+INFO  03:42:08,134 - Pretraga na 50 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@78c03f1f
+INFO  03:42:08,134 - Semantic analysis passed for semantic-valid.mj
+INFO  03:42:08,134 - ===================================

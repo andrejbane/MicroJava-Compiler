@@ -1,0 +1,621 @@
+INFO  12:05:27,400 - Compiling source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\codegen-focus.mj
+INFO  12:05:27,471 - #2 program
+INFO  12:05:27,471 - #54 codegen_focus
+INFO  12:05:27,471 - #5 class
+INFO  12:05:27,472 - #54 Base
+INFO  12:05:27,472 - #45 {
+INFO  12:05:27,472 - #54 int
+INFO  12:05:27,473 - #54 value
+INFO  12:05:27,473 - #40 ;
+INFO  12:05:27,475 - #45 {
+INFO  12:05:27,475 - #14 void
+INFO  12:05:27,475 - #54 set
+INFO  12:05:27,476 - #43 (
+INFO  12:05:27,476 - #54 int
+INFO  12:05:27,476 - #54 value
+INFO  12:05:27,476 - #44 )
+INFO  12:05:27,477 - #45 {
+INFO  12:05:27,478 - #54 this
+INFO  12:05:27,478 - #42 .
+INFO  12:05:27,478 - #54 value
+INFO  12:05:27,478 - #36 =
+INFO  12:05:27,523 - #54 value
+INFO  12:05:27,523 - #40 ;
+INFO  12:05:27,524 - #46 }
+INFO  12:05:27,525 - #54 int
+INFO  12:05:27,525 - #54 get
+INFO  12:05:27,525 - #43 (
+INFO  12:05:27,525 - #44 )
+INFO  12:05:27,526 - #45 {
+INFO  12:05:27,526 - #13 return
+INFO  12:05:27,526 - #54 value
+INFO  12:05:27,526 - #40 ;
+INFO  12:05:27,526 - #46 }
+INFO  12:05:27,526 - #54 int
+INFO  12:05:27,526 - #54 twice
+INFO  12:05:27,526 - #43 (
+INFO  12:05:27,526 - #54 int
+INFO  12:05:27,526 - #54 value
+INFO  12:05:27,526 - #44 )
+INFO  12:05:27,526 - #45 {
+INFO  12:05:27,526 - #13 return
+INFO  12:05:27,526 - #54 value
+INFO  12:05:27,526 - #25 *
+INFO  12:05:27,526 - #53 2
+INFO  12:05:27,527 - #40 ;
+INFO  12:05:27,527 - #46 }
+INFO  12:05:27,528 - #46 }
+INFO  12:05:27,528 - #46 }
+INFO  12:05:27,528 - #5 class
+INFO  12:05:27,528 - #54 Derived
+INFO  12:05:27,528 - #15 extends
+INFO  12:05:27,528 - #54 Base
+INFO  12:05:27,528 - #45 {
+INFO  12:05:27,528 - #45 {
+INFO  12:05:27,528 - #54 int
+INFO  12:05:27,528 - #54 get
+INFO  12:05:27,528 - #43 (
+INFO  12:05:27,528 - #44 )
+INFO  12:05:27,528 - #45 {
+INFO  12:05:27,528 - #13 return
+INFO  12:05:27,528 - #54 value
+INFO  12:05:27,528 - #23 +
+INFO  12:05:27,528 - #53 1
+INFO  12:05:27,530 - #40 ;
+INFO  12:05:27,530 - #46 }
+INFO  12:05:27,530 - #46 }
+INFO  12:05:27,530 - #46 }
+INFO  12:05:27,530 - #5 class
+INFO  12:05:27,530 - #54 Holder
+INFO  12:05:27,530 - #45 {
+INFO  12:05:27,530 - #54 int
+INFO  12:05:27,530 - #54 nums
+INFO  12:05:27,530 - #47 [
+INFO  12:05:27,530 - #48 ]
+INFO  12:05:27,530 - #40 ;
+INFO  12:05:27,531 - #54 bool
+INFO  12:05:27,531 - #54 found
+INFO  12:05:27,531 - #40 ;
+INFO  12:05:27,531 - #46 }
+INFO  12:05:27,532 - #54 Base
+INFO  12:05:27,532 - #54 base
+INFO  12:05:27,532 - #41 ,
+INFO  12:05:27,532 - #54 baseMapper
+INFO  12:05:27,532 - #40 ;
+INFO  12:05:27,532 - #54 Derived
+INFO  12:05:27,532 - #54 derived
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 Holder
+INFO  12:05:27,533 - #54 holder
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 int
+INFO  12:05:27,533 - #54 mapper
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 char
+INFO  12:05:27,533 - #54 charMapper
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 int
+INFO  12:05:27,533 - #54 ints
+INFO  12:05:27,533 - #47 [
+INFO  12:05:27,533 - #48 ]
+INFO  12:05:27,533 - #41 ,
+INFO  12:05:27,533 - #54 mapped
+INFO  12:05:27,533 - #47 [
+INFO  12:05:27,533 - #48 ]
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 char
+INFO  12:05:27,533 - #54 chars
+INFO  12:05:27,533 - #47 [
+INFO  12:05:27,533 - #48 ]
+INFO  12:05:27,533 - #40 ;
+INFO  12:05:27,533 - #54 bool
+INFO  12:05:27,533 - #54 bools
+INFO  12:05:27,533 - #47 [
+INFO  12:05:27,534 - #48 ]
+INFO  12:05:27,534 - #41 ,
+INFO  12:05:27,534 - #54 found
+INFO  12:05:27,534 - #40 ;
+INFO  12:05:27,534 - #54 Base
+INFO  12:05:27,534 - #54 refs
+INFO  12:05:27,534 - #47 [
+INFO  12:05:27,534 - #48 ]
+INFO  12:05:27,534 - #41 ,
+INFO  12:05:27,534 - #54 mappedRefs
+INFO  12:05:27,534 - #47 [
+INFO  12:05:27,534 - #48 ]
+INFO  12:05:27,534 - #40 ;
+INFO  12:05:27,534 - #45 {
+INFO  12:05:27,534 - #54 int
+INFO  12:05:27,535 - #54 factorial
+INFO  12:05:27,535 - #43 (
+INFO  12:05:27,535 - #54 int
+INFO  12:05:27,535 - #54 value
+INFO  12:05:27,535 - #44 )
+INFO  12:05:27,535 - #45 {
+INFO  12:05:27,535 - #9 if
+INFO  12:05:27,535 - #43 (
+INFO  12:05:27,535 - #54 value
+INFO  12:05:27,535 - #33 <=
+INFO  12:05:27,535 - #53 1
+INFO  12:05:27,536 - #44 )
+INFO  12:05:27,536 - #13 return
+INFO  12:05:27,536 - #53 1
+INFO  12:05:27,536 - #40 ;
+INFO  12:05:27,536 - #13 return
+INFO  12:05:27,537 - #54 value
+INFO  12:05:27,537 - #25 *
+INFO  12:05:27,537 - #54 factorial
+INFO  12:05:27,537 - #43 (
+INFO  12:05:27,537 - #54 value
+INFO  12:05:27,537 - #24 -
+INFO  12:05:27,537 - #53 1
+INFO  12:05:27,537 - #44 )
+INFO  12:05:27,538 - #40 ;
+INFO  12:05:27,538 - #46 }
+INFO  12:05:27,538 - #14 void
+INFO  12:05:27,538 - #54 main
+INFO  12:05:27,538 - #43 (
+INFO  12:05:27,538 - #44 )
+INFO  12:05:27,538 - #54 int
+INFO  12:05:27,538 - #54 i
+INFO  12:05:27,538 - #40 ;
+INFO  12:05:27,538 - #45 {
+INFO  12:05:27,538 - #54 derived
+INFO  12:05:27,538 - #36 =
+INFO  12:05:27,538 - #10 new
+INFO  12:05:27,538 - #54 Derived
+INFO  12:05:27,538 - #40 ;
+INFO  12:05:27,538 - #54 derived
+INFO  12:05:27,538 - #42 .
+INFO  12:05:27,538 - #54 set
+INFO  12:05:27,538 - #43 (
+INFO  12:05:27,538 - #53 4
+INFO  12:05:27,538 - #44 )
+INFO  12:05:27,538 - #40 ;
+INFO  12:05:27,538 - #54 base
+INFO  12:05:27,539 - #36 =
+INFO  12:05:27,539 - #54 derived
+INFO  12:05:27,539 - #40 ;
+INFO  12:05:27,539 - #11 print
+INFO  12:05:27,539 - #43 (
+INFO  12:05:27,539 - #54 base
+INFO  12:05:27,539 - #42 .
+INFO  12:05:27,539 - #54 get
+INFO  12:05:27,539 - #43 (
+INFO  12:05:27,539 - #44 )
+INFO  12:05:27,539 - #44 )
+INFO  12:05:27,540 - #40 ;
+INFO  12:05:27,540 - #11 print
+INFO  12:05:27,540 - #43 (
+INFO  12:05:27,540 - #54 base
+INFO  12:05:27,540 - #42 .
+INFO  12:05:27,540 - #54 twice
+INFO  12:05:27,540 - #43 (
+INFO  12:05:27,540 - #54 base
+INFO  12:05:27,540 - #42 .
+INFO  12:05:27,540 - #54 get
+INFO  12:05:27,540 - #43 (
+INFO  12:05:27,540 - #44 )
+INFO  12:05:27,540 - #44 )
+INFO  12:05:27,540 - #44 )
+INFO  12:05:27,540 - #40 ;
+INFO  12:05:27,540 - #11 print
+INFO  12:05:27,540 - #43 (
+INFO  12:05:27,540 - #54 factorial
+INFO  12:05:27,540 - #43 (
+INFO  12:05:27,540 - #53 5
+INFO  12:05:27,541 - #44 )
+INFO  12:05:27,541 - #44 )
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,541 - #11 print
+INFO  12:05:27,541 - #43 (
+INFO  12:05:27,541 - #54 eol
+INFO  12:05:27,541 - #44 )
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,541 - #54 ints
+INFO  12:05:27,541 - #36 =
+INFO  12:05:27,541 - #10 new
+INFO  12:05:27,541 - #54 int
+INFO  12:05:27,541 - #47 [
+INFO  12:05:27,541 - #53 3
+INFO  12:05:27,541 - #48 ]
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,541 - #54 ints
+INFO  12:05:27,541 - #47 [
+INFO  12:05:27,541 - #53 0
+INFO  12:05:27,541 - #48 ]
+INFO  12:05:27,541 - #36 =
+INFO  12:05:27,541 - #53 1
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,541 - #54 ints
+INFO  12:05:27,541 - #47 [
+INFO  12:05:27,541 - #53 1
+INFO  12:05:27,541 - #48 ]
+INFO  12:05:27,541 - #36 =
+INFO  12:05:27,541 - #53 2
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,541 - #54 ints
+INFO  12:05:27,541 - #47 [
+INFO  12:05:27,541 - #53 2
+INFO  12:05:27,541 - #48 ]
+INFO  12:05:27,541 - #36 =
+INFO  12:05:27,541 - #53 3
+INFO  12:05:27,541 - #40 ;
+INFO  12:05:27,542 - #54 holder
+INFO  12:05:27,542 - #36 =
+INFO  12:05:27,542 - #10 new
+INFO  12:05:27,542 - #54 Holder
+INFO  12:05:27,542 - #40 ;
+INFO  12:05:27,542 - #54 holder
+INFO  12:05:27,542 - #42 .
+INFO  12:05:27,542 - #54 nums
+INFO  12:05:27,542 - #36 =
+INFO  12:05:27,542 - #54 ints
+INFO  12:05:27,542 - #42 .
+INFO  12:05:27,542 - #22 map
+INFO  12:05:27,542 - #43 (
+INFO  12:05:27,542 - #54 mapper
+INFO  12:05:27,542 - #39 =>
+INFO  12:05:27,542 - #54 base
+INFO  12:05:27,542 - #42 .
+INFO  12:05:27,542 - #54 twice
+INFO  12:05:27,542 - #43 (
+INFO  12:05:27,542 - #54 mapper
+INFO  12:05:27,542 - #44 )
+INFO  12:05:27,542 - #44 )
+INFO  12:05:27,542 - #40 ;
+INFO  12:05:27,542 - #54 holder
+INFO  12:05:27,543 - #42 .
+INFO  12:05:27,543 - #54 found
+INFO  12:05:27,543 - #36 =
+INFO  12:05:27,543 - #54 holder
+INFO  12:05:27,543 - #42 .
+INFO  12:05:27,543 - #54 nums
+INFO  12:05:27,543 - #42 .
+INFO  12:05:27,543 - #21 findAny
+INFO  12:05:27,543 - #43 (
+INFO  12:05:27,543 - #53 4
+INFO  12:05:27,543 - #44 )
+INFO  12:05:27,543 - #40 ;
+INFO  12:05:27,543 - #11 print
+INFO  12:05:27,544 - #43 (
+INFO  12:05:27,544 - #54 holder
+INFO  12:05:27,544 - #42 .
+INFO  12:05:27,544 - #54 nums
+INFO  12:05:27,544 - #47 [
+INFO  12:05:27,544 - #53 0
+INFO  12:05:27,544 - #48 ]
+INFO  12:05:27,544 - #41 ,
+INFO  12:05:27,544 - #53 1
+INFO  12:05:27,544 - #44 )
+INFO  12:05:27,544 - #40 ;
+INFO  12:05:27,544 - #11 print
+INFO  12:05:27,544 - #43 (
+INFO  12:05:27,544 - #54 holder
+INFO  12:05:27,544 - #42 .
+INFO  12:05:27,544 - #54 nums
+INFO  12:05:27,544 - #47 [
+INFO  12:05:27,544 - #53 1
+INFO  12:05:27,544 - #48 ]
+INFO  12:05:27,544 - #41 ,
+INFO  12:05:27,544 - #53 1
+INFO  12:05:27,544 - #44 )
+INFO  12:05:27,544 - #40 ;
+INFO  12:05:27,544 - #11 print
+INFO  12:05:27,544 - #43 (
+INFO  12:05:27,544 - #54 holder
+INFO  12:05:27,544 - #42 .
+INFO  12:05:27,545 - #54 nums
+INFO  12:05:27,545 - #47 [
+INFO  12:05:27,545 - #53 2
+INFO  12:05:27,545 - #48 ]
+INFO  12:05:27,545 - #41 ,
+INFO  12:05:27,545 - #53 1
+INFO  12:05:27,545 - #44 )
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #11 print
+INFO  12:05:27,545 - #43 (
+INFO  12:05:27,545 - #54 holder
+INFO  12:05:27,545 - #42 .
+INFO  12:05:27,545 - #54 found
+INFO  12:05:27,545 - #41 ,
+INFO  12:05:27,545 - #53 1
+INFO  12:05:27,545 - #44 )
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #11 print
+INFO  12:05:27,545 - #43 (
+INFO  12:05:27,545 - #54 eol
+INFO  12:05:27,545 - #44 )
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #54 chars
+INFO  12:05:27,545 - #36 =
+INFO  12:05:27,545 - #10 new
+INFO  12:05:27,545 - #54 char
+INFO  12:05:27,545 - #47 [
+INFO  12:05:27,545 - #53 2
+INFO  12:05:27,545 - #48 ]
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #54 chars
+INFO  12:05:27,545 - #47 [
+INFO  12:05:27,545 - #53 0
+INFO  12:05:27,545 - #48 ]
+INFO  12:05:27,545 - #36 =
+INFO  12:05:27,545 - #52 'A'
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #54 chars
+INFO  12:05:27,545 - #47 [
+INFO  12:05:27,545 - #53 1
+INFO  12:05:27,545 - #48 ]
+INFO  12:05:27,545 - #36 =
+INFO  12:05:27,545 - #52 'B'
+INFO  12:05:27,545 - #40 ;
+INFO  12:05:27,545 - #54 mapped
+INFO  12:05:27,545 - #36 =
+INFO  12:05:27,545 - #54 chars
+INFO  12:05:27,545 - #42 .
+INFO  12:05:27,545 - #22 map
+INFO  12:05:27,545 - #43 (
+INFO  12:05:27,545 - #54 charMapper
+INFO  12:05:27,545 - #39 =>
+INFO  12:05:27,545 - #54 ord
+INFO  12:05:27,546 - #43 (
+INFO  12:05:27,546 - #54 charMapper
+INFO  12:05:27,546 - #44 )
+INFO  12:05:27,546 - #23 +
+INFO  12:05:27,546 - #53 1
+INFO  12:05:27,546 - #44 )
+INFO  12:05:27,546 - #40 ;
+INFO  12:05:27,546 - #11 print
+INFO  12:05:27,546 - #43 (
+INFO  12:05:27,546 - #54 mapped
+INFO  12:05:27,546 - #47 [
+INFO  12:05:27,546 - #53 0
+INFO  12:05:27,546 - #48 ]
+INFO  12:05:27,546 - #44 )
+INFO  12:05:27,546 - #40 ;
+INFO  12:05:27,546 - #11 print
+INFO  12:05:27,546 - #43 (
+INFO  12:05:27,546 - #54 mapped
+INFO  12:05:27,546 - #47 [
+INFO  12:05:27,546 - #53 1
+INFO  12:05:27,546 - #48 ]
+INFO  12:05:27,546 - #44 )
+INFO  12:05:27,546 - #40 ;
+INFO  12:05:27,546 - #11 print
+INFO  12:05:27,546 - #43 (
+INFO  12:05:27,546 - #54 eol
+INFO  12:05:27,546 - #44 )
+INFO  12:05:27,546 - #40 ;
+INFO  12:05:27,546 - #54 bools
+INFO  12:05:27,547 - #36 =
+INFO  12:05:27,547 - #10 new
+INFO  12:05:27,547 - #54 bool
+INFO  12:05:27,547 - #47 [
+INFO  12:05:27,548 - #53 2
+INFO  12:05:27,548 - #48 ]
+INFO  12:05:27,548 - #40 ;
+INFO  12:05:27,548 - #54 bools
+INFO  12:05:27,548 - #47 [
+INFO  12:05:27,548 - #53 1
+INFO  12:05:27,549 - #48 ]
+INFO  12:05:27,549 - #36 =
+INFO  12:05:27,549 - #51 true
+INFO  12:05:27,549 - #40 ;
+INFO  12:05:27,549 - #54 found
+INFO  12:05:27,549 - #36 =
+INFO  12:05:27,549 - #54 bools
+INFO  12:05:27,549 - #42 .
+INFO  12:05:27,550 - #21 findAny
+INFO  12:05:27,550 - #43 (
+INFO  12:05:27,550 - #51 true
+INFO  12:05:27,550 - #44 )
+INFO  12:05:27,550 - #40 ;
+INFO  12:05:27,550 - #11 print
+INFO  12:05:27,550 - #43 (
+INFO  12:05:27,550 - #54 found
+INFO  12:05:27,550 - #41 ,
+INFO  12:05:27,550 - #53 1
+INFO  12:05:27,550 - #44 )
+INFO  12:05:27,550 - #40 ;
+INFO  12:05:27,550 - #11 print
+INFO  12:05:27,550 - #43 (
+INFO  12:05:27,550 - #54 eol
+INFO  12:05:27,550 - #44 )
+INFO  12:05:27,550 - #40 ;
+INFO  12:05:27,550 - #54 refs
+INFO  12:05:27,550 - #36 =
+INFO  12:05:27,550 - #10 new
+INFO  12:05:27,550 - #54 Base
+INFO  12:05:27,550 - #47 [
+INFO  12:05:27,550 - #53 2
+INFO  12:05:27,550 - #48 ]
+INFO  12:05:27,550 - #40 ;
+INFO  12:05:27,550 - #54 refs
+INFO  12:05:27,550 - #47 [
+INFO  12:05:27,550 - #53 0
+INFO  12:05:27,550 - #48 ]
+INFO  12:05:27,550 - #36 =
+INFO  12:05:27,550 - #54 derived
+INFO  12:05:27,550 - #40 ;
+INFO  12:05:27,550 - #54 refs
+INFO  12:05:27,550 - #47 [
+INFO  12:05:27,551 - #53 1
+INFO  12:05:27,551 - #48 ]
+INFO  12:05:27,551 - #36 =
+INFO  12:05:27,551 - #54 base
+INFO  12:05:27,551 - #40 ;
+INFO  12:05:27,551 - #54 mappedRefs
+INFO  12:05:27,551 - #36 =
+INFO  12:05:27,551 - #54 refs
+INFO  12:05:27,551 - #42 .
+INFO  12:05:27,551 - #22 map
+INFO  12:05:27,551 - #43 (
+INFO  12:05:27,551 - #54 baseMapper
+INFO  12:05:27,551 - #39 =>
+INFO  12:05:27,551 - #54 baseMapper
+INFO  12:05:27,551 - #44 )
+INFO  12:05:27,551 - #40 ;
+INFO  12:05:27,551 - #11 print
+INFO  12:05:27,551 - #43 (
+INFO  12:05:27,551 - #54 mappedRefs
+INFO  12:05:27,551 - #47 [
+INFO  12:05:27,551 - #53 0
+INFO  12:05:27,551 - #48 ]
+INFO  12:05:27,551 - #42 .
+INFO  12:05:27,551 - #54 get
+INFO  12:05:27,551 - #43 (
+INFO  12:05:27,551 - #44 )
+INFO  12:05:27,551 - #44 )
+INFO  12:05:27,551 - #40 ;
+INFO  12:05:27,551 - #11 print
+INFO  12:05:27,551 - #43 (
+INFO  12:05:27,551 - #54 eol
+INFO  12:05:27,551 - #44 )
+INFO  12:05:27,551 - #40 ;
+INFO  12:05:27,551 - #17 for
+INFO  12:05:27,551 - #43 (
+INFO  12:05:27,551 - #54 i
+INFO  12:05:27,551 - #36 =
+INFO  12:05:27,551 - #53 0
+INFO  12:05:27,551 - #40 ;
+INFO  12:05:27,551 - #54 i
+INFO  12:05:27,551 - #32 <
+INFO  12:05:27,551 - #53 5
+INFO  12:05:27,552 - #40 ;
+INFO  12:05:27,552 - #54 i
+INFO  12:05:27,552 - #37 ++
+INFO  12:05:27,552 - #44 )
+INFO  12:05:27,553 - #45 {
+INFO  12:05:27,553 - #9 if
+INFO  12:05:27,553 - #43 (
+INFO  12:05:27,553 - #54 i
+INFO  12:05:27,553 - #28 ==
+INFO  12:05:27,553 - #53 1
+INFO  12:05:27,554 - #44 )
+INFO  12:05:27,554 - #16 continue
+INFO  12:05:27,554 - #40 ;
+INFO  12:05:27,554 - #9 if
+INFO  12:05:27,555 - #43 (
+INFO  12:05:27,555 - #54 i
+INFO  12:05:27,555 - #28 ==
+INFO  12:05:27,555 - #53 4
+INFO  12:05:27,555 - #44 )
+INFO  12:05:27,555 - #3 break
+INFO  12:05:27,555 - #40 ;
+INFO  12:05:27,555 - #11 print
+INFO  12:05:27,555 - #43 (
+INFO  12:05:27,555 - #54 i
+INFO  12:05:27,555 - #41 ,
+INFO  12:05:27,555 - #53 1
+INFO  12:05:27,555 - #44 )
+INFO  12:05:27,555 - #40 ;
+INFO  12:05:27,555 - #46 }
+INFO  12:05:27,555 - #11 print
+INFO  12:05:27,555 - #43 (
+INFO  12:05:27,555 - #54 eol
+INFO  12:05:27,557 - #44 )
+INFO  12:05:27,557 - #40 ;
+INFO  12:05:27,557 - #46 }
+INFO  12:05:27,557 - #46 }
+INFO  12:05:27,565 - Pretraga na 9 (this), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1ec318
+INFO  12:05:27,565 - Pretraga na 9 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  12:05:27,565 - Pretraga na 9 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7e0b0338
+INFO  12:05:27,565 - Pretraga na 14 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@617faa95
+INFO  12:05:27,566 - Pretraga na 19 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31dc339b
+INFO  12:05:27,566 - Pretraga na 29 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31610302
+INFO  12:05:27,566 - Pretraga na 52 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@52a86356
+INFO  12:05:27,566 - Pretraga na 53 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@52a86356
+INFO  12:05:27,566 - Pretraga na 53 (factorial), nadjeno rs.etf.pp1.symboltable.concepts.Obj@66480dd7
+INFO  12:05:27,566 - Pretraga na 53 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@52a86356
+INFO  12:05:27,566 - Pretraga na 59 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  12:05:27,568 - Kreiranje objekta klase Derived na liniji 59
+INFO  12:05:27,568 - Pretraga na 60 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  12:05:27,568 - Pretraga na 60 (set), nadjeno rs.etf.pp1.symboltable.concepts.Obj@71318ec4
+INFO  12:05:27,568 - Pretraga na 61 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 61 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  12:05:27,568 - Pretraga na 62 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 62 (get), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  12:05:27,568 - Pretraga na 63 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 63 (twice), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  12:05:27,568 - Pretraga na 63 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 63 (get), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  12:05:27,568 - Pretraga na 64 (factorial), nadjeno rs.etf.pp1.symboltable.concepts.Obj@66480dd7
+INFO  12:05:27,568 - Pretraga na 65 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,568 - Pretraga na 67 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@63753b6d
+INFO  12:05:27,568 - Pretraga na 68 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@63753b6d
+INFO  12:05:27,568 - Pretraga na 68 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6b09bb57
+INFO  12:05:27,568 - Pretraga na 69 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@63753b6d
+INFO  12:05:27,568 - Pretraga na 69 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6536e911
+INFO  12:05:27,568 - Pretraga na 70 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@63753b6d
+INFO  12:05:27,568 - Pretraga na 70 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@520a3426
+INFO  12:05:27,568 - Pretraga na 71 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Kreiranje objekta klase Holder na liniji 71
+INFO  12:05:27,568 - Pretraga na 72 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 72 (nums), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6c3708b3
+INFO  12:05:27,568 - Pretraga na 72 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@63753b6d
+INFO  12:05:27,568 - Pretraga na 72 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 72 (twice), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2038ae61
+INFO  12:05:27,568 - Pretraga na 72 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6f1fba17
+INFO  12:05:27,568 - Pretraga na 72 (mapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6f1fba17
+INFO  12:05:27,568 - Pretraga na 73 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 73 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@210366b4
+INFO  12:05:27,568 - Pretraga na 73 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 73 (nums), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6c3708b3
+INFO  12:05:27,568 - Pretraga na 74 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 74 (nums), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6c3708b3
+INFO  12:05:27,568 - Pretraga na 74 (nums[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@eec5a4a
+INFO  12:05:27,568 - Pretraga na 75 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 75 (nums), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6c3708b3
+INFO  12:05:27,568 - Pretraga na 75 (nums[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2b2948e2
+INFO  12:05:27,568 - Pretraga na 76 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 76 (nums), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6c3708b3
+INFO  12:05:27,568 - Pretraga na 76 (nums[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6ddf90b0
+INFO  12:05:27,568 - Pretraga na 77 (holder), nadjeno rs.etf.pp1.symboltable.concepts.Obj@18eed359
+INFO  12:05:27,568 - Pretraga na 77 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@210366b4
+INFO  12:05:27,568 - Pretraga na 78 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,568 - Pretraga na 80 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57536d79
+INFO  12:05:27,568 - Pretraga na 81 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57536d79
+INFO  12:05:27,568 - Pretraga na 81 (chars[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3b0143d3
+INFO  12:05:27,568 - Pretraga na 82 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57536d79
+INFO  12:05:27,568 - Pretraga na 82 (chars[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5a8e6209
+INFO  12:05:27,568 - Pretraga na 83 (mapped), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4b4523f8
+INFO  12:05:27,568 - Pretraga na 83 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@57536d79
+INFO  12:05:27,568 - Pretraga na 83 (ord), nadjeno rs.etf.pp1.symboltable.concepts.Obj@148080bb
+INFO  12:05:27,568 - Pretraga na 83 (charMapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@731a74c
+INFO  12:05:27,568 - Pretraga na 83 (charMapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@731a74c
+INFO  12:05:27,568 - Pretraga na 84 (mapped), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4b4523f8
+INFO  12:05:27,568 - Pretraga na 84 (mapped[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7791a895
+INFO  12:05:27,568 - Pretraga na 85 (mapped), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4b4523f8
+INFO  12:05:27,568 - Pretraga na 85 (mapped[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3a5ed7a6
+INFO  12:05:27,568 - Pretraga na 86 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,568 - Pretraga na 88 (bools), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6325a3ee
+INFO  12:05:27,568 - Pretraga na 89 (bools), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6325a3ee
+INFO  12:05:27,568 - Pretraga na 89 (bools[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1d16f93d
+INFO  12:05:27,568 - Pretraga na 90 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@67b92f0a
+INFO  12:05:27,568 - Pretraga na 90 (bools), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6325a3ee
+INFO  12:05:27,568 - Pretraga na 91 (found), nadjeno rs.etf.pp1.symboltable.concepts.Obj@67b92f0a
+INFO  12:05:27,568 - Pretraga na 92 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,568 - Pretraga na 94 (refs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2b9627bc
+INFO  12:05:27,568 - Pretraga na 95 (refs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2b9627bc
+INFO  12:05:27,568 - Pretraga na 95 (refs[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@65e2dbf3
+INFO  12:05:27,568 - Pretraga na 95 (derived), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5383967b
+INFO  12:05:27,568 - Pretraga na 96 (refs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2b9627bc
+INFO  12:05:27,568 - Pretraga na 96 (refs[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@4f970963
+INFO  12:05:27,568 - Pretraga na 96 (base), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fc6f14e
+INFO  12:05:27,568 - Pretraga na 97 (mappedRefs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@61f8bee4
+INFO  12:05:27,568 - Pretraga na 97 (refs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@2b9627bc
+INFO  12:05:27,568 - Pretraga na 97 (baseMapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7b49cea0
+INFO  12:05:27,568 - Pretraga na 97 (baseMapper), nadjeno rs.etf.pp1.symboltable.concepts.Obj@7b49cea0
+INFO  12:05:27,568 - Pretraga na 98 (mappedRefs), nadjeno rs.etf.pp1.symboltable.concepts.Obj@61f8bee4
+INFO  12:05:27,568 - Pretraga na 98 (mappedRefs[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@887af79
+INFO  12:05:27,568 - Pretraga na 98 (get), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e127982
+INFO  12:05:27,568 - Pretraga na 99 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,568 - Pretraga na 101 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,568 - Pretraga na 101 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,568 - Pretraga na 101 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,569 - Pretraga na 103 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,569 - Pretraga na 104 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,569 - Pretraga na 105 (i), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e0e048a
+INFO  12:05:27,569 - Pretraga na 107 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f9d02cb
+INFO  12:05:27,578 - Object code written to C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\codegen-focus.obj
+INFO  12:05:27,578 - ===================================

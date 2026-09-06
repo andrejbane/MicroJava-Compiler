@@ -1,0 +1,76 @@
+INFO  04:02:36,725 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n5_misuse.mj
+INFO  04:02:36,768 - #2 program
+INFO  04:02:36,768 - #54 p
+INFO  04:02:36,768 - #54 int
+INFO  04:02:36,769 - #54 niz
+INFO  04:02:36,769 - #47 [
+INFO  04:02:36,769 - #48 ]
+INFO  04:02:36,769 - #40 ;
+INFO  04:02:36,770 - #45 {
+INFO  04:02:36,770 - #54 int
+INFO  04:02:36,770 - #54 foo
+INFO  04:02:36,770 - #43 (
+INFO  04:02:36,771 - #54 int
+INFO  04:02:36,771 - #54 a
+INFO  04:02:36,771 - #44 )
+INFO  04:02:36,771 - #45 {
+INFO  04:02:36,772 - #13 return
+INFO  04:02:36,772 - #54 a
+INFO  04:02:36,772 - #40 ;
+INFO  04:02:36,773 - #46 }
+INFO  04:02:36,773 - #14 void
+INFO  04:02:36,773 - #54 main
+INFO  04:02:36,779 - #43 (
+INFO  04:02:36,779 - #44 )
+INFO  04:02:36,779 - #54 int
+INFO  04:02:36,779 - #54 x
+INFO  04:02:36,779 - #40 ;
+INFO  04:02:36,779 - #54 int
+INFO  04:02:36,779 - #54 y
+INFO  04:02:36,779 - #40 ;
+INFO  04:02:36,779 - #45 {
+INFO  04:02:36,779 - #54 x
+INFO  04:02:36,779 - #36 =
+INFO  04:02:36,779 - #53 5
+INFO  04:02:36,779 - #40 ;
+INFO  04:02:36,779 - #54 y
+INFO  04:02:36,780 - #36 =
+INFO  04:02:36,780 - #54 x
+INFO  04:02:36,780 - #47 [
+INFO  04:02:36,780 - #53 0
+INFO  04:02:36,780 - #48 ]
+INFO  04:02:36,780 - #40 ;
+INFO  04:02:36,780 - #54 x
+INFO  04:02:36,780 - #43 (
+INFO  04:02:36,780 - #44 )
+INFO  04:02:36,780 - #40 ;
+INFO  04:02:36,780 - #54 niz
+INFO  04:02:36,780 - #36 =
+INFO  04:02:36,780 - #10 new
+INFO  04:02:36,780 - #54 int
+INFO  04:02:36,780 - #47 [
+INFO  04:02:36,780 - #53 2
+INFO  04:02:36,780 - #48 ]
+INFO  04:02:36,780 - #40 ;
+INFO  04:02:36,780 - #54 y
+INFO  04:02:36,780 - #36 =
+INFO  04:02:36,780 - #54 niz
+INFO  04:02:36,780 - #23 +
+INFO  04:02:36,780 - #53 1
+INFO  04:02:36,781 - #40 ;
+INFO  04:02:36,781 - #46 }
+INFO  04:02:36,781 - #46 }
+INFO  04:02:36,785 - Pretraga na 6 (a), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6eebc39e
+INFO  04:02:36,786 - Pretraga na 11 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@f6c48ac
+INFO  04:02:36,786 - Pretraga na 12 (y), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13deb50e
+INFO  04:02:36,786 - Pretraga na 12 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@f6c48ac
+ERROR 04:02:36,786 - Indeksiranje se moze primeniti samo na niz na liniji 12
+ERROR 04:02:36,786 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 12
+INFO  04:02:36,786 - Pretraga na 13 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@f6c48ac
+ERROR 04:02:36,786 - x nije metoda ili funkcija na liniji 13
+INFO  04:02:36,786 - Pretraga na 14 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3abbfa04
+INFO  04:02:36,786 - Pretraga na 15 (y), nadjeno rs.etf.pp1.symboltable.concepts.Obj@13deb50e
+INFO  04:02:36,786 - Pretraga na 15 (niz), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3abbfa04
+ERROR 04:02:36,786 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 15
+INFO  04:02:36,786 - Semantic errors detected in n5_misuse.mj
+INFO  04:02:36,786 - ===================================

@@ -1,0 +1,41 @@
+INFO  03:59:50,394 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t1_forward_method.mj
+INFO  03:59:50,439 - #2 program
+INFO  03:59:50,439 - #54 p
+INFO  03:59:50,439 - #5 class
+INFO  03:59:50,440 - #54 A
+INFO  03:59:50,440 - #45 {
+INFO  03:59:50,440 - #45 {
+INFO  03:59:50,440 - #54 int
+INFO  03:59:50,440 - #54 f
+INFO  03:59:50,441 - #43 (
+INFO  03:59:50,441 - #44 )
+INFO  03:59:50,441 - #45 {
+INFO  03:59:50,442 - #13 return
+INFO  03:59:50,442 - #54 g
+INFO  03:59:50,442 - #43 (
+INFO  03:59:50,442 - #44 )
+INFO  03:59:50,442 - #40 ;
+INFO  03:59:50,443 - #46 }
+INFO  03:59:50,443 - #54 int
+INFO  03:59:50,444 - #54 g
+INFO  03:59:50,444 - #43 (
+INFO  03:59:50,444 - #44 )
+INFO  03:59:50,449 - #45 {
+INFO  03:59:50,449 - #13 return
+INFO  03:59:50,449 - #53 1
+INFO  03:59:50,449 - #40 ;
+INFO  03:59:50,449 - #46 }
+INFO  03:59:50,449 - #46 }
+INFO  03:59:50,449 - #46 }
+INFO  03:59:50,449 - #45 {
+INFO  03:59:50,449 - #14 void
+INFO  03:59:50,449 - #54 main
+INFO  03:59:50,450 - #43 (
+INFO  03:59:50,450 - #44 )
+INFO  03:59:50,450 - #45 {
+INFO  03:59:50,450 - #46 }
+INFO  03:59:50,450 - #46 }
+ERROR 03:59:50,454 - Simbol g nije deklarisan na liniji 5
+ERROR 03:59:50,454 - Tip return izraza ne odgovara povratnom tipu metode na liniji 5
+INFO  03:59:50,454 - Semantic errors detected in t1_forward_method.mj
+INFO  03:59:50,454 - ===================================

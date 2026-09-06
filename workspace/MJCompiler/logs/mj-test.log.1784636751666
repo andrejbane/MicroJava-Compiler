@@ -1,0 +1,41 @@
+INFO  14:21:01,381 - Compiling source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\object-lexical-error.mj
+INFO  14:21:01,446 - #2 program
+INFO  14:21:01,446 - #54 lexical_error
+INFO  14:21:01,446 - #45 {
+INFO  14:21:01,448 - #14 void
+INFO  14:21:01,449 - #54 main
+INFO  14:21:01,449 - #43 (
+INFO  14:21:01,449 - #44 )
+INFO  14:21:01,450 - #45 {
+INFO  14:21:01,451 - #11 print
+INFO  14:21:01,451 - #43 (
+INFO  14:21:01,451 - #53 1
+INFO  14:21:01,451 - #44 )
+INFO  14:21:01,453 - #40 ;
+INFO  14:21:01,453 - #46 }
+INFO  14:21:01,453 - #46 }
+ERROR 14:21:01,455 - Compilation failed for C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\object-lexical-error.mj
+java.lang.IllegalStateException: Lexical errors detected in object-lexical-error.mj
+	at rs.ac.bg.etf.pp1.MJCodeGeneratorTest.compile(MJCodeGeneratorTest.java:70)
+	at rs.ac.bg.etf.pp1.MJCodeGeneratorTest.main(MJCodeGeneratorTest.java:38)
+INFO  14:21:01,462 - Compiling source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\object-semantic-error.mj
+INFO  14:21:01,462 - #2 program
+INFO  14:21:01,462 - #54 semantic_error
+INFO  14:21:01,462 - #45 {
+INFO  14:21:01,462 - #14 void
+INFO  14:21:01,462 - #54 main
+INFO  14:21:01,462 - #43 (
+INFO  14:21:01,463 - #44 )
+INFO  14:21:01,463 - #45 {
+INFO  14:21:01,463 - #54 missing
+INFO  14:21:01,463 - #36 =
+INFO  14:21:01,463 - #53 1
+INFO  14:21:01,463 - #40 ;
+INFO  14:21:01,463 - #46 }
+INFO  14:21:01,463 - #46 }
+ERROR 14:21:01,469 - Simbol missing nije deklarisan na liniji 5
+ERROR 14:21:01,469 - Leva strana dodele mora biti promenljiva, polje ili element niza na liniji 5
+ERROR 14:21:01,469 - Compilation failed for C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\object-semantic-error.mj
+java.lang.IllegalStateException: Semantic errors detected in object-semantic-error.mj
+	at rs.ac.bg.etf.pp1.MJCodeGeneratorTest.compile(MJCodeGeneratorTest.java:89)
+	at rs.ac.bg.etf.pp1.MJCodeGeneratorTest.main(MJCodeGeneratorTest.java:38)

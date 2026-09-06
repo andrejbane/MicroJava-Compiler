@@ -1,0 +1,59 @@
+INFO  04:05:32,706 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\v3_multilevel_abstract_missing.mj
+INFO  04:05:32,750 - #2 program
+INFO  04:05:32,750 - #54 p
+INFO  04:05:32,750 - #6 abstract
+INFO  04:05:32,750 - #5 class
+INFO  04:05:32,751 - #54 A
+INFO  04:05:32,751 - #45 {
+INFO  04:05:32,751 - #45 {
+INFO  04:05:32,751 - #6 abstract
+INFO  04:05:32,751 - #14 void
+INFO  04:05:32,751 - #54 f
+INFO  04:05:32,751 - #43 (
+INFO  04:05:32,752 - #44 )
+INFO  04:05:32,752 - #40 ;
+INFO  04:05:32,752 - #6 abstract
+INFO  04:05:32,753 - #54 int
+INFO  04:05:32,753 - #54 g
+INFO  04:05:32,753 - #43 (
+INFO  04:05:32,753 - #54 int
+INFO  04:05:32,753 - #54 x
+INFO  04:05:32,753 - #44 )
+INFO  04:05:32,754 - #40 ;
+INFO  04:05:32,754 - #46 }
+INFO  04:05:32,754 - #46 }
+INFO  04:05:32,754 - #5 class
+INFO  04:05:32,754 - #54 C
+INFO  04:05:32,754 - #15 extends
+INFO  04:05:32,754 - #54 A
+INFO  04:05:32,754 - #45 {
+INFO  04:05:32,754 - #45 {
+INFO  04:05:32,754 - #14 void
+INFO  04:05:32,755 - #54 f
+INFO  04:05:32,755 - #43 (
+INFO  04:05:32,755 - #44 )
+INFO  04:05:32,755 - #45 {
+INFO  04:05:32,755 - #46 }
+INFO  04:05:32,755 - #46 }
+INFO  04:05:32,756 - #46 }
+INFO  04:05:32,756 - #45 {
+INFO  04:05:32,756 - #14 void
+INFO  04:05:32,756 - #54 main
+INFO  04:05:32,756 - #43 (
+INFO  04:05:32,756 - #44 )
+INFO  04:05:32,756 - #54 C
+INFO  04:05:32,756 - #54 c
+INFO  04:05:32,756 - #40 ;
+INFO  04:05:32,757 - #45 {
+INFO  04:05:32,757 - #54 c
+INFO  04:05:32,757 - #36 =
+INFO  04:05:32,757 - #10 new
+INFO  04:05:32,757 - #54 C
+INFO  04:05:32,757 - #40 ;
+INFO  04:05:32,758 - #46 }
+INFO  04:05:32,758 - #46 }
+ERROR 04:05:32,763 - Klasa C ne implementira apstraktnu metodu g na liniji 10
+INFO  04:05:32,763 - Pretraga na 20 (c), nadjeno rs.etf.pp1.symboltable.concepts.Obj@589838eb
+INFO  04:05:32,763 - Kreiranje objekta klase C na liniji 20
+INFO  04:05:32,763 - Semantic errors detected in v3_multilevel_abstract_missing.mj
+INFO  04:05:32,763 - ===================================

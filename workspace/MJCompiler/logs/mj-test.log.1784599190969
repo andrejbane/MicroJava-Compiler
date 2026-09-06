@@ -1,0 +1,35 @@
+INFO  03:59:50,682 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\t2_missing_abstract.mj
+INFO  03:59:50,721 - #2 program
+INFO  03:59:50,722 - #54 p
+INFO  03:59:50,722 - #6 abstract
+INFO  03:59:50,722 - #5 class
+INFO  03:59:50,722 - #54 A
+INFO  03:59:50,722 - #45 {
+INFO  03:59:50,722 - #45 {
+INFO  03:59:50,723 - #6 abstract
+INFO  03:59:50,723 - #54 int
+INFO  03:59:50,723 - #54 f
+INFO  03:59:50,723 - #43 (
+INFO  03:59:50,724 - #44 )
+INFO  03:59:50,724 - #40 ;
+INFO  03:59:50,724 - #46 }
+INFO  03:59:50,724 - #46 }
+INFO  03:59:50,724 - #5 class
+INFO  03:59:50,725 - #54 B
+INFO  03:59:50,725 - #15 extends
+INFO  03:59:50,725 - #54 A
+INFO  03:59:50,725 - #45 {
+INFO  03:59:50,725 - #45 {
+INFO  03:59:50,730 - #46 }
+INFO  03:59:50,730 - #46 }
+INFO  03:59:50,730 - #45 {
+INFO  03:59:50,730 - #14 void
+INFO  03:59:50,730 - #54 main
+INFO  03:59:50,730 - #43 (
+INFO  03:59:50,730 - #44 )
+INFO  03:59:50,731 - #45 {
+INFO  03:59:50,731 - #46 }
+INFO  03:59:50,731 - #46 }
+ERROR 03:59:50,735 - Klasa B ne implementira apstraktnu metodu f na liniji 9
+INFO  03:59:50,735 - Semantic errors detected in t2_missing_abstract.mj
+INFO  03:59:50,735 - ===================================

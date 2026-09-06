@@ -1,0 +1,24 @@
+INFO  04:11:17,301 - Semantically checking source file: C:\dev\pp1domaci\workspace\MJCompiler\test\review\n7_new_primitive.mj
+INFO  04:11:17,342 - #2 program
+INFO  04:11:17,342 - #54 p
+INFO  04:11:17,342 - #45 {
+INFO  04:11:17,343 - #14 void
+INFO  04:11:17,343 - #54 main
+INFO  04:11:17,343 - #43 (
+INFO  04:11:17,344 - #44 )
+INFO  04:11:17,344 - #54 int
+INFO  04:11:17,344 - #54 x
+INFO  04:11:17,345 - #40 ;
+INFO  04:11:17,345 - #45 {
+INFO  04:11:17,345 - #54 x
+INFO  04:11:17,346 - #36 =
+INFO  04:11:17,346 - #10 new
+INFO  04:11:17,346 - #54 int
+INFO  04:11:17,346 - #40 ;
+INFO  04:11:17,346 - #46 }
+INFO  04:11:17,346 - #46 }
+INFO  04:11:17,350 - Pretraga na 7 (x), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6a4f787b
+ERROR 04:11:17,351 - Operator new bez [] zahteva tip klase na liniji 7
+ERROR 04:11:17,351 - Tipovi leve i desne strane dodele nisu kompatibilni na liniji 7
+INFO  04:11:17,351 - Semantic errors detected in n7_new_primitive.mj
+INFO  04:11:17,351 - ===================================

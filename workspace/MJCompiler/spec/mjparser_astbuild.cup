@@ -1,0 +1,660 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+parser code {:
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+
+	public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+		done_parsing();
+		report_error(message, info);
+	}
+
+	public void syntax_error(Symbol currentToken) {
+		report_error("Sintaksna greska", currentToken);
+	}
+
+	public void unrecovered_syntax_error(Symbol currentToken) throws java.lang.Exception {
+		report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", currentToken);
+	}
+
+	public void report_error(String message, Object info) {
+		errorDetected = true;
+		StringBuilder errorMessage = new StringBuilder(message);
+		if (info instanceof Symbol) {
+			Symbol symbol = (Symbol) info;
+			errorMessage.append(" na liniji ").append(symbol.left)
+				.append(", kolona ").append(symbol.right);
+		}
+		log.error(errorMessage.toString());
+	}
+
+	public boolean hasErrors() {
+		return errorDetected;
+	}
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol symbol = getScanner().next_token();
+	if (symbol != null && symbol.value != null) {
+		log.info(symbol.toString() + " " + symbol.value.toString());
+	}
+	return symbol;
+:}
+
+terminal PROG, BREAK, ENUM, CLASS, ABSTRACT, ELSE, CONST, IF, NEW;
+terminal PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, FOR, FOREACH, LENGTH;
+terminal SWITCH, CASE, FINDANY, MAP;
+terminal PLUS, MINUS, MUL, DIV, MOD;
+terminal EQUALSTO, DIFFERENT, GREATER, EGREATER, LESS, ELESS;
+terminal AND, OR, EQUAL, PLUSPLUS, MINUSMINUS, ARROW;
+terminal SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
+terminal LSQBRACE, RSQBRACE, QUESTION, DOUBLEDOT;
+terminal String BOOL;
+terminal String CHAR;
+terminal Integer NUMBER;
+terminal String IDENT;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
+nonterminal GlobalDeclarationList GlobalDeclarationList;
+nonterminal GlobalDeclaration GlobalDeclaration;
+nonterminal ConstDeclaration ConstDeclaration;
+nonterminal ConstDeclaratorList ConstDeclaratorList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ConstDeclarator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ConstValue;
+nonterminal VariableDeclaration VariableDeclaration;
+nonterminal VariableDeclaratorList VariableDeclaratorList;
+nonterminal VariableDeclaratorListPrefix VariableDeclaratorListPrefix;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj VariableDeclarator;
+nonterminal ArraySuffix ArraySuffix;
+nonterminal VariableDeclarationRecovery VariableDeclarationRecovery;
+nonterminal VariableDeclaratorCommaRecovery VariableDeclaratorCommaRecovery;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDeclaration, ConcreteClassHeader;
+nonterminal ConcreteMethodSectionOpt ConcreteMethodSectionOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj AbstractClassDeclaration, AbstractClassHeader;
+nonterminal AbstractMethodSectionOpt AbstractMethodSectionOpt;
+nonterminal ClassFieldList ClassFieldList;
+nonterminal ExtendsRecovery ExtendsRecovery;
+nonterminal ClassFieldRecovery ClassFieldRecovery;
+nonterminal ClassFieldToMethodRecovery ClassFieldToMethodRecovery;
+nonterminal MethodDeclarationList MethodDeclarationList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDeclaration, MethodHeader, MethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ReturnType;
+nonterminal AbstractClassMemberList AbstractClassMemberList;
+nonterminal AbstractClassMember AbstractClassMember;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj AbstractMethodDeclaration;
+nonterminal LocalVariableDeclarationList LocalVariableDeclarationList;
+nonterminal FormalParametersOpt FormalParametersOpt;
+nonterminal FormalParameters FormalParameters;
+nonterminal FormalParametersPrefix FormalParametersPrefix;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj FormalParameter;
+nonterminal FormalParameterEndRecovery FormalParameterEndRecovery;
+nonterminal FormalParameterCommaRecovery FormalParameterCommaRecovery;
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal MatchedStatement MatchedStatement;
+nonterminal UnmatchedStatement UnmatchedStatement;
+nonterminal IfCondition IfCondition;
+nonterminal ForHeader ForHeader;
+nonterminal ForeachHeader ForeachHeader;
+nonterminal DesignatorStatementOpt DesignatorStatementOpt;
+nonterminal ConditionOpt ConditionOpt;
+nonterminal ReturnExpressionOpt ReturnExpressionOpt;
+nonterminal PrintWidthOpt PrintWidthOpt;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal FindAnyStatement FindAnyStatement;
+nonterminal MapStatement MapStatement;
+nonterminal DesignatorStatementRecovery DesignatorStatementRecovery;
+nonterminal IfConditionEndRecovery IfConditionEndRecovery;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal ActualParametersOpt ActualParametersOpt;
+nonterminal ActualParameters ActualParameters;
+nonterminal FactorCallOpt FactorCallOpt;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expression, NonTernaryExpression;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct TernaryExpression, AdditiveTail;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Term, Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition, ConditionTerm, ConditionFactor;
+nonterminal RelationalOperator RelationalOperator;
+nonterminal AdditiveOperator AdditiveOperator;
+nonterminal MultiplicativeOperator MultiplicativeOperator;
+
+start with Program;
+
+Program ::=
+	(Program) PROG ProgramName:P1 GlobalDeclarationList:G2 LBRACE MethodDeclarationList:M3 RBRACE {: RESULT=new Program(P1, G2, M3); RESULT.setLine(P1left); :}
+;
+
+ProgramName ::=
+	(ProgramName) IDENT:name {: RESULT=new ProgramName(name); RESULT.setLine(nameleft); :}
+;
+
+GlobalDeclarationList ::=
+	(GlobalDeclarationsMultiple) GlobalDeclarationList:G1 GlobalDeclaration:G2 {: RESULT=new GlobalDeclarationsMultiple(G1, G2); RESULT.setLine(G1left); :}
+	|
+	(NoGlobalDeclarations) {: RESULT=new NoGlobalDeclarations(); :} /* epsilon */
+;
+
+GlobalDeclaration ::=
+	(GlobalConstDeclaration) ConstDeclaration:C1 {: RESULT=new GlobalConstDeclaration(C1); RESULT.setLine(C1left); :}
+	|
+	(GlobalVariableDeclaration) VariableDeclaration:V1 {: RESULT=new GlobalVariableDeclaration(V1); RESULT.setLine(V1left); :}
+	|
+	(GlobalClassDeclaration) ClassDeclaration:C1 {: RESULT=new GlobalClassDeclaration(C1); RESULT.setLine(C1left); :}
+	|
+	(GlobalAbstractClassDeclaration) AbstractClassDeclaration:A1 {: RESULT=new GlobalAbstractClassDeclaration(A1); RESULT.setLine(A1left); :}
+;
+
+ConstDeclaration ::=
+	(ConstDeclaration) CONST Type:T1 ConstDeclaratorList:C2 SEMI {: RESULT=new ConstDeclaration(T1, C2); RESULT.setLine(T1left); :}
+;
+
+ConstDeclaratorList ::=
+	(ConstDeclaratorsMultiple) ConstDeclaratorList:C1 COMMA ConstDeclarator:C2 {: RESULT=new ConstDeclaratorsMultiple(C1, C2); RESULT.setLine(C1left); :}
+	|
+	(ConstDeclaratorsSingle) ConstDeclarator:C1 {: RESULT=new ConstDeclaratorsSingle(C1); RESULT.setLine(C1left); :}
+;
+
+ConstDeclarator ::=
+	(ConstDeclarator) IDENT:name EQUAL ConstValue:C1 {: RESULT=new ConstDeclarator(name, C1); RESULT.setLine(nameleft); :}
+;
+
+ConstValue ::=
+	(NumericConstValue) NUMBER:value {: RESULT=new NumericConstValue(value); RESULT.setLine(valueleft); :}
+	|
+	(CharacterConstValue) CHAR:value {: RESULT=new CharacterConstValue(value); RESULT.setLine(valueleft); :}
+	|
+	(BooleanConstValue) BOOL:value {: RESULT=new BooleanConstValue(value); RESULT.setLine(valueleft); :}
+;
+
+VariableDeclaration ::=
+	(ValidVariableDeclaration) Type:T1 VariableDeclaratorList:V2 SEMI {: RESULT=new ValidVariableDeclaration(T1, V2); RESULT.setLine(T1left); :}
+	|
+	(VariableDeclarationRecoveredAtSemicolon) Type:T1 VariableDeclarationRecovery:V2 {: RESULT=new VariableDeclarationRecoveredAtSemicolon(T1, V2); RESULT.setLine(T1left); :}
+;
+
+VariableDeclarationRecovery ::=
+	(VariableDeclarationRecovery) error SEMI:semicolon
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije promenljive do ; na liniji " + semicolonleft,
+			null
+		);
+	:} {: RESULT=new VariableDeclarationRecovery(); :}
+;
+
+VariableDeclaratorList ::=
+	(VariableDeclaratorsMultiple) VariableDeclaratorListPrefix:V1 VariableDeclarator:V2 {: RESULT=new VariableDeclaratorsMultiple(V1, V2); RESULT.setLine(V1left); :}
+	|
+	(VariableDeclaratorsSingle) VariableDeclarator:V1 {: RESULT=new VariableDeclaratorsSingle(V1); RESULT.setLine(V1left); :}
+;
+
+VariableDeclaratorListPrefix ::=
+	(VariableDeclaratorListPrefixValid) VariableDeclaratorList:V1 COMMA {: RESULT=new VariableDeclaratorListPrefixValid(V1); RESULT.setLine(V1left); :}
+	|
+	(VariableDeclaratorListPrefixRecovered) VariableDeclaratorCommaRecovery:V1 {: RESULT=new VariableDeclaratorListPrefixRecovered(V1); RESULT.setLine(V1left); :}
+;
+
+VariableDeclaratorCommaRecovery ::=
+	(VariableDeclaratorCommaRecovery) error COMMA:comma
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije promenljive do , na liniji " + commaleft,
+			null
+		);
+	:} {: RESULT=new VariableDeclaratorCommaRecovery(); :}
+;
+
+VariableDeclarator ::=
+	(VariableDeclarator) IDENT:name ArraySuffix:A1 {: RESULT=new VariableDeclarator(name, A1); RESULT.setLine(nameleft); :}
+;
+
+ArraySuffix ::=
+	(ArraySuffixPresent) LSQBRACE RSQBRACE {: RESULT=new ArraySuffixPresent(); :}
+	|
+	(NoArraySuffix) {: RESULT=new NoArraySuffix(); :} /* epsilon */
+;
+
+Type ::=
+	(Type) IDENT:name {: RESULT=new Type(name); RESULT.setLine(nameleft); :}
+;
+
+ClassDeclaration ::=
+	(CompleteClassDeclaration)
+		ConcreteClassHeader:C1 ClassFieldList:C2 ConcreteMethodSectionOpt:C3 RBRACE {: RESULT=new CompleteClassDeclaration(C1, C2, C3); RESULT.setLine(C1left); :}
+	|
+	(ClassDeclarationRecoveredTypedField)
+		ConcreteClassHeader:C1 ClassFieldList:C2 Type:T3 ClassFieldToMethodRecovery:C4
+		MethodDeclarationList:M5 RBRACE RBRACE {: RESULT=new ClassDeclarationRecoveredTypedField(C1, C2, T3, C4, M5); RESULT.setLine(C1left); :}
+;
+
+ConcreteClassHeader ::=
+	(ConcreteClassHeaderWithoutExtends) CLASS IDENT:name LBRACE {: RESULT=new ConcreteClassHeaderWithoutExtends(name); RESULT.setLine(nameleft); :}
+	|
+	(ConcreteClassHeaderWithExtends) CLASS IDENT:name EXTENDS Type:T1 LBRACE {: RESULT=new ConcreteClassHeaderWithExtends(name, T1); RESULT.setLine(nameleft); :}
+	|
+	(ConcreteClassHeaderRecoveredExtends) CLASS IDENT:name EXTENDS ExtendsRecovery:E1 {: RESULT=new ConcreteClassHeaderRecoveredExtends(name, E1); RESULT.setLine(nameleft); :}
+;
+
+ExtendsRecovery ::=
+	(ExtendsRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije extends do { na liniji " + lbraceleft,
+			null
+		);
+	:} {: RESULT=new ExtendsRecovery(); :}
+;
+
+ConcreteMethodSectionOpt ::=
+	(ConcreteMethodSection) LBRACE MethodDeclarationList:M1 RBRACE {: RESULT=new ConcreteMethodSection(M1); RESULT.setLine(M1left); :}
+	|
+	(NoConcreteMethodSection) {: RESULT=new NoConcreteMethodSection(); :} /* epsilon */
+	|
+	(ConcreteMethodSectionRecoveredField)
+		ClassFieldRecovery:C1 MethodDeclarationList:M2 RBRACE {: RESULT=new ConcreteMethodSectionRecoveredField(C1, M2); RESULT.setLine(C1left); :}
+;
+
+ClassFieldRecovery ::=
+	(ClassFieldRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije polja klase do { na liniji " + lbraceleft,
+			null
+		);
+	:} {: RESULT=new ClassFieldRecovery(); :}
+;
+
+AbstractClassDeclaration ::=
+	(CompleteAbstractClassDeclaration)
+		AbstractClassHeader:A1 ClassFieldList:C2 AbstractMethodSectionOpt:A3 RBRACE {: RESULT=new CompleteAbstractClassDeclaration(A1, C2, A3); RESULT.setLine(A1left); :}
+	|
+	(AbstractClassDeclarationRecoveredTypedField)
+		AbstractClassHeader:A1 ClassFieldList:C2 Type:T3 ClassFieldToMethodRecovery:C4
+		AbstractClassMemberList:A5 RBRACE RBRACE {: RESULT=new AbstractClassDeclarationRecoveredTypedField(A1, C2, T3, C4, A5); RESULT.setLine(A1left); :}
+;
+
+ClassFieldToMethodRecovery ::=
+	(ClassFieldToMethodRecovery) error LBRACE:lbrace
+	{:
+		parser.report_error(
+			"Izvrsen oporavak deklaracije polja klase do { na liniji " + lbraceleft,
+			null
+		);
+	:} {: RESULT=new ClassFieldToMethodRecovery(); :}
+;
+
+AbstractClassHeader ::=
+	(AbstractClassHeaderWithoutExtends) ABSTRACT CLASS IDENT:name LBRACE {: RESULT=new AbstractClassHeaderWithoutExtends(name); RESULT.setLine(nameleft); :}
+	|
+	(AbstractClassHeaderWithExtends) ABSTRACT CLASS IDENT:name EXTENDS Type:T1 LBRACE {: RESULT=new AbstractClassHeaderWithExtends(name, T1); RESULT.setLine(nameleft); :}
+	|
+	(AbstractClassHeaderRecoveredExtends) ABSTRACT CLASS IDENT:name EXTENDS ExtendsRecovery:E1 {: RESULT=new AbstractClassHeaderRecoveredExtends(name, E1); RESULT.setLine(nameleft); :}
+;
+
+AbstractMethodSectionOpt ::=
+	(AbstractMethodSection) LBRACE AbstractClassMemberList:A1 RBRACE {: RESULT=new AbstractMethodSection(A1); RESULT.setLine(A1left); :}
+	|
+	(NoAbstractMethodSection) {: RESULT=new NoAbstractMethodSection(); :} /* epsilon */
+	|
+	(AbstractMethodSectionRecoveredField)
+		ClassFieldRecovery:C1 AbstractClassMemberList:A2 RBRACE {: RESULT=new AbstractMethodSectionRecoveredField(C1, A2); RESULT.setLine(C1left); :}
+;
+
+ClassFieldList ::=
+	(ClassFieldsMultiple) ClassFieldList:C1 VariableDeclaration:V2 {: RESULT=new ClassFieldsMultiple(C1, V2); RESULT.setLine(C1left); :}
+	|
+	(NoClassFields) {: RESULT=new NoClassFields(); :} /* epsilon */
+;
+
+MethodDeclarationList ::=
+	(MethodDeclarationsMultiple) MethodDeclarationList:M1 MethodDeclaration:M2 {: RESULT=new MethodDeclarationsMultiple(M1, M2); RESULT.setLine(M1left); :}
+	|
+	(NoMethodDeclarations) {: RESULT=new NoMethodDeclarations(); :} /* epsilon */
+;
+
+MethodDeclaration ::=
+	(MethodDeclaration)
+		MethodHeader:M1 LocalVariableDeclarationList:L2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclaration(M1, L2, S3); RESULT.setLine(M1left); :}
+;
+
+MethodHeader ::=
+	(ValidMethodHeader) ReturnType:R1 MethodName:M2 LPAREN FormalParametersOpt:F3 RPAREN {: RESULT=new ValidMethodHeader(R1, M2, F3); RESULT.setLine(R1left); :}
+	|
+	(MethodHeaderRecoveredFormalParameter)
+		ReturnType:R1 MethodName:M2 LPAREN FormalParameterEndRecovery:F3 {: RESULT=new MethodHeaderRecoveredFormalParameter(R1, M2, F3); RESULT.setLine(R1left); :}
+;
+
+MethodName ::=
+	(MethodName) IDENT:name {: RESULT=new MethodName(name); RESULT.setLine(nameleft); :}
+;
+
+FormalParameterEndRecovery ::=
+	(FormalParameterEndRecovery) error RPAREN:rparen
+	{:
+		parser.report_error(
+			"Izvrsen oporavak formalnog parametra do ) na liniji " + rparenleft,
+			null
+		);
+	:} {: RESULT=new FormalParameterEndRecovery(); :}
+;
+
+ReturnType ::=
+	(TypedReturnType) Type:T1 {: RESULT=new TypedReturnType(T1); RESULT.setLine(T1left); :}
+	|
+	(VoidReturnType) VOID {: RESULT=new VoidReturnType(); :}
+;
+
+AbstractClassMemberList ::=
+	(AbstractClassMembersMultiple) AbstractClassMemberList:A1 AbstractClassMember:A2 {: RESULT=new AbstractClassMembersMultiple(A1, A2); RESULT.setLine(A1left); :}
+	|
+	(NoAbstractClassMembers) {: RESULT=new NoAbstractClassMembers(); :} /* epsilon */
+;
+
+AbstractClassMember ::=
+	(AbstractClassConcreteMethod) MethodDeclaration:M1 {: RESULT=new AbstractClassConcreteMethod(M1); RESULT.setLine(M1left); :}
+	|
+	(AbstractClassAbstractMethod) AbstractMethodDeclaration:A1 SEMI {: RESULT=new AbstractClassAbstractMethod(A1); RESULT.setLine(A1left); :}
+;
+
+AbstractMethodDeclaration ::=
+	(AbstractMethodDeclaration) ABSTRACT MethodHeader:M1 {: RESULT=new AbstractMethodDeclaration(M1); RESULT.setLine(M1left); :}
+;
+
+LocalVariableDeclarationList ::=
+	(LocalVariableDeclarationsMultiple)
+		LocalVariableDeclarationList:L1 VariableDeclaration:V2 {: RESULT=new LocalVariableDeclarationsMultiple(L1, V2); RESULT.setLine(L1left); :}
+	|
+	(NoLocalVariableDeclarations) {: RESULT=new NoLocalVariableDeclarations(); :} /* epsilon */
+;
+
+FormalParametersOpt ::=
+	(FormalParametersPresent) FormalParameters:F1 {: RESULT=new FormalParametersPresent(F1); RESULT.setLine(F1left); :}
+	|
+	(NoFormalParameters) {: RESULT=new NoFormalParameters(); :} /* epsilon */
+;
+
+FormalParameters ::=
+	(FormalParametersMultiple) FormalParametersPrefix:F1 FormalParameter:F2 {: RESULT=new FormalParametersMultiple(F1, F2); RESULT.setLine(F1left); :}
+	|
+	(FormalParametersSingle) FormalParameter:F1 {: RESULT=new FormalParametersSingle(F1); RESULT.setLine(F1left); :}
+;
+
+FormalParametersPrefix ::=
+	(FormalParametersPrefixValid) FormalParameters:F1 COMMA {: RESULT=new FormalParametersPrefixValid(F1); RESULT.setLine(F1left); :}
+	|
+	(FormalParametersPrefixRecovered) FormalParameterCommaRecovery:F1 {: RESULT=new FormalParametersPrefixRecovered(F1); RESULT.setLine(F1left); :}
+;
+
+FormalParameterCommaRecovery ::=
+	(FormalParameterCommaRecovery) error COMMA:comma
+	{:
+		parser.report_error(
+			"Izvrsen oporavak formalnog parametra do , na liniji " + commaleft,
+			null
+		);
+	:} {: RESULT=new FormalParameterCommaRecovery(); :}
+;
+
+FormalParameter ::=
+	(FormalParameter) Type:T1 IDENT:name ArraySuffix:A2 {: RESULT=new FormalParameter(T1, name, A2); RESULT.setLine(T1left); :}
+;
+
+StatementList ::=
+	(StatementsMultiple) StatementList:S1 Statement:S2 {: RESULT=new StatementsMultiple(S1, S2); RESULT.setLine(S1left); :}
+	|
+	(NoStatements) {: RESULT=new NoStatements(); :} /* epsilon */
+;
+
+Statement ::=
+	(MatchedStatementNode) MatchedStatement:M1 {: RESULT=new MatchedStatementNode(M1); RESULT.setLine(M1left); :}
+	|
+	(UnmatchedStatementNode) UnmatchedStatement:U1 {: RESULT=new UnmatchedStatementNode(U1); RESULT.setLine(U1left); :}
+;
+
+MatchedStatement ::=
+	(MatchedDesignatorStatement) DesignatorStatement:D1 SEMI {: RESULT=new MatchedDesignatorStatement(D1); RESULT.setLine(D1left); :}
+	|
+	(MatchedFindAnyStatement) FindAnyStatement:F1 {: RESULT=new MatchedFindAnyStatement(F1); RESULT.setLine(F1left); :}
+	|
+	(MatchedMapStatement) MapStatement:M1 {: RESULT=new MatchedMapStatement(M1); RESULT.setLine(M1left); :}
+	|
+	(MatchedRecoveredDesignatorStatement) Designator:D1 DesignatorStatementRecovery:D2 {: RESULT=new MatchedRecoveredDesignatorStatement(D1, D2); RESULT.setLine(D1left); :}
+	|
+	(MatchedIfElseStatement)
+		IfCondition:I1 MatchedStatement:M2 ELSE MatchedStatement:M3 {: RESULT=new MatchedIfElseStatement(I1, M2, M3); RESULT.setLine(I1left); :}
+	|
+	(MatchedForStatement) ForHeader:F1 MatchedStatement:M2 {: RESULT=new MatchedForStatement(F1, M2); RESULT.setLine(F1left); :}
+	|
+	(MatchedForeachStatement) ForeachHeader:F1 MatchedStatement:M2 {: RESULT=new MatchedForeachStatement(F1, M2); RESULT.setLine(F1left); :}
+	|
+	(MatchedBreakStatement) BREAK SEMI {: RESULT=new MatchedBreakStatement(); :}
+	|
+	(MatchedContinueStatement) CONTINUE SEMI {: RESULT=new MatchedContinueStatement(); :}
+	|
+	(MatchedReturnStatement) RETURN ReturnExpressionOpt:R1 SEMI {: RESULT=new MatchedReturnStatement(R1); RESULT.setLine(R1left); :}
+	|
+	(MatchedReadStatement) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new MatchedReadStatement(D1); RESULT.setLine(D1left); :}
+	|
+	(MatchedPrintStatement) PRINT LPAREN Expression:E1 PrintWidthOpt:P2 RPAREN SEMI {: RESULT=new MatchedPrintStatement(E1, P2); RESULT.setLine(E1left); :}
+	|
+	(MatchedBlockStatement) LBRACE StatementList:S1 RBRACE {: RESULT=new MatchedBlockStatement(S1); RESULT.setLine(S1left); :}
+;
+
+DesignatorStatementRecovery ::=
+	(DesignatorStatementRecovery) error SEMI:semicolon
+	{:
+		parser.report_error(
+			"Izvrsen oporavak iskaza dodele do ; na liniji " + semicolonleft,
+			null
+		);
+	:} {: RESULT=new DesignatorStatementRecovery(); :}
+;
+
+UnmatchedStatement ::=
+	(UnmatchedIfStatement) IfCondition:I1 Statement:S2 {: RESULT=new UnmatchedIfStatement(I1, S2); RESULT.setLine(I1left); :}
+	|
+	(UnmatchedIfElseStatement)
+		IfCondition:I1 MatchedStatement:M2 ELSE UnmatchedStatement:U3 {: RESULT=new UnmatchedIfElseStatement(I1, M2, U3); RESULT.setLine(I1left); :}
+	|
+	(UnmatchedForStatement) ForHeader:F1 UnmatchedStatement:U2 {: RESULT=new UnmatchedForStatement(F1, U2); RESULT.setLine(F1left); :}
+	|
+	(UnmatchedForeachStatement) ForeachHeader:F1 UnmatchedStatement:U2 {: RESULT=new UnmatchedForeachStatement(F1, U2); RESULT.setLine(F1left); :}
+;
+
+IfCondition ::=
+	(ValidIfCondition) IF LPAREN Condition:C1 RPAREN {: RESULT=new ValidIfCondition(C1); RESULT.setLine(C1left); :}
+	|
+	(IfConditionRecovered) IF LPAREN IfConditionEndRecovery:I1 {: RESULT=new IfConditionRecovered(I1); RESULT.setLine(I1left); :}
+;
+
+IfConditionEndRecovery ::=
+	(IfConditionEndRecovery) error RPAREN:rparen
+	{:
+		parser.report_error(
+			"Izvrsen oporavak uslova if iskaza do ) na liniji " + rparenleft,
+			null
+		);
+	:} {: RESULT=new IfConditionEndRecovery(); :}
+;
+
+ForHeader ::=
+	(ForHeader)
+		FOR LPAREN DesignatorStatementOpt:D1 SEMI ConditionOpt:C2 SEMI
+		DesignatorStatementOpt:D3 RPAREN {: RESULT=new ForHeader(D1, C2, D3); RESULT.setLine(D1left); :}
+;
+
+ForeachHeader ::=
+	(ForeachHeader)
+		FOREACH LPAREN Designator:target DOUBLEDOT Designator:array RPAREN {: RESULT=new ForeachHeader(target, array); RESULT.setLine(targetleft); :}
+;
+
+DesignatorStatementOpt ::=
+	(DesignatorStatementPresent) DesignatorStatement:D1 {: RESULT=new DesignatorStatementPresent(D1); RESULT.setLine(D1left); :}
+	|
+	(NoDesignatorStatement) {: RESULT=new NoDesignatorStatement(); :} /* epsilon */
+;
+
+ConditionOpt ::=
+	(ConditionPresent) Condition:C1 {: RESULT=new ConditionPresent(C1); RESULT.setLine(C1left); :}
+	|
+	(NoCondition) {: RESULT=new NoCondition(); :} /* epsilon */
+;
+
+ReturnExpressionOpt ::=
+	(ReturnExpressionPresent) Expression:E1 {: RESULT=new ReturnExpressionPresent(E1); RESULT.setLine(E1left); :}
+	|
+	(NoReturnExpression) {: RESULT=new NoReturnExpression(); :} /* epsilon */
+;
+
+PrintWidthOpt ::=
+	(PrintWidthPresent) COMMA NUMBER:N1 {: RESULT=new PrintWidthPresent(N1); RESULT.setLine(N1left); :}
+	|
+	(NoPrintWidth) {: RESULT=new NoPrintWidth(); :} /* epsilon */
+;
+
+DesignatorStatement ::=
+	(DesignatorAssignment) Designator:destination EQUAL Expression:value {: RESULT=new DesignatorAssignment(destination, value); RESULT.setLine(destinationleft); :}
+	|
+	(DesignatorCall) Designator:method LPAREN ActualParametersOpt:A1 RPAREN {: RESULT=new DesignatorCall(method, A1); RESULT.setLine(methodleft); :}
+	|
+	(DesignatorIncrement) Designator:target PLUSPLUS {: RESULT=new DesignatorIncrement(target); RESULT.setLine(targetleft); :}
+	|
+	(DesignatorDecrement) Designator:target MINUSMINUS {: RESULT=new DesignatorDecrement(target); RESULT.setLine(targetleft); :}
+;
+
+FindAnyStatement ::=
+	(FindAnyStatement)
+		Designator:result EQUAL Designator:array DOT FINDANY
+		LPAREN Expression:value RPAREN SEMI {: RESULT=new FindAnyStatement(result, array, value); RESULT.setLine(resultleft); :}
+;
+
+MapStatement ::=
+	(MapStatement)
+		Designator:result EQUAL Designator:array DOT MAP
+		LPAREN IDENT:mapper ARROW Expression:value RPAREN SEMI {: RESULT=new MapStatement(result, array, mapper, value); RESULT.setLine(resultleft); :}
+;
+
+Designator ::=
+	(DesignatorName) IDENT:name {: RESULT=new DesignatorName(name); RESULT.setLine(nameleft); :}
+	|
+	(DesignatorMember) Designator:owner DOT IDENT:member {: RESULT=new DesignatorMember(owner, member); RESULT.setLine(ownerleft); :}
+	|
+	(DesignatorLength) Designator:array DOT LENGTH {: RESULT=new DesignatorLength(array); RESULT.setLine(arrayleft); :}
+	|
+	(DesignatorElement) Designator:array LSQBRACE Expression:index RSQBRACE {: RESULT=new DesignatorElement(array, index); RESULT.setLine(arrayleft); :}
+;
+
+ActualParametersOpt ::=
+	(ActualParametersPresent) ActualParameters:A1 {: RESULT=new ActualParametersPresent(A1); RESULT.setLine(A1left); :}
+	|
+	(NoActualParameters) {: RESULT=new NoActualParameters(); :} /* epsilon */
+;
+
+ActualParameters ::=
+	(ActualParametersMultiple) ActualParameters:previous COMMA Expression:argument {: RESULT=new ActualParametersMultiple(previous, argument); RESULT.setLine(previousleft); :}
+	|
+	(ActualParametersSingle) Expression:argument {: RESULT=new ActualParametersSingle(argument); RESULT.setLine(argumentleft); :}
+;
+
+FactorCallOpt ::=
+	(FactorCall) LPAREN ActualParametersOpt:A1 RPAREN {: RESULT=new FactorCall(A1); RESULT.setLine(A1left); :}
+	|
+	(NoFactorCall) {: RESULT=new NoFactorCall(); :} /* epsilon */
+;
+
+Expression ::=
+	(ExpressionWithoutTernary) NonTernaryExpression:N1 {: RESULT=new ExpressionWithoutTernary(N1); RESULT.setLine(N1left); :}
+	|
+	(ExpressionWithTernary) TernaryExpression:T1 {: RESULT=new ExpressionWithTernary(T1); RESULT.setLine(T1left); :}
+;
+
+NonTernaryExpression ::=
+	(PositiveNonTernaryExpression) Term:T1 AdditiveTail:A2 {: RESULT=new PositiveNonTernaryExpression(T1, A2); RESULT.setLine(T1left); :}
+	|
+	(NegativeNonTernaryExpression) MINUS Term:T1 AdditiveTail:A2 {: RESULT=new NegativeNonTernaryExpression(T1, A2); RESULT.setLine(T1left); :}
+;
+
+TernaryExpression ::=
+	(TernaryExpression) Condition:C1 QUESTION Expression:E2 DOUBLEDOT Expression:E3 {: RESULT=new TernaryExpression(C1, E2, E3); RESULT.setLine(C1left); :}
+;
+
+AdditiveTail ::=
+	(AdditiveTermsMultiple) AdditiveTail:A1 AdditiveOperator:A2 Term:T3 {: RESULT=new AdditiveTermsMultiple(A1, A2, T3); RESULT.setLine(A1left); :}
+	|
+	(NoAdditiveTerms) {: RESULT=new NoAdditiveTerms(); :} /* epsilon */
+;
+
+Term ::=
+	(TermWithMultiplication) Term:T1 MultiplicativeOperator:M2 Factor:F3 {: RESULT=new TermWithMultiplication(T1, M2, F3); RESULT.setLine(T1left); :}
+	|
+	(TermFactor) Factor:F1 {: RESULT=new TermFactor(F1); RESULT.setLine(F1left); :}
+;
+
+Factor ::=
+	(FactorDesignator) Designator:value FactorCallOpt:F1 {: RESULT=new FactorDesignator(value, F1); RESULT.setLine(valueleft); :}
+	|
+	(FactorConstant) ConstValue:value {: RESULT=new FactorConstant(value); RESULT.setLine(valueleft); :}
+	|
+	(FactorNewObject) NEW Type:type {: RESULT=new FactorNewObject(type); RESULT.setLine(typeleft); :}
+	|
+	(FactorNewArray) NEW Type:type LSQBRACE Expression:size RSQBRACE {: RESULT=new FactorNewArray(type, size); RESULT.setLine(typeleft); :}
+	|
+	(FactorParenthesized) LPAREN Expression:value RPAREN {: RESULT=new FactorParenthesized(value); RESULT.setLine(valueleft); :}
+;
+
+Condition ::=
+	(ConditionWithOr) Condition:C1 OR ConditionTerm:C2 {: RESULT=new ConditionWithOr(C1, C2); RESULT.setLine(C1left); :}
+	|
+	(ConditionSingleTerm) ConditionTerm:C1 {: RESULT=new ConditionSingleTerm(C1); RESULT.setLine(C1left); :}
+;
+
+ConditionTerm ::=
+	(ConditionTermWithAnd) ConditionTerm:C1 AND ConditionFactor:C2 {: RESULT=new ConditionTermWithAnd(C1, C2); RESULT.setLine(C1left); :}
+	|
+	(ConditionTermSingleFactor) ConditionFactor:C1 {: RESULT=new ConditionTermSingleFactor(C1); RESULT.setLine(C1left); :}
+;
+
+ConditionFactor ::=
+	(ConditionFactorExpression) NonTernaryExpression:N1 {: RESULT=new ConditionFactorExpression(N1); RESULT.setLine(N1left); :}
+	|
+	(ConditionFactorRelational)
+		NonTernaryExpression:N1 RelationalOperator:R2 NonTernaryExpression:N3 {: RESULT=new ConditionFactorRelational(N1, R2, N3); RESULT.setLine(N1left); :}
+;
+
+RelationalOperator ::=
+	(RelationalEqual) EQUALSTO {: RESULT=new RelationalEqual(); :}
+	|
+	(RelationalNotEqual) DIFFERENT {: RESULT=new RelationalNotEqual(); :}
+	|
+	(RelationalGreater) GREATER {: RESULT=new RelationalGreater(); :}
+	|
+	(RelationalGreaterOrEqual) EGREATER {: RESULT=new RelationalGreaterOrEqual(); :}
+	|
+	(RelationalLess) LESS {: RESULT=new RelationalLess(); :}
+	|
+	(RelationalLessOrEqual) ELESS {: RESULT=new RelationalLessOrEqual(); :}
+;
+
+AdditiveOperator ::=
+	(AdditivePlus) PLUS {: RESULT=new AdditivePlus(); :}
+	|
+	(AdditiveMinus) MINUS {: RESULT=new AdditiveMinus(); :}
+;
+
+MultiplicativeOperator ::=
+	(MultiplicativeMultiply) MUL {: RESULT=new MultiplicativeMultiply(); :}
+	|
+	(MultiplicativeDivide) DIV {: RESULT=new MultiplicativeDivide(); :}
+	|
+	(MultiplicativeModulo) MOD {: RESULT=new MultiplicativeModulo(); :}
+;

@@ -1,0 +1,239 @@
+INFO  14:36:47,463 - Compiling source file: C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\foreach-focus.mj
+INFO  14:36:47,550 - #2 program
+INFO  14:36:47,551 - #55 foreach_focus
+INFO  14:36:47,551 - #55 int
+INFO  14:36:47,552 - #55 ints
+INFO  14:36:47,553 - #48 [
+INFO  14:36:47,553 - #49 ]
+INFO  14:36:47,553 - #41 ;
+INFO  14:36:47,555 - #55 char
+INFO  14:36:47,555 - #55 chars
+INFO  14:36:47,555 - #48 [
+INFO  14:36:47,555 - #49 ]
+INFO  14:36:47,555 - #41 ;
+INFO  14:36:47,555 - #55 bool
+INFO  14:36:47,555 - #55 flags
+INFO  14:36:47,555 - #48 [
+INFO  14:36:47,555 - #49 ]
+INFO  14:36:47,556 - #41 ;
+INFO  14:36:47,556 - #46 {
+INFO  14:36:47,556 - #14 void
+INFO  14:36:47,557 - #55 main
+INFO  14:36:47,559 - #44 (
+INFO  14:36:47,559 - #45 )
+INFO  14:36:47,560 - #55 int
+INFO  14:36:47,560 - #55 value
+INFO  14:36:47,560 - #42 ,
+INFO  14:36:47,561 - #55 sum
+INFO  14:36:47,561 - #41 ;
+INFO  14:36:47,561 - #55 char
+INFO  14:36:47,561 - #55 character
+INFO  14:36:47,561 - #41 ;
+INFO  14:36:47,561 - #55 bool
+INFO  14:36:47,561 - #55 flag
+INFO  14:36:47,561 - #41 ;
+INFO  14:36:47,561 - #46 {
+INFO  14:36:47,561 - #55 ints
+INFO  14:36:47,562 - #37 =
+INFO  14:36:47,562 - #10 new
+INFO  14:36:47,562 - #55 int
+INFO  14:36:47,562 - #48 [
+INFO  14:36:47,562 - #54 4
+INFO  14:36:47,562 - #49 ]
+INFO  14:36:47,563 - #41 ;
+INFO  14:36:47,563 - #55 ints
+INFO  14:36:47,563 - #48 [
+INFO  14:36:47,563 - #54 0
+INFO  14:36:47,564 - #49 ]
+INFO  14:36:47,564 - #37 =
+INFO  14:36:47,564 - #54 1
+INFO  14:36:47,564 - #41 ;
+INFO  14:36:47,564 - #55 ints
+INFO  14:36:47,564 - #48 [
+INFO  14:36:47,564 - #54 1
+INFO  14:36:47,564 - #49 ]
+INFO  14:36:47,564 - #37 =
+INFO  14:36:47,564 - #54 2
+INFO  14:36:47,564 - #41 ;
+INFO  14:36:47,564 - #55 ints
+INFO  14:36:47,564 - #48 [
+INFO  14:36:47,564 - #54 2
+INFO  14:36:47,564 - #49 ]
+INFO  14:36:47,564 - #37 =
+INFO  14:36:47,565 - #54 3
+INFO  14:36:47,565 - #41 ;
+INFO  14:36:47,565 - #55 ints
+INFO  14:36:47,565 - #48 [
+INFO  14:36:47,565 - #54 3
+INFO  14:36:47,565 - #49 ]
+INFO  14:36:47,565 - #37 =
+INFO  14:36:47,565 - #54 4
+INFO  14:36:47,565 - #41 ;
+INFO  14:36:47,565 - #55 sum
+INFO  14:36:47,565 - #37 =
+INFO  14:36:47,565 - #54 0
+INFO  14:36:47,565 - #41 ;
+INFO  14:36:47,565 - #18 foreach
+INFO  14:36:47,565 - #44 (
+INFO  14:36:47,565 - #55 value
+INFO  14:36:47,565 - #51 :
+INFO  14:36:47,566 - #55 ints
+INFO  14:36:47,566 - #45 )
+INFO  14:36:47,566 - #46 {
+INFO  14:36:47,566 - #9 if
+INFO  14:36:47,566 - #44 (
+INFO  14:36:47,567 - #55 value
+INFO  14:36:47,567 - #29 ==
+INFO  14:36:47,568 - #54 2
+INFO  14:36:47,569 - #45 )
+INFO  14:36:47,569 - #16 continue
+INFO  14:36:47,569 - #41 ;
+INFO  14:36:47,569 - #9 if
+INFO  14:36:47,570 - #44 (
+INFO  14:36:47,570 - #55 value
+INFO  14:36:47,570 - #29 ==
+INFO  14:36:47,571 - #54 4
+INFO  14:36:47,571 - #45 )
+INFO  14:36:47,571 - #3 break
+INFO  14:36:47,571 - #41 ;
+INFO  14:36:47,571 - #55 sum
+INFO  14:36:47,571 - #37 =
+INFO  14:36:47,572 - #55 sum
+INFO  14:36:47,572 - #24 +
+INFO  14:36:47,572 - #55 value
+INFO  14:36:47,573 - #41 ;
+INFO  14:36:47,573 - #47 }
+INFO  14:36:47,573 - #11 print
+INFO  14:36:47,573 - #44 (
+INFO  14:36:47,573 - #55 sum
+INFO  14:36:47,573 - #42 ,
+INFO  14:36:47,573 - #54 1
+INFO  14:36:47,573 - #45 )
+INFO  14:36:47,573 - #41 ;
+INFO  14:36:47,573 - #11 print
+INFO  14:36:47,573 - #44 (
+INFO  14:36:47,573 - #55 eol
+INFO  14:36:47,573 - #45 )
+INFO  14:36:47,574 - #41 ;
+INFO  14:36:47,574 - #55 chars
+INFO  14:36:47,574 - #37 =
+INFO  14:36:47,574 - #10 new
+INFO  14:36:47,574 - #55 char
+INFO  14:36:47,574 - #48 [
+INFO  14:36:47,574 - #54 2
+INFO  14:36:47,574 - #49 ]
+INFO  14:36:47,574 - #41 ;
+INFO  14:36:47,575 - #55 chars
+INFO  14:36:47,575 - #48 [
+INFO  14:36:47,575 - #54 0
+INFO  14:36:47,575 - #49 ]
+INFO  14:36:47,575 - #37 =
+INFO  14:36:47,575 - #53 'A'
+INFO  14:36:47,575 - #41 ;
+INFO  14:36:47,575 - #55 chars
+INFO  14:36:47,575 - #48 [
+INFO  14:36:47,575 - #54 1
+INFO  14:36:47,575 - #49 ]
+INFO  14:36:47,575 - #37 =
+INFO  14:36:47,575 - #53 'B'
+INFO  14:36:47,576 - #41 ;
+INFO  14:36:47,576 - #18 foreach
+INFO  14:36:47,576 - #44 (
+INFO  14:36:47,576 - #55 character
+INFO  14:36:47,576 - #51 :
+INFO  14:36:47,576 - #55 chars
+INFO  14:36:47,576 - #45 )
+INFO  14:36:47,576 - #11 print
+INFO  14:36:47,576 - #44 (
+INFO  14:36:47,576 - #55 character
+INFO  14:36:47,576 - #45 )
+INFO  14:36:47,576 - #41 ;
+INFO  14:36:47,576 - #11 print
+INFO  14:36:47,576 - #44 (
+INFO  14:36:47,576 - #55 eol
+INFO  14:36:47,576 - #45 )
+INFO  14:36:47,576 - #41 ;
+INFO  14:36:47,576 - #55 flags
+INFO  14:36:47,576 - #37 =
+INFO  14:36:47,576 - #10 new
+INFO  14:36:47,576 - #55 bool
+INFO  14:36:47,576 - #48 [
+INFO  14:36:47,576 - #54 2
+INFO  14:36:47,576 - #49 ]
+INFO  14:36:47,576 - #41 ;
+INFO  14:36:47,576 - #55 flags
+INFO  14:36:47,576 - #48 [
+INFO  14:36:47,576 - #54 1
+INFO  14:36:47,576 - #49 ]
+INFO  14:36:47,576 - #37 =
+INFO  14:36:47,577 - #52 true
+INFO  14:36:47,577 - #41 ;
+INFO  14:36:47,577 - #18 foreach
+INFO  14:36:47,577 - #44 (
+INFO  14:36:47,577 - #55 flag
+INFO  14:36:47,577 - #51 :
+INFO  14:36:47,577 - #55 flags
+INFO  14:36:47,577 - #45 )
+INFO  14:36:47,577 - #9 if
+INFO  14:36:47,577 - #44 (
+INFO  14:36:47,577 - #55 flag
+INFO  14:36:47,577 - #45 )
+INFO  14:36:47,577 - #11 print
+INFO  14:36:47,577 - #44 (
+INFO  14:36:47,577 - #54 1
+INFO  14:36:47,577 - #42 ,
+INFO  14:36:47,577 - #54 1
+INFO  14:36:47,577 - #45 )
+INFO  14:36:47,577 - #41 ;
+INFO  14:36:47,577 - #7 else
+INFO  14:36:47,577 - #11 print
+INFO  14:36:47,577 - #44 (
+INFO  14:36:47,577 - #54 0
+INFO  14:36:47,577 - #42 ,
+INFO  14:36:47,577 - #54 1
+INFO  14:36:47,577 - #45 )
+INFO  14:36:47,578 - #41 ;
+INFO  14:36:47,578 - #11 print
+INFO  14:36:47,578 - #44 (
+INFO  14:36:47,578 - #55 eol
+INFO  14:36:47,578 - #45 )
+INFO  14:36:47,578 - #41 ;
+INFO  14:36:47,578 - #47 }
+INFO  14:36:47,578 - #47 }
+INFO  14:36:47,587 - Pretraga na 12 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 13 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 13 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5bcab519
+INFO  14:36:47,587 - Pretraga na 14 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 14 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@e45f292
+INFO  14:36:47,587 - Pretraga na 15 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 15 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5f2108b5
+INFO  14:36:47,587 - Pretraga na 16 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 16 (ints[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@31a5c39e
+INFO  14:36:47,587 - Pretraga na 17 (sum), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3f49dace
+INFO  14:36:47,587 - Pretraga na 18 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e397ed7
+INFO  14:36:47,587 - Pretraga na 18 (ints), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6fd02e5
+INFO  14:36:47,587 - Pretraga na 20 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e397ed7
+INFO  14:36:47,588 - Pretraga na 21 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e397ed7
+INFO  14:36:47,588 - Pretraga na 22 (sum), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3f49dace
+INFO  14:36:47,588 - Pretraga na 22 (sum), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3f49dace
+INFO  14:36:47,588 - Pretraga na 22 (value), nadjeno rs.etf.pp1.symboltable.concepts.Obj@1e397ed7
+INFO  14:36:47,588 - Pretraga na 24 (sum), nadjeno rs.etf.pp1.symboltable.concepts.Obj@3f49dace
+INFO  14:36:47,588 - Pretraga na 25 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@490ab905
+INFO  14:36:47,588 - Pretraga na 27 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ac3a89
+INFO  14:36:47,588 - Pretraga na 28 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ac3a89
+INFO  14:36:47,588 - Pretraga na 28 (chars[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@27c20538
+INFO  14:36:47,588 - Pretraga na 29 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ac3a89
+INFO  14:36:47,588 - Pretraga na 29 (chars[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@72d818d1
+INFO  14:36:47,588 - Pretraga na 30 (character), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e06451e
+INFO  14:36:47,588 - Pretraga na 30 (chars), nadjeno rs.etf.pp1.symboltable.concepts.Obj@56ac3a89
+INFO  14:36:47,588 - Pretraga na 31 (character), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e06451e
+INFO  14:36:47,588 - Pretraga na 32 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@490ab905
+INFO  14:36:47,588 - Pretraga na 34 (flags), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  14:36:47,588 - Pretraga na 35 (flags), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  14:36:47,588 - Pretraga na 35 (flags[]), nadjeno rs.etf.pp1.symboltable.concepts.Obj@6e1567f1
+INFO  14:36:47,588 - Pretraga na 36 (flag), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  14:36:47,588 - Pretraga na 36 (flags), nadjeno rs.etf.pp1.symboltable.concepts.Obj@59494225
+INFO  14:36:47,588 - Pretraga na 37 (flag), nadjeno rs.etf.pp1.symboltable.concepts.Obj@5cb9f472
+INFO  14:36:47,588 - Pretraga na 39 (eol), nadjeno rs.etf.pp1.symboltable.concepts.Obj@490ab905
+INFO  14:36:47,599 - Object code written to C:\Users\andre\.copilot\session-state\f0014fb6-b100-4a88-a459-559e825e504c\files\foreach-focus.obj
+INFO  14:36:47,599 - ===================================
